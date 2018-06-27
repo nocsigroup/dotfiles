@@ -1,0 +1,139 @@
+tap "crisidev/chunkwm"
+tap "homebrew/cask-versions"
+tap "homebrew/core"
+tap "homebrew/cask"
+tap "homebrew/bundle"
+tap "homebrew/cask-fonts"
+tap "homebrew/services"
+tap "koekeishiya/formulae"
+cask "java"
+cask "xquartz"
+brew "openssl"
+brew "readline"
+brew "python@2", args: ["with-tcl-tk"]
+brew "ansible"
+brew "ansifilter"
+brew "autoconf"
+brew "automake"
+brew "xz"
+brew "python"
+brew "azure-cli"
+brew "bash"
+brew "binutils"
+brew "bison"
+brew "bochs"
+brew "gettext"
+brew "glib"
+brew "capstone", args: ["HEAD"]
+brew "cmake"
+brew "cmocka"
+brew "coreutils"
+brew "ctags"
+brew "curl", args: ["with-gssapi", "with-libssh2", "with-nghttp2"]
+brew "direnv"
+brew "erlang", args: ["with-dirty-schedulers", "with-native-libs"]
+brew "elixir"
+brew "envchain"
+brew "flex"
+brew "fpp"
+brew "webp"
+brew "geckodriver"
+brew "git-lfs"
+brew "gnu-sed"
+brew "go"
+brew "grc"
+brew "haskell-stack"
+brew "htop"
+brew "ifstat"
+brew "iperf"
+brew "jq"
+brew "jump"
+brew "kerl"
+brew "keystone"
+brew "krb5"
+brew "libiconv"
+brew "libusb"
+brew "libuv"
+brew "llvm", args: ["with-graphviz", "with-python@2", "with-shared-libs", "with-toolchain"]
+brew "lzip"
+brew "makedepend"
+brew "mas"
+brew "maven"
+brew "mitmproxy"
+brew "molecule"
+brew "mono"
+brew "mosh"
+brew "ncurses"
+brew "neofetch"
+brew "neovim"
+brew "ninja"
+brew "nmap"
+brew "nvm"
+brew "openssl@1.1"
+brew "packer"
+brew "pandoc"
+brew "parallel"
+brew "pyenv"
+brew "pyenv-virtualenv"
+brew "qemu", args: ["with-libssh2", "with-libusb", "with-sdl2"]
+brew "qt"
+brew "radare2"
+brew "ranger"
+brew "reattach-to-user-namespace"
+brew "rebar"
+brew "rebar@3"
+brew "ruby"
+brew "sassc"
+brew "shellcheck"
+brew "sift"
+brew "socat"
+brew "sshpass"
+brew "terminal-notifier"
+brew "terraform"
+brew "tig"
+brew "tmux", args: ["HEAD", "with-utf8proc"]
+brew "tree"
+brew "unicorn", args: ["HEAD", "with-all"]
+brew "unison"
+brew "vault"
+brew "wget"
+brew "xhyve", args: ["HEAD"]
+brew "z3", args: ["with-python"]
+brew "zsh", args: ["with-gdbm", "with-pcre", "with-unicode9"]
+brew "zsh-syntax-highlighting"
+brew "crisidev/chunkwm/chunkwm", args: ["HEAD"]
+brew "koekeishiya/formulae/skhd"
+cask "betterzip"
+cask "cardhop"
+cask "cryptomator"
+cask "docker"
+cask "firefox"
+cask "istat-menus"
+cask "mountain-duck"
+cask "tower"
+cask "typinator"
+cask "ubersicht"
+cask "vagrant"
+cask "wireshark"
+cask "homebrew/cask-fonts/font-fira-code"
+cask "homebrew/cask-fonts/font-hack-nerd-font"
+cask "homebrew/cask-versions/firefox-developer-edition"
+mas "1Password 7", id: 1333542190
+mas "Agenda", id: 1287445660
+mas "Apple Configurator 2", id: 1037126344
+mas "Bear", id: 1091189122
+mas "Canary Mail", id: 1236045954
+mas "Deliveries", id: 924726344
+mas "MindNode", id: 1289197285
+mas "Paste", id: 967805235
+mas "PopClip", id: 445189367
+mas "Quiver", id: 866773894
+mas "Reeder", id: 880001334
+mas "Remote Desktop", id: 409907375
+mas "SnippetsLab", id: 1006087419
+mas "Soulver", id: 413965349
+mas "Synalyze It! Pro", id: 475193367
+mas "Things3", id: 904280696
+mas "Tweetbot", id: 1384080005
+mas "Xcode", id: 497799835
+mas "Yoink", id: 457622435

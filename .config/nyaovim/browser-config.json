@@ -1,0 +1,16 @@
+{
+  "window_options": {
+    "width": 1200,
+    "height": 960,
+    "titleBarStyle": "hidden-inset",
+    "fullscreen": false,
+    "alwaysOnTop": false,
+    "webPreferences": {
+      "webgl": true,
+      "plugins": true
+    }
+  },
+  "remember_window_state": true,
+  "single_instance": true,
+  "show_menubar": false
+}

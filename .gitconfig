@@ -1,0 +1,26 @@
+[color]
+	ui = true
+[user]
+  name = Loc Nguyen
+  email = l@nocsi.com
+  signingkey = 201B3228
+[gpg]
+	program = gpg2
+[credential]
+	helper = osxkeychain
+[filter "lfs"]
+	clean = git-lfs clean -- %f
+	smudge = git-lfs smudge -- %f
+	process = git-lfs filter-process
+	required = true
+[alias]
+	lg = "log --color --graph --pretty=format:'%Cred%h%Creset -%C(yellow)%d%Creset %s %Cgreen(%cr) %C(bold blue)&lt;%an&gt;%Creset' --abbrev-commit"
+[http]
+	emptyAuth = true
+	postBuffer = 524288000
+[commit]
+	gpgsign = true
+[core]
+	editor = nvim
+[tag]
+	forceSignAnnotated = true

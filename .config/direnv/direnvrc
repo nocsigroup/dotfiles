@@ -1,0 +1,78 @@
+# ~/.config/direnv/direnvrc: Global configuration for direnv to make it compliant
+# with pyenv -- see https://direnv.net/
+#
+# Adapted from
+#  - https://github.com/direnv/direnv/wiki/Python#-pyenv and
+#  - https://github.com/direnv/direnv/wiki/Python#-virtualenvwrapper
+# use a certain pyenv version
+source ~/.bin/helpers.sh
+
+nvm() {
+  . ~/.nvm/nvm.sh
+  nvm "$@"
+}
+
+use_nvm() {
+  local node_version=$1
+
+  if [[ $node_version = "package.json" ]]; then
+    if has jq; then
+      node_version=$(jq --raw-output .engines.node package.json | tr -d "<=> ")
+    else
+      echo "Parsing package.json for node version to use with direnv requires jq"
+    fi
+  fi
+
+  nvm_sh=$HOME/.nvm/nvm.sh
+  if [[ -e $nvm_sh ]]; then
+    source $nvm_sh
+    nvm use $node_version
+  fi
+}
+
+
+use_python() {
+    if [ -n "$(which pyenv)" ]; then
+        local pyversion=$1
+        pyenv local ${pyversion}
+    fi
+}
+layout_virtualenv() {
+    local pyversion=$1
+    local pvenv=$2
+    if [ -n "$(which pyenv-virtualenv)" ]; then
+        pyenv virtualenv --force --quiet ${pyversion} ${pvenv}-${pyversion}
+    fi
+    pyenv local --unset
+}
+layout_activate() {
+    if [ -n "$(which pyenv)" ]; then
+        source $PYENV_ROOT/versions/$1/bin/activate
+    fi
+}
+
+layout_haskell() {
+  PATH_add ~/.cabal/bin
+  [ -d .cabal-sandbox ] || cabal sandbox init
+  PATH_add .cabal-sandbox/bin
+  export GHC_PACKAGE_PATH=$(cabal exec -- sh -c "echo \$GHC_PACKAGE_PATH")
+}
+
+set_credentials() {
+  namespace="$1"
+  for env in ${@:2}; do
+    if ! envchain $namespace printenv $env >/dev/null 2>&1; then
+      envchain -- set $namespace $env
+    else 
+      echo "Already set \$$env"
+    fi
+  done
+}
+
+add_extra_vimrc() {
+  local extravim="$(find_up .vimrc)"
+  if [ -n "$extravim" ]; then
+    echo "Adding extra .vimrc: ${extravim}"
+    path_add EXTRA_VIM $extravim
+  fi
+}

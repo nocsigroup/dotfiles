@@ -1,0 +1,61 @@
+export MANTA_URL="https://manta.nocsi.org"
+export MANTA_USER=locnguyen
+unset MANTA_SUBUSER
+export MANTA_KEY_ID="54:8f:89:22:58:90:0e:14:3a:90:f7:de:63:2e:d6:ef"
+export TRITON_DC=triton
+export TRITON_ACCOUNT=locnguyen
+unset TRITON_USER
+export TRITON_URL="https://triton.nocsi.org"
+export TRITON_KEY_ID="54:8f:89:22:58:90:0e:14:3a:90:f7:de:63:2e:d6:ef"
+export SDC_URL="https://triton.nocsi.org"
+export SDC_ACCOUNT="locnguyen"
+unset SDC_USER
+export SDC_KEY_ID="54:8f:89:22:58:90:0e:14:3a:90:f7:de:63:2e:d6:ef"
+unset SDC_TESTING
+
+export DYLD_LIBRARY_PATH=/usr/local/opt/unicorn/lib/:/usr/local/opt/capstone/lib/:/usr/local/opt/keyston/lib/:$DYLD_LIBRARY_PATH
+export CC=/usr/local/opt/llvm/bin/clang
+export CXX=/usr/local/opt/llvm/bin/clang++
+export PATH="/usr/local/opt/llvm/bin:$PATH"
+export LLVM_CONFIG=llvm-config
+#export LDFLAGS="-L/usr/local/opt/llvm/lib"
+export CFLAGS="$CFLAGS -I$(brew --prefix openssl)/include -I$(xcrun --show-sdk-path)/usr/include -I$(brew --prefix readline)/include -march=native -O2"
+export LDFLAGS="$LDFLAGS -L/usr/local/opt/llvm/lib -Wl,-rpath,/usr/local/opt/llvm/lib"
+export LDFLAGS="$LDFLAGS -L$(brew --prefix openssl)/lib -L$(brew --prefix readline)/lib"
+export CPPFLAGS="-I/usr/local/opt/llvm/include"
+export CXXFLAGS="$CXXFLAGS -nostdinc++ -I/usr/local/opt/llvm/include/c++/v1"
+
+export GOPATH=$HOME/golang
+export GOROOT=/usr/local/opt/go/libexec
+export GOBIN=$GOPATH/bin
+export PATH=$PATH:$GOPATH
+export PATH=$PATH:$GOROOT/bin
+export PATH=$PATH:$GOBIN
+
+export PYTHON_CONFIGURE_OPTS="--enable-framework --with-computed-gotos"
+export OPENSSL_STATIC=yes
+
+export TERM='xterm-256color-italic'
+export LSCOLORS=exfxcxdxbxegedabagacad
+#export LSCOLORS="EHfxcxdxBxegecabagacad" 
+export CLICOLOR=1
+export EDITOR="nvim"
+export VISUAL="nvim"
+export GIT_UNCOMMITTED="+"
+export GIT_UNSTAGED="!"
+export GIT_UNTRACKED="?"
+export GIT_STASHED="$"
+export GIT_UNPULLED="⇣"
+export GIT_UNPUSHED="⇡"
+export TRITON_PROFILE="triton"
+
+export VAULT_ADDR=http://vault.nocsi.org:8200
+
+export PATH="$HOME/.cargo/bin:$PATH"
+export PATH="/opt/piv-agent/bin:$PATH"
+
+export LANG=en_US.UTF-8
+export LC_ALL=en_US.UTF-8
+
+#export RUSTC_WRAPPER="$HOME/.cargo/bin/sccache'
+export RUST_SRC_PATH=${HOME}/.rustup/toolchains/stable-x86_64-apple-darwin/lib/rustlib/src/rust/src

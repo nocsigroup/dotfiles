@@ -1,0 +1,1944 @@
+# BSD3
+
+- array (Mutable and immutable arrays, no copyright notice available)
+- base (Basic libraries, no copyright notice available)
+- binary (Binary serialisation for Haskell values using lazy ByteStrings, no copyright notice available)
+- bytestring (Fast, compact, strict and lazy byte strings with a list interface, Copyright Copyright (c) Don Stewart          2005-2009,
+(c) Duncan Coutts        2006-2015,
+(c) David Roundy         2003-2005,
+(c) Jasper Van der Jeugt 2010,
+(c) Simon Meier          2010-2013.)
+- containers (Assorted concrete container types, no copyright notice available)
+- deepseq (Deep evaluation of data structures, no copyright notice available)
+- directory (Platform-agnostic library for filesystem operations, no copyright notice available)
+- filepath (Library for manipulating FilePaths in a cross platform way., Copyright Neil Mitchell 2005-2017)
+- ghc-prim (GHC primitives, no copyright notice available)
+- integer-gmp (Integer library based on GMP, no copyright notice available)
+- process (Process libraries, no copyright notice available)
+- rts (, no copyright notice available)
+- time (A time library, no copyright notice available)
+- unix (POSIX functionality, no copyright notice available)
+
+# BSD2
+
+- text (An efficient packed Unicode text type., Copyright 2009-2011 Bryan O'Sullivan, 2008-2009 Tom Harper)
+
+# BSD3
+
+- HTTP (A library for client-side HTTP, no copyright notice available)
+- Hclip (A small cross-platform library for reading and modifying the system clipboard., no copyright notice available)
+- QuickCheck (Automatic testing of Haskell programs, Copyright 2000-2016 Koen Claessen, 2006-2008 Björn Bringert, 2009-2016 Nick Smallbone)
+- SHA (Implementations of the SHA suite of message digest functions, no copyright notice available)
+- StateVar (State variables, Copyright Copyright (C) 2014-2015 Edward A. Kmett, 2009-2016 Sven Panne)
+- aeson (Fast JSON parsing and encoding, Copyright (c) 2011-2016 Bryan O'Sullivan
+(c) 2011 MailRank, Inc.)
+- ansi-terminal (Simple ANSI terminal support, with Windows compatibility, no copyright notice available)
+- array (Mutable and immutable arrays, no copyright notice available)
+- asn1-encoding (ASN1 data reader and writer in RAW, BER and DER forms, Copyright Vincent Hanquez <vincent@snarc.org>)
+- asn1-parse (Simple monadic parser for ASN1 stream types., Copyright Vincent Hanquez <vincent@snarc.org>)
+- asn1-types (ASN.1 types, Copyright Vincent Hanquez <vincent@snarc.org>)
+- aspell-pipe (Pipe-based interface to the Aspell program, Copyright 2017 Jonathan Daugherty)
+- async (Run IO operations asynchronously and wait for their results, Copyright (c) Simon Marlow 2012)
+- attoparsec (Fast combinator parsing for bytestrings and text, no copyright notice available)
+- base (Basic libraries, no copyright notice available)
+- base64-bytestring (Fast base64 encoding and decoding for ByteStrings, Copyright 2010-2012 Bryan O'Sullivan)
+- binary (Binary serialisation for Haskell values using lazy ByteStrings, no copyright notice available)
+- blaze-builder (Efficient buffered output., Copyright (c) 2010-2014 Simon Meier
+(c) 2010 Jasper Van der Jeugt
+(c) 2013-2015 Leon P Smith)
+- blaze-html (A blazingly fast HTML combinator library for Haskell, no copyright notice available)
+- blaze-markup (A blazingly fast markup combinator library for Haskell, no copyright notice available)
+- brick (A declarative terminal user interface library, Copyright (c) Jonathan Daugherty 2015-2018)
+- brick-skylighting (Show syntax-highlighted text in your Brick UI, Copyright Jonathan Daugherty 2018)
+- byteable (Type class for sequence of bytes, Copyright Vincent Hanquez <vincent@snarc.org>)
+- bytestring (Fast, compact, strict and lazy byte strings with a list interface, Copyright Copyright (c) Don Stewart          2005-2009,
+(c) Duncan Coutts        2006-2015,
+(c) David Roundy         2003-2005,
+(c) Jasper Van der Jeugt 2010,
+(c) Simon Meier          2010-2013.)
+- case-insensitive (Case insensitive string comparison, Copyright 2011 Bas van Dijk)
+- cereal (A binary serialization library, no copyright notice available)
+- cheapskate (Experimental markdown processor., Copyright (C) 2012-2013 John MacFarlane)
+- config-ini (A library for simple INI-based configuration files., Copyright ©2016 Getty Ritter)
+- connection (Simple and easy network connections API, Copyright Vincent Hanquez <vincent@snarc.org>)
+- containers (Assorted concrete container types, no copyright notice available)
+- contravariant (Contravariant functors, Copyright Copyright (C) 2007-2015 Edward A. Kmett)
+- cryptonite (Cryptography Primitives sink, Copyright Vincent Hanquez <vincent@snarc.org>)
+- data-clist (Simple functional ring type., no copyright notice available)
+- data-default (A class for types with a default value, no copyright notice available)
+- data-default-class (A class for types with a default value, no copyright notice available)
+- data-default-instances-containers (Default instances for types in containers, no copyright notice available)
+- data-default-instances-dlist (Default instances for types in dlist, no copyright notice available)
+- data-default-instances-old-locale (Default instances for types in old-locale, no copyright notice available)
+- deepseq (Deep evaluation of data structures, no copyright notice available)
+- directory (Platform-agnostic library for filesystem operations, no copyright notice available)
+- dlist (Difference lists, Copyright 2006-2009 Don Stewart, 2013-2016 Sean Leather)
+- entropy (A platform independent entropy source, Copyright Thomas DuBuisson <thomas.dubuisson@gmail.com>)
+- exceptions (Extensible optionally-pure exceptions, Copyright Copyright (C) 2013-2015 Edward A. Kmett
+Copyright (C) 2012 Google Inc.)
+- extensible-exceptions (Extensible exceptions, no copyright notice available)
+- filepath (Library for manipulating FilePaths in a cross platform way., Copyright Neil Mitchell 2005-2017)
+- ghc-boot-th (Shared functionality between GHC and the @template-haskell@
+library, no copyright notice available)
+- ghc-prim (GHC primitives, no copyright notice available)
+- gitrev (Compile git revision info into Haskell projects, no copyright notice available)
+- hashable (A class for types that can be converted to a hash value, no copyright notice available)
+- haskell-lexer (A fully compliant Haskell 98 lexer., no copyright notice available)
+- hourglass (simple performant time related library, Copyright Vincent Hanquez <vincent@snarc.org>)
+- integer-gmp (Integer library based on GMP, no copyright notice available)
+- mattermost-api (Client API for Mattermost chat system, Copyright 2016-2017 Jason Dagit, Getty Ritter, Jonathan Daugherty)
+- memory (memory and related abstraction stuff, Copyright Vincent Hanquez <vincent@snarc.org>)
+- microlens (A tiny lens library with no dependencies. If you're writing an app, you probably want microlens-platform, not this., no copyright notice available)
+- microlens-ghc (microlens + array, bytestring, containers, transformers, no copyright notice available)
+- microlens-mtl (microlens support for Reader/Writer/State from mtl, no copyright notice available)
+- microlens-platform (Feature-complete microlens, no copyright notice available)
+- microlens-th (Automatic generation of record lenses for microlens, no copyright notice available)
+- mtl (Monad classes, using functional dependencies, no copyright notice available)
+- network (Low-level networking interface, no copyright notice available)
+- network-uri (URI manipulation, no copyright notice available)
+- old-locale (locale library, no copyright notice available)
+- parallel (Parallel programming library, no copyright notice available)
+- parsec (Monadic parser combinators, no copyright notice available)
+- pem (Privacy Enhanced Mail (PEM) format reader and writer., Copyright Vincent Hanquez <vincent@snarc.org>)
+- pretty (Pretty-printing library, no copyright notice available)
+- primitive (Primitive memory-related operations, Copyright (c) Roman Leshchinskiy 2009-2012)
+- process (Process libraries, no copyright notice available)
+- random (random number library, no copyright notice available)
+- regex-base (Replaces/Enhances Text.Regex, Copyright Copyright (c) 2006, Christopher Kuklewicz)
+- regex-pcre-builtin (Replaces/Enhances Text.Regex, Copyright See LICENSE file)
+- rts (, no copyright notice available)
+- safe (Library of safe (exception free) functions, Copyright Neil Mitchell 2007-2018)
+- scientific (Numbers represented using scientific notation, no copyright notice available)
+- semigroups (Anything that associates, Copyright Copyright (C) 2011-2015 Edward A. Kmett)
+- socks (Socks proxy (ver 5), Copyright Vincent Hanquez <vincent@snarc.org>)
+- stm (Software Transactional Memory, no copyright notice available)
+- stm-delay (Updatable one-shot timer polled with STM, Copyright Copyright (c) Joseph Adams 2012)
+- strict (Strict data types and String IO., Copyright (c) 2006-2007 by Roman Leshchinskiy)
+- syb (Scrap Your Boilerplate, no copyright notice available)
+- tagged (Haskell 98 phantom types to avoid unsafely passing dummy arguments, Copyright 2009-2015 Edward A. Kmett)
+- tagsoup (Parsing and extracting information from (possibly malformed) HTML/XML documents, Copyright Neil Mitchell 2006-2018)
+- template-haskell (Support library for Template Haskell, no copyright notice available)
+- temporary (Portable temporary file and directory support, no copyright notice available)
+- terminfo (Haskell bindings to the terminfo library., Copyright (c) Judah Jacobson)
+- text-zipper (A text editor zipper library, Copyright (c) 2015 Jonathan Daugherty)
+- tf-random (High-quality splittable pseudorandom number generator, no copyright notice available)
+- time (A time library, no copyright notice available)
+- time-locale-compat (Compatibility of TimeLocale between old-locale and time-1.5, Copyright Copyright (c) 2014-2016 Kei Hibino)
+- timezone-olson (A pure Haskell parser and renderer for binary Olson timezone files, Copyright Copyright (c) 2010-2015 Yitzchak Gale. All rights reserved.)
+- timezone-series (Enhanced timezone handling for Data.Time, Copyright Copyright (c) 2010-2015 Yitzchak Gale. All rights reserved.)
+- tls (TLS/SSL protocol native implementation (Server and Client), Copyright Vincent Hanquez <vincent@snarc.org>)
+- transformers (Concrete functor and monad transformers, no copyright notice available)
+- transformers-compat (A small compatibility shim exposing the new types from transformers 0.3 and 0.4 to older Haskell platforms., Copyright Copyright (C) 2012-2015 Edward A. Kmett)
+- uniplate (Help writing simple, concise and fast generic operations., Copyright Neil Mitchell 2006-2013)
+- unix (POSIX functionality, no copyright notice available)
+- unordered-containers (Efficient hashing-based container types, Copyright 2010-2014 Johan Tibell
+2010 Edward Z. Yang)
+- utf8-string (Support for reading and writing UTF8 Strings, no copyright notice available)
+- uuid-types (Type definitions for Universally Unique Identifiers, Copyright (c) 2008-2014 Antoine Latter)
+- vector (Efficient Arrays, Copyright (c) Roman Leshchinskiy 2008-2012)
+- vty (A simple terminal UI library, no copyright notice available)
+- websockets (A sensible and clean way to write WebSocket-capable servers in Haskell., Copyright (c) 2010-2011 Siniša Biđin
+(c) 2011-2013 Jasper Van der Jeugt
+(c) 2011 Steffen Schuldenzucker
+(c) 2011 Alex Lang)
+- word-wrap (A library for word-wrapping, Copyright 2017 Jonathan Daugherty)
+- x509 (X509 reader and writer, Copyright Vincent Hanquez <vincent@snarc.org>)
+- x509-store (X.509 collection accessing and storing methods, Copyright Vincent Hanquez <vincent@snarc.org>)
+- x509-system (Handle per-operating-system X.509 accessors and storage, Copyright Vincent Hanquez <vincent@snarc.org>)
+- x509-validation (X.509 Certificate and CRL validation, Copyright Vincent Hanquez <vincent@snarc.org>)
+- xdg-basedir (A basic implementation of the XDG Base Directory specification., Copyright (c) 2011 Will Donnelly)
+- zlib (Compression and decompression in the gzip and zlib formats, Copyright (c) 2006-2016 Duncan Coutts)
+
+# MIT
+
+- base-compat (A compatibility layer for base, Copyright (c) 2012-2017 Simon Hengel,
+(c) 2014-2017 João Cristóvão,
+(c) 2015-2017 Ryan Scott)
+- colour (A model for human colour/color perception, no copyright notice available)
+- css-text (CSS parser and renderer., no copyright notice available)
+- hxt (A collection of tools for processing XML with Haskell., Copyright Copyright (c) 2005-20161 Uwe Schmidt)
+- hxt-charproperties (Character properties and classes for XML and Unicode, Copyright Copyright (c) 2010-2014 Uwe Schmidt)
+- hxt-regex-xmlschema (A regular expression library for W3C XML Schema regular expressions, Copyright Copyright (c) 2010- Uwe Schmidt)
+- hxt-unicode (Unicode en-/decoding functions for utf8, iso-latin-* and other encodings, Copyright Copyright (c) 2010- Uwe Schmidt)
+- integer-logarithms (Integer logarithms., Copyright (c) 2011 Daniel Fischer)
+- pretty-show (Tools for working with derived `Show` instances and generic
+inspection of values., no copyright notice available)
+- streaming-commons (Common lower-level functions needed by various streaming data libraries, no copyright notice available)
+
+# BSD2
+
+- megaparsec (Monadic parser combinators, no copyright notice available)
+- text (An efficient packed Unicode text type., Copyright 2009-2011 Bryan O'Sullivan, 2008-2009 Tom Harper)
+- xss-sanitize (sanitize untrusted HTML to prevent XSS attacks, no copyright notice available)
+
+# GPL-2
+
+- skylighting (syntax highlighting library, Copyright (C) 2016 John MacFarlane)
+
+# ISC
+
+- th-abstraction (Nicer interface for reified information about data types, Copyright 2017 Eric Mertens)
+
+# BSD3
+
+- HTTP (A library for client-side HTTP, no copyright notice available)
+- Hclip (A small cross-platform library for reading and modifying the system clipboard., no copyright notice available)
+- QuickCheck (Automatic testing of Haskell programs, Copyright 2000-2016 Koen Claessen, 2006-2008 Björn Bringert, 2009-2016 Nick Smallbone)
+- SHA (Implementations of the SHA suite of message digest functions, no copyright notice available)
+- StateVar (State variables, Copyright Copyright (C) 2014-2015 Edward A. Kmett, 2009-2016 Sven Panne)
+- Unique (It provides the functionality like unix "uniq" utility, no copyright notice available)
+- aeson (Fast JSON parsing and encoding, Copyright (c) 2011-2016 Bryan O'Sullivan
+(c) 2011 MailRank, Inc.)
+- ansi-terminal (Simple ANSI terminal support, with Windows compatibility, no copyright notice available)
+- ansi-wl-pprint (The Wadler/Leijen Pretty Printer for colored ANSI terminal output, no copyright notice available)
+- array (Mutable and immutable arrays, no copyright notice available)
+- asn1-encoding (ASN1 data reader and writer in RAW, BER and DER forms, Copyright Vincent Hanquez <vincent@snarc.org>)
+- asn1-parse (Simple monadic parser for ASN1 stream types., Copyright Vincent Hanquez <vincent@snarc.org>)
+- asn1-types (ASN.1 types, Copyright Vincent Hanquez <vincent@snarc.org>)
+- async (Run IO operations asynchronously and wait for their results, Copyright (c) Simon Marlow 2012)
+- attoparsec (Fast combinator parsing for bytestrings and text, no copyright notice available)
+- base (Basic libraries, no copyright notice available)
+- base64-bytestring (Fast base64 encoding and decoding for ByteStrings, Copyright 2010-2012 Bryan O'Sullivan)
+- bifunctors (Bifunctors, Copyright Copyright (C) 2008-2016 Edward A. Kmett)
+- binary (Binary serialisation for Haskell values using lazy ByteStrings, no copyright notice available)
+- blaze-builder (Efficient buffered output., Copyright (c) 2010-2014 Simon Meier
+(c) 2010 Jasper Van der Jeugt
+(c) 2013-2015 Leon P Smith)
+- blaze-html (A blazingly fast HTML combinator library for Haskell, no copyright notice available)
+- blaze-markup (A blazingly fast markup combinator library for Haskell, no copyright notice available)
+- brick (A declarative terminal user interface library, Copyright (c) Jonathan Daugherty 2015-2018)
+- byteable (Type class for sequence of bytes, Copyright Vincent Hanquez <vincent@snarc.org>)
+- bytestring (Fast, compact, strict and lazy byte strings with a list interface, Copyright Copyright (c) Don Stewart          2005-2009,
+(c) Duncan Coutts        2006-2015,
+(c) David Roundy         2003-2005,
+(c) Jasper Van der Jeugt 2010,
+(c) Simon Meier          2010-2013.)
+- case-insensitive (Case insensitive string comparison, Copyright 2011 Bas van Dijk)
+- cereal (A binary serialization library, no copyright notice available)
+- cheapskate (Experimental markdown processor., Copyright (C) 2012-2013 John MacFarlane)
+- checkers (Check properties on standard classes and data structures., Copyright (c) 2008-2013 by Conal Elliott)
+- clock (High-resolution clock functions: monotonic, realtime, cputime., Copyright Copyright © Cetin Sert 2009-2016, Eugene Kirpichov 2010, Finn Espen Gundersen 2013, Gerolf Seitz 2013, Mathieu Boespflug 2014 2015, Chris Done 2015, Dimitri Sabadie 2015, Christian Burger 2015, Mario Longobardi 2016)
+- comonad (Comonads, Copyright Copyright (C) 2008-2014 Edward A. Kmett,
+Copyright (C) 2004-2008 Dave Menendez)
+- config-ini (A library for simple INI-based configuration files., Copyright ©2016 Getty Ritter)
+- connection (Simple and easy network connections API, Copyright Vincent Hanquez <vincent@snarc.org>)
+- containers (Assorted concrete container types, no copyright notice available)
+- contravariant (Contravariant functors, Copyright Copyright (C) 2007-2015 Edward A. Kmett)
+- cryptonite (Cryptography Primitives sink, Copyright Vincent Hanquez <vincent@snarc.org>)
+- data-clist (Simple functional ring type., no copyright notice available)
+- data-default (A class for types with a default value, no copyright notice available)
+- data-default-class (A class for types with a default value, no copyright notice available)
+- data-default-instances-containers (Default instances for types in containers, no copyright notice available)
+- data-default-instances-dlist (Default instances for types in dlist, no copyright notice available)
+- data-default-instances-old-locale (Default instances for types in old-locale, no copyright notice available)
+- deepseq (Deep evaluation of data structures, no copyright notice available)
+- directory (Platform-agnostic library for filesystem operations, no copyright notice available)
+- distributive (Distributive functors -- Dual to Traversable, Copyright Copyright (C) 2011-2016 Edward A. Kmett)
+- dlist (Difference lists, Copyright 2006-2009 Don Stewart, 2013-2016 Sean Leather)
+- entropy (A platform independent entropy source, Copyright Thomas DuBuisson <thomas.dubuisson@gmail.com>)
+- exceptions (Extensible optionally-pure exceptions, Copyright Copyright (C) 2013-2015 Edward A. Kmett
+Copyright (C) 2012 Google Inc.)
+- extensible-exceptions (Extensible exceptions, no copyright notice available)
+- extra (Extra functions I use., Copyright Neil Mitchell 2014-2018)
+- filepath (Library for manipulating FilePaths in a cross platform way., Copyright Neil Mitchell 2005-2017)
+- ghc-boot-th (Shared functionality between GHC and the @template-haskell@
+library, no copyright notice available)
+- ghc-prim (GHC primitives, no copyright notice available)
+- gitrev (Compile git revision info into Haskell projects, no copyright notice available)
+- hashable (A class for types that can be converted to a hash value, no copyright notice available)
+- haskell-lexer (A fully compliant Haskell 98 lexer., no copyright notice available)
+- hourglass (simple performant time related library, Copyright Vincent Hanquez <vincent@snarc.org>)
+- integer-gmp (Integer library based on GMP, no copyright notice available)
+- mattermost-api (Client API for Mattermost chat system, Copyright 2016-2017 Jason Dagit, Getty Ritter, Jonathan Daugherty)
+- memory (memory and related abstraction stuff, Copyright Vincent Hanquez <vincent@snarc.org>)
+- microlens (A tiny lens library with no dependencies. If you're writing an app, you probably want microlens-platform, not this., no copyright notice available)
+- microlens-ghc (microlens + array, bytestring, containers, transformers, no copyright notice available)
+- microlens-mtl (microlens support for Reader/Writer/State from mtl, no copyright notice available)
+- microlens-platform (Feature-complete microlens, no copyright notice available)
+- microlens-th (Automatic generation of record lenses for microlens, no copyright notice available)
+- mtl (Monad classes, using functional dependencies, no copyright notice available)
+- network (Low-level networking interface, no copyright notice available)
+- network-uri (URI manipulation, no copyright notice available)
+- old-locale (locale library, no copyright notice available)
+- optparse-applicative (Utilities and combinators for parsing command line options, Copyright (c) 2012-2017 Paolo Capriotti <paolo@capriotti.io>)
+- parallel (Parallel programming library, no copyright notice available)
+- parsec (Monadic parser combinators, no copyright notice available)
+- pem (Privacy Enhanced Mail (PEM) format reader and writer., Copyright Vincent Hanquez <vincent@snarc.org>)
+- pretty (Pretty-printing library, no copyright notice available)
+- primitive (Primitive memory-related operations, Copyright (c) Roman Leshchinskiy 2009-2012)
+- process (Process libraries, no copyright notice available)
+- random (random number library, no copyright notice available)
+- regex-base (Replaces/Enhances Text.Regex, Copyright Copyright (c) 2006, Christopher Kuklewicz)
+- regex-tdfa (Replaces/Enhances Text.Regex, Copyright Copyright (c) 2007, Christopher Kuklewicz)
+- rts (, no copyright notice available)
+- scientific (Numbers represented using scientific notation, no copyright notice available)
+- semigroupoids (Semigroupoids: Category sans id, Copyright Copyright (C) 2011-2015 Edward A. Kmett)
+- semigroups (Anything that associates, Copyright Copyright (C) 2011-2015 Edward A. Kmett)
+- socks (Socks proxy (ver 5), Copyright Vincent Hanquez <vincent@snarc.org>)
+- stm (Software Transactional Memory, no copyright notice available)
+- strict (Strict data types and String IO., Copyright (c) 2006-2007 by Roman Leshchinskiy)
+- string-conversions (Simplifies dealing with different types for strings, no copyright notice available)
+- syb (Scrap Your Boilerplate, no copyright notice available)
+- tagged (Haskell 98 phantom types to avoid unsafely passing dummy arguments, Copyright 2009-2015 Edward A. Kmett)
+- tagsoup (Parsing and extracting information from (possibly malformed) HTML/XML documents, Copyright Neil Mitchell 2006-2018)
+- template-haskell (Support library for Template Haskell, no copyright notice available)
+- terminfo (Haskell bindings to the terminfo library., Copyright (c) Judah Jacobson)
+- text-zipper (A text editor zipper library, Copyright (c) 2015 Jonathan Daugherty)
+- tf-random (High-quality splittable pseudorandom number generator, no copyright notice available)
+- time (A time library, no copyright notice available)
+- time-locale-compat (Compatibility of TimeLocale between old-locale and time-1.5, Copyright Copyright (c) 2014-2016 Kei Hibino)
+- timezone-olson (A pure Haskell parser and renderer for binary Olson timezone files, Copyright Copyright (c) 2010-2015 Yitzchak Gale. All rights reserved.)
+- timezone-series (Enhanced timezone handling for Data.Time, Copyright Copyright (c) 2010-2015 Yitzchak Gale. All rights reserved.)
+- tls (TLS/SSL protocol native implementation (Server and Client), Copyright Vincent Hanquez <vincent@snarc.org>)
+- transformers (Concrete functor and monad transformers, no copyright notice available)
+- transformers-compat (A small compatibility shim exposing the new types from transformers 0.3 and 0.4 to older Haskell platforms., Copyright Copyright (C) 2012-2015 Edward A. Kmett)
+- unbounded-delays (Unbounded thread delays and timeouts, Copyright 2011-2012 Bas van Dijk & Roel van Dijk)
+- uniplate (Help writing simple, concise and fast generic operations., Copyright Neil Mitchell 2006-2013)
+- unix (POSIX functionality, no copyright notice available)
+- unordered-containers (Efficient hashing-based container types, Copyright 2010-2014 Johan Tibell
+2010 Edward Z. Yang)
+- utf8-string (Support for reading and writing UTF8 Strings, no copyright notice available)
+- uuid-types (Type definitions for Universally Unique Identifiers, Copyright (c) 2008-2014 Antoine Latter)
+- vector (Efficient Arrays, Copyright (c) Roman Leshchinskiy 2008-2012)
+- vty (A simple terminal UI library, no copyright notice available)
+- websockets (A sensible and clean way to write WebSocket-capable servers in Haskell., Copyright (c) 2010-2011 Siniša Biđin
+(c) 2011-2013 Jasper Van der Jeugt
+(c) 2011 Steffen Schuldenzucker
+(c) 2011 Alex Lang)
+- word-wrap (A library for word-wrapping, Copyright 2017 Jonathan Daugherty)
+- x509 (X509 reader and writer, Copyright Vincent Hanquez <vincent@snarc.org>)
+- x509-store (X.509 collection accessing and storing methods, Copyright Vincent Hanquez <vincent@snarc.org>)
+- x509-system (Handle per-operating-system X.509 accessors and storage, Copyright Vincent Hanquez <vincent@snarc.org>)
+- x509-validation (X.509 Certificate and CRL validation, Copyright Vincent Hanquez <vincent@snarc.org>)
+- xdg-basedir (A basic implementation of the XDG Base Directory specification., Copyright (c) 2011 Will Donnelly)
+- zlib (Compression and decompression in the gzip and zlib formats, Copyright (c) 2006-2016 Duncan Coutts)
+
+# MIT
+
+- base-compat (A compatibility layer for base, Copyright (c) 2012-2017 Simon Hengel,
+(c) 2014-2017 João Cristóvão,
+(c) 2015-2017 Ryan Scott)
+- base-orphans (Backwards-compatible orphan instances for base, Copyright (c) 2012-2017 Simon Hengel,
+(c) 2014-2017 João Cristóvão,
+(c) 2015-2017 Ryan Scott)
+- colour (A model for human colour/color perception, no copyright notice available)
+- css-text (CSS parser and renderer., no copyright notice available)
+- integer-logarithms (Integer logarithms., Copyright (c) 2011 Daniel Fischer)
+- pretty-show (Tools for working with derived `Show` instances and generic
+inspection of values., no copyright notice available)
+- quickcheck-text (Alternative arbitrary instance for Text, Copyright 2015-2016 Sharif Olorin and others)
+- streaming-commons (Common lower-level functions needed by various streaming data libraries, no copyright notice available)
+- tasty (Modern and extensible testing framework, no copyright notice available)
+- tasty-hunit (HUnit support for the Tasty test framework., no copyright notice available)
+- tasty-quickcheck (QuickCheck support for the Tasty test framework., no copyright notice available)
+
+# ISC
+
+- mattermost-api-qc (QuickCheck instances for the Mattermost client API library, Copyright 2017 Kevin Quick)
+- th-abstraction (Nicer interface for reified information about data types, Copyright 2017 Eric Mertens)
+
+# BSD2
+
+- megaparsec (Monadic parser combinators, no copyright notice available)
+- text (An efficient packed Unicode text type., Copyright 2009-2011 Bryan O'Sullivan, 2008-2009 Tom Harper)
+- xss-sanitize (sanitize untrusted HTML to prevent XSS attacks, no copyright notice available)
+
+# BSD3
+
+- HTTP (A library for client-side HTTP, no copyright notice available)
+- Hclip (A small cross-platform library for reading and modifying the system clipboard., no copyright notice available)
+- QuickCheck (Automatic testing of Haskell programs, Copyright 2000-2016 Koen Claessen, 2006-2008 Björn Bringert, 2009-2016 Nick Smallbone)
+- SHA (Implementations of the SHA suite of message digest functions, no copyright notice available)
+- StateVar (State variables, Copyright Copyright (C) 2014-2015 Edward A. Kmett, 2009-2016 Sven Panne)
+- aeson (Fast JSON parsing and encoding, Copyright (c) 2011-2016 Bryan O'Sullivan
+(c) 2011 MailRank, Inc.)
+- ansi-terminal (Simple ANSI terminal support, with Windows compatibility, no copyright notice available)
+- array (Mutable and immutable arrays, no copyright notice available)
+- asn1-encoding (ASN1 data reader and writer in RAW, BER and DER forms, Copyright Vincent Hanquez <vincent@snarc.org>)
+- asn1-parse (Simple monadic parser for ASN1 stream types., Copyright Vincent Hanquez <vincent@snarc.org>)
+- asn1-types (ASN.1 types, Copyright Vincent Hanquez <vincent@snarc.org>)
+- aspell-pipe (Pipe-based interface to the Aspell program, Copyright 2017 Jonathan Daugherty)
+- async (Run IO operations asynchronously and wait for their results, Copyright (c) Simon Marlow 2012)
+- attoparsec (Fast combinator parsing for bytestrings and text, no copyright notice available)
+- base (Basic libraries, no copyright notice available)
+- base64-bytestring (Fast base64 encoding and decoding for ByteStrings, Copyright 2010-2012 Bryan O'Sullivan)
+- binary (Binary serialisation for Haskell values using lazy ByteStrings, no copyright notice available)
+- blaze-builder (Efficient buffered output., Copyright (c) 2010-2014 Simon Meier
+(c) 2010 Jasper Van der Jeugt
+(c) 2013-2015 Leon P Smith)
+- blaze-html (A blazingly fast HTML combinator library for Haskell, no copyright notice available)
+- blaze-markup (A blazingly fast markup combinator library for Haskell, no copyright notice available)
+- brick (A declarative terminal user interface library, Copyright (c) Jonathan Daugherty 2015-2018)
+- brick-skylighting (Show syntax-highlighted text in your Brick UI, Copyright Jonathan Daugherty 2018)
+- byteable (Type class for sequence of bytes, Copyright Vincent Hanquez <vincent@snarc.org>)
+- bytestring (Fast, compact, strict and lazy byte strings with a list interface, Copyright Copyright (c) Don Stewart          2005-2009,
+(c) Duncan Coutts        2006-2015,
+(c) David Roundy         2003-2005,
+(c) Jasper Van der Jeugt 2010,
+(c) Simon Meier          2010-2013.)
+- case-insensitive (Case insensitive string comparison, Copyright 2011 Bas van Dijk)
+- cereal (A binary serialization library, no copyright notice available)
+- cheapskate (Experimental markdown processor., Copyright (C) 2012-2013 John MacFarlane)
+- config-ini (A library for simple INI-based configuration files., Copyright ©2016 Getty Ritter)
+- connection (Simple and easy network connections API, Copyright Vincent Hanquez <vincent@snarc.org>)
+- containers (Assorted concrete container types, no copyright notice available)
+- contravariant (Contravariant functors, Copyright Copyright (C) 2007-2015 Edward A. Kmett)
+- cryptonite (Cryptography Primitives sink, Copyright Vincent Hanquez <vincent@snarc.org>)
+- data-clist (Simple functional ring type., no copyright notice available)
+- data-default (A class for types with a default value, no copyright notice available)
+- data-default-class (A class for types with a default value, no copyright notice available)
+- data-default-instances-containers (Default instances for types in containers, no copyright notice available)
+- data-default-instances-dlist (Default instances for types in dlist, no copyright notice available)
+- data-default-instances-old-locale (Default instances for types in old-locale, no copyright notice available)
+- deepseq (Deep evaluation of data structures, no copyright notice available)
+- directory (Platform-agnostic library for filesystem operations, no copyright notice available)
+- dlist (Difference lists, Copyright 2006-2009 Don Stewart, 2013-2016 Sean Leather)
+- entropy (A platform independent entropy source, Copyright Thomas DuBuisson <thomas.dubuisson@gmail.com>)
+- exceptions (Extensible optionally-pure exceptions, Copyright Copyright (C) 2013-2015 Edward A. Kmett
+Copyright (C) 2012 Google Inc.)
+- extensible-exceptions (Extensible exceptions, no copyright notice available)
+- filepath (Library for manipulating FilePaths in a cross platform way., Copyright Neil Mitchell 2005-2017)
+- ghc-boot-th (Shared functionality between GHC and the @template-haskell@
+library, no copyright notice available)
+- ghc-prim (GHC primitives, no copyright notice available)
+- gitrev (Compile git revision info into Haskell projects, no copyright notice available)
+- hashable (A class for types that can be converted to a hash value, no copyright notice available)
+- haskell-lexer (A fully compliant Haskell 98 lexer., no copyright notice available)
+- hourglass (simple performant time related library, Copyright Vincent Hanquez <vincent@snarc.org>)
+- integer-gmp (Integer library based on GMP, no copyright notice available)
+- mattermost-api (Client API for Mattermost chat system, Copyright 2016-2017 Jason Dagit, Getty Ritter, Jonathan Daugherty)
+- memory (memory and related abstraction stuff, Copyright Vincent Hanquez <vincent@snarc.org>)
+- microlens (A tiny lens library with no dependencies. If you're writing an app, you probably want microlens-platform, not this., no copyright notice available)
+- microlens-ghc (microlens + array, bytestring, containers, transformers, no copyright notice available)
+- microlens-mtl (microlens support for Reader/Writer/State from mtl, no copyright notice available)
+- microlens-platform (Feature-complete microlens, no copyright notice available)
+- microlens-th (Automatic generation of record lenses for microlens, no copyright notice available)
+- mtl (Monad classes, using functional dependencies, no copyright notice available)
+- network (Low-level networking interface, no copyright notice available)
+- network-uri (URI manipulation, no copyright notice available)
+- old-locale (locale library, no copyright notice available)
+- parallel (Parallel programming library, no copyright notice available)
+- parsec (Monadic parser combinators, no copyright notice available)
+- pem (Privacy Enhanced Mail (PEM) format reader and writer., Copyright Vincent Hanquez <vincent@snarc.org>)
+- pretty (Pretty-printing library, no copyright notice available)
+- primitive (Primitive memory-related operations, Copyright (c) Roman Leshchinskiy 2009-2012)
+- process (Process libraries, no copyright notice available)
+- random (random number library, no copyright notice available)
+- regex-base (Replaces/Enhances Text.Regex, Copyright Copyright (c) 2006, Christopher Kuklewicz)
+- regex-pcre-builtin (Replaces/Enhances Text.Regex, Copyright See LICENSE file)
+- rts (, no copyright notice available)
+- safe (Library of safe (exception free) functions, Copyright Neil Mitchell 2007-2018)
+- scientific (Numbers represented using scientific notation, no copyright notice available)
+- semigroups (Anything that associates, Copyright Copyright (C) 2011-2015 Edward A. Kmett)
+- socks (Socks proxy (ver 5), Copyright Vincent Hanquez <vincent@snarc.org>)
+- stm (Software Transactional Memory, no copyright notice available)
+- stm-delay (Updatable one-shot timer polled with STM, Copyright Copyright (c) Joseph Adams 2012)
+- strict (Strict data types and String IO., Copyright (c) 2006-2007 by Roman Leshchinskiy)
+- syb (Scrap Your Boilerplate, no copyright notice available)
+- tagged (Haskell 98 phantom types to avoid unsafely passing dummy arguments, Copyright 2009-2015 Edward A. Kmett)
+- tagsoup (Parsing and extracting information from (possibly malformed) HTML/XML documents, Copyright Neil Mitchell 2006-2018)
+- template-haskell (Support library for Template Haskell, no copyright notice available)
+- temporary (Portable temporary file and directory support, no copyright notice available)
+- terminfo (Haskell bindings to the terminfo library., Copyright (c) Judah Jacobson)
+- text-zipper (A text editor zipper library, Copyright (c) 2015 Jonathan Daugherty)
+- tf-random (High-quality splittable pseudorandom number generator, no copyright notice available)
+- time (A time library, no copyright notice available)
+- time-locale-compat (Compatibility of TimeLocale between old-locale and time-1.5, Copyright Copyright (c) 2014-2016 Kei Hibino)
+- timezone-olson (A pure Haskell parser and renderer for binary Olson timezone files, Copyright Copyright (c) 2010-2015 Yitzchak Gale. All rights reserved.)
+- timezone-series (Enhanced timezone handling for Data.Time, Copyright Copyright (c) 2010-2015 Yitzchak Gale. All rights reserved.)
+- tls (TLS/SSL protocol native implementation (Server and Client), Copyright Vincent Hanquez <vincent@snarc.org>)
+- transformers (Concrete functor and monad transformers, no copyright notice available)
+- transformers-compat (A small compatibility shim exposing the new types from transformers 0.3 and 0.4 to older Haskell platforms., Copyright Copyright (C) 2012-2015 Edward A. Kmett)
+- uniplate (Help writing simple, concise and fast generic operations., Copyright Neil Mitchell 2006-2013)
+- unix (POSIX functionality, no copyright notice available)
+- unordered-containers (Efficient hashing-based container types, Copyright 2010-2014 Johan Tibell
+2010 Edward Z. Yang)
+- utf8-string (Support for reading and writing UTF8 Strings, no copyright notice available)
+- uuid-types (Type definitions for Universally Unique Identifiers, Copyright (c) 2008-2014 Antoine Latter)
+- vector (Efficient Arrays, Copyright (c) Roman Leshchinskiy 2008-2012)
+- vty (A simple terminal UI library, no copyright notice available)
+- websockets (A sensible and clean way to write WebSocket-capable servers in Haskell., Copyright (c) 2010-2011 Siniša Biđin
+(c) 2011-2013 Jasper Van der Jeugt
+(c) 2011 Steffen Schuldenzucker
+(c) 2011 Alex Lang)
+- word-wrap (A library for word-wrapping, Copyright 2017 Jonathan Daugherty)
+- x509 (X509 reader and writer, Copyright Vincent Hanquez <vincent@snarc.org>)
+- x509-store (X.509 collection accessing and storing methods, Copyright Vincent Hanquez <vincent@snarc.org>)
+- x509-system (Handle per-operating-system X.509 accessors and storage, Copyright Vincent Hanquez <vincent@snarc.org>)
+- x509-validation (X.509 Certificate and CRL validation, Copyright Vincent Hanquez <vincent@snarc.org>)
+- xdg-basedir (A basic implementation of the XDG Base Directory specification., Copyright (c) 2011 Will Donnelly)
+- zlib (Compression and decompression in the gzip and zlib formats, Copyright (c) 2006-2016 Duncan Coutts)
+
+# MIT
+
+- base-compat (A compatibility layer for base, Copyright (c) 2012-2017 Simon Hengel,
+(c) 2014-2017 João Cristóvão,
+(c) 2015-2017 Ryan Scott)
+- colour (A model for human colour/color perception, no copyright notice available)
+- css-text (CSS parser and renderer., no copyright notice available)
+- hxt (A collection of tools for processing XML with Haskell., Copyright Copyright (c) 2005-20161 Uwe Schmidt)
+- hxt-charproperties (Character properties and classes for XML and Unicode, Copyright Copyright (c) 2010-2014 Uwe Schmidt)
+- hxt-regex-xmlschema (A regular expression library for W3C XML Schema regular expressions, Copyright Copyright (c) 2010- Uwe Schmidt)
+- hxt-unicode (Unicode en-/decoding functions for utf8, iso-latin-* and other encodings, Copyright Copyright (c) 2010- Uwe Schmidt)
+- integer-logarithms (Integer logarithms., Copyright (c) 2011 Daniel Fischer)
+- pretty-show (Tools for working with derived `Show` instances and generic
+inspection of values., no copyright notice available)
+- streaming-commons (Common lower-level functions needed by various streaming data libraries, no copyright notice available)
+
+# BSD2
+
+- megaparsec (Monadic parser combinators, no copyright notice available)
+- text (An efficient packed Unicode text type., Copyright 2009-2011 Bryan O'Sullivan, 2008-2009 Tom Harper)
+- xss-sanitize (sanitize untrusted HTML to prevent XSS attacks, no copyright notice available)
+
+# GPL-2
+
+- skylighting (syntax highlighting library, Copyright (C) 2016 John MacFarlane)
+
+# ISC
+
+- th-abstraction (Nicer interface for reified information about data types, Copyright 2017 Eric Mertens)
+
+# BSD3
+
+- HTTP (A library for client-side HTTP, no copyright notice available)
+- Hclip (A small cross-platform library for reading and modifying the system clipboard., no copyright notice available)
+- QuickCheck (Automatic testing of Haskell programs, Copyright 2000-2016 Koen Claessen, 2006-2008 Björn Bringert, 2009-2016 Nick Smallbone)
+- SHA (Implementations of the SHA suite of message digest functions, no copyright notice available)
+- StateVar (State variables, Copyright Copyright (C) 2014-2015 Edward A. Kmett, 2009-2016 Sven Panne)
+- Unique (It provides the functionality like unix "uniq" utility, no copyright notice available)
+- aeson (Fast JSON parsing and encoding, Copyright (c) 2011-2016 Bryan O'Sullivan
+(c) 2011 MailRank, Inc.)
+- ansi-terminal (Simple ANSI terminal support, with Windows compatibility, no copyright notice available)
+- ansi-wl-pprint (The Wadler/Leijen Pretty Printer for colored ANSI terminal output, no copyright notice available)
+- array (Mutable and immutable arrays, no copyright notice available)
+- asn1-encoding (ASN1 data reader and writer in RAW, BER and DER forms, Copyright Vincent Hanquez <vincent@snarc.org>)
+- asn1-parse (Simple monadic parser for ASN1 stream types., Copyright Vincent Hanquez <vincent@snarc.org>)
+- asn1-types (ASN.1 types, Copyright Vincent Hanquez <vincent@snarc.org>)
+- async (Run IO operations asynchronously and wait for their results, Copyright (c) Simon Marlow 2012)
+- attoparsec (Fast combinator parsing for bytestrings and text, no copyright notice available)
+- base (Basic libraries, no copyright notice available)
+- base64-bytestring (Fast base64 encoding and decoding for ByteStrings, Copyright 2010-2012 Bryan O'Sullivan)
+- bifunctors (Bifunctors, Copyright Copyright (C) 2008-2016 Edward A. Kmett)
+- binary (Binary serialisation for Haskell values using lazy ByteStrings, no copyright notice available)
+- blaze-builder (Efficient buffered output., Copyright (c) 2010-2014 Simon Meier
+(c) 2010 Jasper Van der Jeugt
+(c) 2013-2015 Leon P Smith)
+- blaze-html (A blazingly fast HTML combinator library for Haskell, no copyright notice available)
+- blaze-markup (A blazingly fast markup combinator library for Haskell, no copyright notice available)
+- brick (A declarative terminal user interface library, Copyright (c) Jonathan Daugherty 2015-2018)
+- byteable (Type class for sequence of bytes, Copyright Vincent Hanquez <vincent@snarc.org>)
+- bytestring (Fast, compact, strict and lazy byte strings with a list interface, Copyright Copyright (c) Don Stewart          2005-2009,
+(c) Duncan Coutts        2006-2015,
+(c) David Roundy         2003-2005,
+(c) Jasper Van der Jeugt 2010,
+(c) Simon Meier          2010-2013.)
+- case-insensitive (Case insensitive string comparison, Copyright 2011 Bas van Dijk)
+- cereal (A binary serialization library, no copyright notice available)
+- cheapskate (Experimental markdown processor., Copyright (C) 2012-2013 John MacFarlane)
+- checkers (Check properties on standard classes and data structures., Copyright (c) 2008-2013 by Conal Elliott)
+- clock (High-resolution clock functions: monotonic, realtime, cputime., Copyright Copyright © Cetin Sert 2009-2016, Eugene Kirpichov 2010, Finn Espen Gundersen 2013, Gerolf Seitz 2013, Mathieu Boespflug 2014 2015, Chris Done 2015, Dimitri Sabadie 2015, Christian Burger 2015, Mario Longobardi 2016)
+- comonad (Comonads, Copyright Copyright (C) 2008-2014 Edward A. Kmett,
+Copyright (C) 2004-2008 Dave Menendez)
+- config-ini (A library for simple INI-based configuration files., Copyright ©2016 Getty Ritter)
+- connection (Simple and easy network connections API, Copyright Vincent Hanquez <vincent@snarc.org>)
+- containers (Assorted concrete container types, no copyright notice available)
+- contravariant (Contravariant functors, Copyright Copyright (C) 2007-2015 Edward A. Kmett)
+- cryptonite (Cryptography Primitives sink, Copyright Vincent Hanquez <vincent@snarc.org>)
+- data-clist (Simple functional ring type., no copyright notice available)
+- data-default (A class for types with a default value, no copyright notice available)
+- data-default-class (A class for types with a default value, no copyright notice available)
+- data-default-instances-containers (Default instances for types in containers, no copyright notice available)
+- data-default-instances-dlist (Default instances for types in dlist, no copyright notice available)
+- data-default-instances-old-locale (Default instances for types in old-locale, no copyright notice available)
+- deepseq (Deep evaluation of data structures, no copyright notice available)
+- directory (Platform-agnostic library for filesystem operations, no copyright notice available)
+- distributive (Distributive functors -- Dual to Traversable, Copyright Copyright (C) 2011-2016 Edward A. Kmett)
+- dlist (Difference lists, Copyright 2006-2009 Don Stewart, 2013-2016 Sean Leather)
+- entropy (A platform independent entropy source, Copyright Thomas DuBuisson <thomas.dubuisson@gmail.com>)
+- exceptions (Extensible optionally-pure exceptions, Copyright Copyright (C) 2013-2015 Edward A. Kmett
+Copyright (C) 2012 Google Inc.)
+- extensible-exceptions (Extensible exceptions, no copyright notice available)
+- extra (Extra functions I use., Copyright Neil Mitchell 2014-2018)
+- filepath (Library for manipulating FilePaths in a cross platform way., Copyright Neil Mitchell 2005-2017)
+- ghc-boot-th (Shared functionality between GHC and the @template-haskell@
+library, no copyright notice available)
+- ghc-prim (GHC primitives, no copyright notice available)
+- gitrev (Compile git revision info into Haskell projects, no copyright notice available)
+- hashable (A class for types that can be converted to a hash value, no copyright notice available)
+- haskell-lexer (A fully compliant Haskell 98 lexer., no copyright notice available)
+- hourglass (simple performant time related library, Copyright Vincent Hanquez <vincent@snarc.org>)
+- integer-gmp (Integer library based on GMP, no copyright notice available)
+- mattermost-api (Client API for Mattermost chat system, Copyright 2016-2017 Jason Dagit, Getty Ritter, Jonathan Daugherty)
+- memory (memory and related abstraction stuff, Copyright Vincent Hanquez <vincent@snarc.org>)
+- microlens (A tiny lens library with no dependencies. If you're writing an app, you probably want microlens-platform, not this., no copyright notice available)
+- microlens-ghc (microlens + array, bytestring, containers, transformers, no copyright notice available)
+- microlens-mtl (microlens support for Reader/Writer/State from mtl, no copyright notice available)
+- microlens-platform (Feature-complete microlens, no copyright notice available)
+- microlens-th (Automatic generation of record lenses for microlens, no copyright notice available)
+- monad-control (Lift control operations, like exception catching, through monad transformers, Copyright (c) 2011 Bas van Dijk, Anders Kaseorg)
+- mtl (Monad classes, using functional dependencies, no copyright notice available)
+- network (Low-level networking interface, no copyright notice available)
+- network-uri (URI manipulation, no copyright notice available)
+- old-locale (locale library, no copyright notice available)
+- optparse-applicative (Utilities and combinators for parsing command line options, Copyright (c) 2012-2017 Paolo Capriotti <paolo@capriotti.io>)
+- parallel (Parallel programming library, no copyright notice available)
+- parsec (Monadic parser combinators, no copyright notice available)
+- pem (Privacy Enhanced Mail (PEM) format reader and writer., Copyright Vincent Hanquez <vincent@snarc.org>)
+- pretty (Pretty-printing library, no copyright notice available)
+- primitive (Primitive memory-related operations, Copyright (c) Roman Leshchinskiy 2009-2012)
+- process (Process libraries, no copyright notice available)
+- random (random number library, no copyright notice available)
+- regex-base (Replaces/Enhances Text.Regex, Copyright Copyright (c) 2006, Christopher Kuklewicz)
+- regex-tdfa (Replaces/Enhances Text.Regex, Copyright Copyright (c) 2007, Christopher Kuklewicz)
+- resource-pool (A high-performance striped resource pooling implementation, Copyright Copyright 2011 MailRank, Inc.)
+- rts (, no copyright notice available)
+- scientific (Numbers represented using scientific notation, no copyright notice available)
+- semigroupoids (Semigroupoids: Category sans id, Copyright Copyright (C) 2011-2015 Edward A. Kmett)
+- semigroups (Anything that associates, Copyright Copyright (C) 2011-2015 Edward A. Kmett)
+- socks (Socks proxy (ver 5), Copyright Vincent Hanquez <vincent@snarc.org>)
+- stm (Software Transactional Memory, no copyright notice available)
+- strict (Strict data types and String IO., Copyright (c) 2006-2007 by Roman Leshchinskiy)
+- string-conversions (Simplifies dealing with different types for strings, no copyright notice available)
+- syb (Scrap Your Boilerplate, no copyright notice available)
+- tagged (Haskell 98 phantom types to avoid unsafely passing dummy arguments, Copyright 2009-2015 Edward A. Kmett)
+- tagsoup (Parsing and extracting information from (possibly malformed) HTML/XML documents, Copyright Neil Mitchell 2006-2018)
+- template-haskell (Support library for Template Haskell, no copyright notice available)
+- terminfo (Haskell bindings to the terminfo library., Copyright (c) Judah Jacobson)
+- text-zipper (A text editor zipper library, Copyright (c) 2015 Jonathan Daugherty)
+- tf-random (High-quality splittable pseudorandom number generator, no copyright notice available)
+- time (A time library, no copyright notice available)
+- time-locale-compat (Compatibility of TimeLocale between old-locale and time-1.5, Copyright Copyright (c) 2014-2016 Kei Hibino)
+- timezone-olson (A pure Haskell parser and renderer for binary Olson timezone files, Copyright Copyright (c) 2010-2015 Yitzchak Gale. All rights reserved.)
+- timezone-series (Enhanced timezone handling for Data.Time, Copyright Copyright (c) 2010-2015 Yitzchak Gale. All rights reserved.)
+- tls (TLS/SSL protocol native implementation (Server and Client), Copyright Vincent Hanquez <vincent@snarc.org>)
+- transformers (Concrete functor and monad transformers, no copyright notice available)
+- transformers-base (Lift computations from the bottom of a transformer stack, Copyright 2011 Mikhail Vorozhtsov <mikhail.vorozhtsov@gmail.com>,
+Bas van Dijk <v.dijk.bas@gmail.com>)
+- transformers-compat (A small compatibility shim exposing the new types from transformers 0.3 and 0.4 to older Haskell platforms., Copyright Copyright (C) 2012-2015 Edward A. Kmett)
+- unbounded-delays (Unbounded thread delays and timeouts, Copyright 2011-2012 Bas van Dijk & Roel van Dijk)
+- uniplate (Help writing simple, concise and fast generic operations., Copyright Neil Mitchell 2006-2013)
+- unix (POSIX functionality, no copyright notice available)
+- unordered-containers (Efficient hashing-based container types, Copyright 2010-2014 Johan Tibell
+2010 Edward Z. Yang)
+- utf8-string (Support for reading and writing UTF8 Strings, no copyright notice available)
+- uuid-types (Type definitions for Universally Unique Identifiers, Copyright (c) 2008-2014 Antoine Latter)
+- vector (Efficient Arrays, Copyright (c) Roman Leshchinskiy 2008-2012)
+- vty (A simple terminal UI library, no copyright notice available)
+- websockets (A sensible and clean way to write WebSocket-capable servers in Haskell., Copyright (c) 2010-2011 Siniša Biđin
+(c) 2011-2013 Jasper Van der Jeugt
+(c) 2011 Steffen Schuldenzucker
+(c) 2011 Alex Lang)
+- word-wrap (A library for word-wrapping, Copyright 2017 Jonathan Daugherty)
+- x509 (X509 reader and writer, Copyright Vincent Hanquez <vincent@snarc.org>)
+- x509-store (X.509 collection accessing and storing methods, Copyright Vincent Hanquez <vincent@snarc.org>)
+- x509-system (Handle per-operating-system X.509 accessors and storage, Copyright Vincent Hanquez <vincent@snarc.org>)
+- x509-validation (X.509 Certificate and CRL validation, Copyright Vincent Hanquez <vincent@snarc.org>)
+- xdg-basedir (A basic implementation of the XDG Base Directory specification., Copyright (c) 2011 Will Donnelly)
+- zlib (Compression and decompression in the gzip and zlib formats, Copyright (c) 2006-2016 Duncan Coutts)
+
+# MIT
+
+- base-compat (A compatibility layer for base, Copyright (c) 2012-2017 Simon Hengel,
+(c) 2014-2017 João Cristóvão,
+(c) 2015-2017 Ryan Scott)
+- base-orphans (Backwards-compatible orphan instances for base, Copyright (c) 2012-2017 Simon Hengel,
+(c) 2014-2017 João Cristóvão,
+(c) 2015-2017 Ryan Scott)
+- colour (A model for human colour/color perception, no copyright notice available)
+- css-text (CSS parser and renderer., no copyright notice available)
+- integer-logarithms (Integer logarithms., Copyright (c) 2011 Daniel Fischer)
+- pretty-show (Tools for working with derived `Show` instances and generic
+inspection of values., no copyright notice available)
+- quickcheck-text (Alternative arbitrary instance for Text, Copyright 2015-2016 Sharif Olorin and others)
+- streaming-commons (Common lower-level functions needed by various streaming data libraries, no copyright notice available)
+- tasty (Modern and extensible testing framework, no copyright notice available)
+- tasty-hunit (HUnit support for the Tasty test framework., no copyright notice available)
+- tasty-quickcheck (QuickCheck support for the Tasty test framework., no copyright notice available)
+
+# ISC
+
+- mattermost-api-qc (QuickCheck instances for the Mattermost client API library, Copyright 2017 Kevin Quick)
+- th-abstraction (Nicer interface for reified information about data types, Copyright 2017 Eric Mertens)
+
+# BSD2
+
+- megaparsec (Monadic parser combinators, no copyright notice available)
+- text (An efficient packed Unicode text type., Copyright 2009-2011 Bryan O'Sullivan, 2008-2009 Tom Harper)
+- xss-sanitize (sanitize untrusted HTML to prevent XSS attacks, no copyright notice available)
+
+# BSD3
+
+- HTTP (A library for client-side HTTP, no copyright notice available)
+- Hclip (A small cross-platform library for reading and modifying the system clipboard., no copyright notice available)
+- QuickCheck (Automatic testing of Haskell programs, Copyright 2000-2016 Koen Claessen, 2006-2008 Björn Bringert, 2009-2016 Nick Smallbone)
+- SHA (Implementations of the SHA suite of message digest functions, no copyright notice available)
+- StateVar (State variables, Copyright Copyright (C) 2014-2015 Edward A. Kmett, 2009-2016 Sven Panne)
+- aeson (Fast JSON parsing and encoding, Copyright (c) 2011-2016 Bryan O'Sullivan
+(c) 2011 MailRank, Inc.)
+- ansi-terminal (Simple ANSI terminal support, with Windows compatibility, no copyright notice available)
+- array (Mutable and immutable arrays, no copyright notice available)
+- asn1-encoding (ASN1 data reader and writer in RAW, BER and DER forms, Copyright Vincent Hanquez <vincent@snarc.org>)
+- asn1-parse (Simple monadic parser for ASN1 stream types., Copyright Vincent Hanquez <vincent@snarc.org>)
+- asn1-types (ASN.1 types, Copyright Vincent Hanquez <vincent@snarc.org>)
+- aspell-pipe (Pipe-based interface to the Aspell program, Copyright 2017 Jonathan Daugherty)
+- async (Run IO operations asynchronously and wait for their results, Copyright (c) Simon Marlow 2012)
+- attoparsec (Fast combinator parsing for bytestrings and text, no copyright notice available)
+- base (Basic libraries, no copyright notice available)
+- base64-bytestring (Fast base64 encoding and decoding for ByteStrings, Copyright 2010-2012 Bryan O'Sullivan)
+- binary (Binary serialisation for Haskell values using lazy ByteStrings, no copyright notice available)
+- blaze-builder (Efficient buffered output., Copyright (c) 2010-2014 Simon Meier
+(c) 2010 Jasper Van der Jeugt
+(c) 2013-2015 Leon P Smith)
+- blaze-html (A blazingly fast HTML combinator library for Haskell, no copyright notice available)
+- blaze-markup (A blazingly fast markup combinator library for Haskell, no copyright notice available)
+- brick (A declarative terminal user interface library, Copyright (c) Jonathan Daugherty 2015-2018)
+- brick-skylighting (Show syntax-highlighted text in your Brick UI, Copyright Jonathan Daugherty 2018)
+- byteable (Type class for sequence of bytes, Copyright Vincent Hanquez <vincent@snarc.org>)
+- bytestring (Fast, compact, strict and lazy byte strings with a list interface, Copyright Copyright (c) Don Stewart          2005-2009,
+(c) Duncan Coutts        2006-2015,
+(c) David Roundy         2003-2005,
+(c) Jasper Van der Jeugt 2010,
+(c) Simon Meier          2010-2013.)
+- case-insensitive (Case insensitive string comparison, Copyright 2011 Bas van Dijk)
+- cereal (A binary serialization library, no copyright notice available)
+- cheapskate (Experimental markdown processor., Copyright (C) 2012-2013 John MacFarlane)
+- config-ini (A library for simple INI-based configuration files., Copyright ©2016 Getty Ritter)
+- connection (Simple and easy network connections API, Copyright Vincent Hanquez <vincent@snarc.org>)
+- containers (Assorted concrete container types, no copyright notice available)
+- contravariant (Contravariant functors, Copyright Copyright (C) 2007-2015 Edward A. Kmett)
+- cryptonite (Cryptography Primitives sink, Copyright Vincent Hanquez <vincent@snarc.org>)
+- data-clist (Simple functional ring type., no copyright notice available)
+- data-default (A class for types with a default value, no copyright notice available)
+- data-default-class (A class for types with a default value, no copyright notice available)
+- data-default-instances-containers (Default instances for types in containers, no copyright notice available)
+- data-default-instances-dlist (Default instances for types in dlist, no copyright notice available)
+- data-default-instances-old-locale (Default instances for types in old-locale, no copyright notice available)
+- deepseq (Deep evaluation of data structures, no copyright notice available)
+- directory (Platform-agnostic library for filesystem operations, no copyright notice available)
+- dlist (Difference lists, Copyright 2006-2009 Don Stewart, 2013-2016 Sean Leather)
+- entropy (A platform independent entropy source, Copyright Thomas DuBuisson <thomas.dubuisson@gmail.com>)
+- exceptions (Extensible optionally-pure exceptions, Copyright Copyright (C) 2013-2015 Edward A. Kmett
+Copyright (C) 2012 Google Inc.)
+- extensible-exceptions (Extensible exceptions, no copyright notice available)
+- filepath (Library for manipulating FilePaths in a cross platform way., Copyright Neil Mitchell 2005-2017)
+- ghc-boot-th (Shared functionality between GHC and the @template-haskell@
+library, no copyright notice available)
+- ghc-prim (GHC primitives, no copyright notice available)
+- gitrev (Compile git revision info into Haskell projects, no copyright notice available)
+- hashable (A class for types that can be converted to a hash value, no copyright notice available)
+- haskell-lexer (A fully compliant Haskell 98 lexer., no copyright notice available)
+- hourglass (simple performant time related library, Copyright Vincent Hanquez <vincent@snarc.org>)
+- integer-gmp (Integer library based on GMP, no copyright notice available)
+- mattermost-api (Client API for Mattermost chat system, Copyright 2016-2017 Jason Dagit, Getty Ritter, Jonathan Daugherty)
+- memory (memory and related abstraction stuff, Copyright Vincent Hanquez <vincent@snarc.org>)
+- microlens (A tiny lens library with no dependencies. If you're writing an app, you probably want microlens-platform, not this., no copyright notice available)
+- microlens-ghc (microlens + array, bytestring, containers, transformers, no copyright notice available)
+- microlens-mtl (microlens support for Reader/Writer/State from mtl, no copyright notice available)
+- microlens-platform (Feature-complete microlens, no copyright notice available)
+- microlens-th (Automatic generation of record lenses for microlens, no copyright notice available)
+- monad-control (Lift control operations, like exception catching, through monad transformers, Copyright (c) 2011 Bas van Dijk, Anders Kaseorg)
+- mtl (Monad classes, using functional dependencies, no copyright notice available)
+- network (Low-level networking interface, no copyright notice available)
+- network-uri (URI manipulation, no copyright notice available)
+- old-locale (locale library, no copyright notice available)
+- parallel (Parallel programming library, no copyright notice available)
+- parsec (Monadic parser combinators, no copyright notice available)
+- pem (Privacy Enhanced Mail (PEM) format reader and writer., Copyright Vincent Hanquez <vincent@snarc.org>)
+- pretty (Pretty-printing library, no copyright notice available)
+- primitive (Primitive memory-related operations, Copyright (c) Roman Leshchinskiy 2009-2012)
+- process (Process libraries, no copyright notice available)
+- random (random number library, no copyright notice available)
+- regex-base (Replaces/Enhances Text.Regex, Copyright Copyright (c) 2006, Christopher Kuklewicz)
+- regex-pcre-builtin (Replaces/Enhances Text.Regex, Copyright See LICENSE file)
+- resource-pool (A high-performance striped resource pooling implementation, Copyright Copyright 2011 MailRank, Inc.)
+- rts (, no copyright notice available)
+- safe (Library of safe (exception free) functions, Copyright Neil Mitchell 2007-2018)
+- scientific (Numbers represented using scientific notation, no copyright notice available)
+- semigroups (Anything that associates, Copyright Copyright (C) 2011-2015 Edward A. Kmett)
+- socks (Socks proxy (ver 5), Copyright Vincent Hanquez <vincent@snarc.org>)
+- stm (Software Transactional Memory, no copyright notice available)
+- stm-delay (Updatable one-shot timer polled with STM, Copyright Copyright (c) Joseph Adams 2012)
+- strict (Strict data types and String IO., Copyright (c) 2006-2007 by Roman Leshchinskiy)
+- syb (Scrap Your Boilerplate, no copyright notice available)
+- tagged (Haskell 98 phantom types to avoid unsafely passing dummy arguments, Copyright 2009-2015 Edward A. Kmett)
+- tagsoup (Parsing and extracting information from (possibly malformed) HTML/XML documents, Copyright Neil Mitchell 2006-2018)
+- template-haskell (Support library for Template Haskell, no copyright notice available)
+- temporary (Portable temporary file and directory support, no copyright notice available)
+- terminfo (Haskell bindings to the terminfo library., Copyright (c) Judah Jacobson)
+- text-zipper (A text editor zipper library, Copyright (c) 2015 Jonathan Daugherty)
+- tf-random (High-quality splittable pseudorandom number generator, no copyright notice available)
+- time (A time library, no copyright notice available)
+- time-locale-compat (Compatibility of TimeLocale between old-locale and time-1.5, Copyright Copyright (c) 2014-2016 Kei Hibino)
+- timezone-olson (A pure Haskell parser and renderer for binary Olson timezone files, Copyright Copyright (c) 2010-2015 Yitzchak Gale. All rights reserved.)
+- timezone-series (Enhanced timezone handling for Data.Time, Copyright Copyright (c) 2010-2015 Yitzchak Gale. All rights reserved.)
+- tls (TLS/SSL protocol native implementation (Server and Client), Copyright Vincent Hanquez <vincent@snarc.org>)
+- transformers (Concrete functor and monad transformers, no copyright notice available)
+- transformers-base (Lift computations from the bottom of a transformer stack, Copyright 2011 Mikhail Vorozhtsov <mikhail.vorozhtsov@gmail.com>,
+Bas van Dijk <v.dijk.bas@gmail.com>)
+- transformers-compat (A small compatibility shim exposing the new types from transformers 0.3 and 0.4 to older Haskell platforms., Copyright Copyright (C) 2012-2015 Edward A. Kmett)
+- uniplate (Help writing simple, concise and fast generic operations., Copyright Neil Mitchell 2006-2013)
+- unix (POSIX functionality, no copyright notice available)
+- unordered-containers (Efficient hashing-based container types, Copyright 2010-2014 Johan Tibell
+2010 Edward Z. Yang)
+- utf8-string (Support for reading and writing UTF8 Strings, no copyright notice available)
+- uuid-types (Type definitions for Universally Unique Identifiers, Copyright (c) 2008-2014 Antoine Latter)
+- vector (Efficient Arrays, Copyright (c) Roman Leshchinskiy 2008-2012)
+- vty (A simple terminal UI library, no copyright notice available)
+- websockets (A sensible and clean way to write WebSocket-capable servers in Haskell., Copyright (c) 2010-2011 Siniša Biđin
+(c) 2011-2013 Jasper Van der Jeugt
+(c) 2011 Steffen Schuldenzucker
+(c) 2011 Alex Lang)
+- word-wrap (A library for word-wrapping, Copyright 2017 Jonathan Daugherty)
+- x509 (X509 reader and writer, Copyright Vincent Hanquez <vincent@snarc.org>)
+- x509-store (X.509 collection accessing and storing methods, Copyright Vincent Hanquez <vincent@snarc.org>)
+- x509-system (Handle per-operating-system X.509 accessors and storage, Copyright Vincent Hanquez <vincent@snarc.org>)
+- x509-validation (X.509 Certificate and CRL validation, Copyright Vincent Hanquez <vincent@snarc.org>)
+- xdg-basedir (A basic implementation of the XDG Base Directory specification., Copyright (c) 2011 Will Donnelly)
+- zlib (Compression and decompression in the gzip and zlib formats, Copyright (c) 2006-2016 Duncan Coutts)
+
+# MIT
+
+- base-compat (A compatibility layer for base, Copyright (c) 2012-2017 Simon Hengel,
+(c) 2014-2017 João Cristóvão,
+(c) 2015-2017 Ryan Scott)
+- colour (A model for human colour/color perception, no copyright notice available)
+- css-text (CSS parser and renderer., no copyright notice available)
+- hxt (A collection of tools for processing XML with Haskell., Copyright Copyright (c) 2005-20161 Uwe Schmidt)
+- hxt-charproperties (Character properties and classes for XML and Unicode, Copyright Copyright (c) 2010-2014 Uwe Schmidt)
+- hxt-regex-xmlschema (A regular expression library for W3C XML Schema regular expressions, Copyright Copyright (c) 2010- Uwe Schmidt)
+- hxt-unicode (Unicode en-/decoding functions for utf8, iso-latin-* and other encodings, Copyright Copyright (c) 2010- Uwe Schmidt)
+- integer-logarithms (Integer logarithms., Copyright (c) 2011 Daniel Fischer)
+- pretty-show (Tools for working with derived `Show` instances and generic
+inspection of values., no copyright notice available)
+- streaming-commons (Common lower-level functions needed by various streaming data libraries, no copyright notice available)
+
+# BSD2
+
+- megaparsec (Monadic parser combinators, no copyright notice available)
+- text (An efficient packed Unicode text type., Copyright 2009-2011 Bryan O'Sullivan, 2008-2009 Tom Harper)
+- xss-sanitize (sanitize untrusted HTML to prevent XSS attacks, no copyright notice available)
+
+# GPL-2
+
+- skylighting (syntax highlighting library, Copyright (C) 2016 John MacFarlane)
+
+# ISC
+
+- th-abstraction (Nicer interface for reified information about data types, Copyright 2017 Eric Mertens)
+
+# BSD3
+
+- HTTP (A library for client-side HTTP, no copyright notice available)
+- Hclip (A small cross-platform library for reading and modifying the system clipboard., no copyright notice available)
+- QuickCheck (Automatic testing of Haskell programs, Copyright 2000-2016 Koen Claessen, 2006-2008 Björn Bringert, 2009-2016 Nick Smallbone)
+- SHA (Implementations of the SHA suite of message digest functions, no copyright notice available)
+- StateVar (State variables, Copyright Copyright (C) 2014-2015 Edward A. Kmett, 2009-2016 Sven Panne)
+- Unique (It provides the functionality like unix "uniq" utility, no copyright notice available)
+- aeson (Fast JSON parsing and encoding, Copyright (c) 2011-2016 Bryan O'Sullivan
+(c) 2011 MailRank, Inc.)
+- ansi-terminal (Simple ANSI terminal support, with Windows compatibility, no copyright notice available)
+- ansi-wl-pprint (The Wadler/Leijen Pretty Printer for colored ANSI terminal output, no copyright notice available)
+- array (Mutable and immutable arrays, no copyright notice available)
+- asn1-encoding (ASN1 data reader and writer in RAW, BER and DER forms, Copyright Vincent Hanquez <vincent@snarc.org>)
+- asn1-parse (Simple monadic parser for ASN1 stream types., Copyright Vincent Hanquez <vincent@snarc.org>)
+- asn1-types (ASN.1 types, Copyright Vincent Hanquez <vincent@snarc.org>)
+- async (Run IO operations asynchronously and wait for their results, Copyright (c) Simon Marlow 2012)
+- attoparsec (Fast combinator parsing for bytestrings and text, no copyright notice available)
+- base (Basic libraries, no copyright notice available)
+- base64-bytestring (Fast base64 encoding and decoding for ByteStrings, Copyright 2010-2012 Bryan O'Sullivan)
+- bifunctors (Bifunctors, Copyright Copyright (C) 2008-2016 Edward A. Kmett)
+- binary (Binary serialisation for Haskell values using lazy ByteStrings, no copyright notice available)
+- blaze-builder (Efficient buffered output., Copyright (c) 2010-2014 Simon Meier
+(c) 2010 Jasper Van der Jeugt
+(c) 2013-2015 Leon P Smith)
+- blaze-html (A blazingly fast HTML combinator library for Haskell, no copyright notice available)
+- blaze-markup (A blazingly fast markup combinator library for Haskell, no copyright notice available)
+- brick (A declarative terminal user interface library, Copyright (c) Jonathan Daugherty 2015-2018)
+- byteable (Type class for sequence of bytes, Copyright Vincent Hanquez <vincent@snarc.org>)
+- bytestring (Fast, compact, strict and lazy byte strings with a list interface, Copyright Copyright (c) Don Stewart          2005-2009,
+(c) Duncan Coutts        2006-2015,
+(c) David Roundy         2003-2005,
+(c) Jasper Van der Jeugt 2010,
+(c) Simon Meier          2010-2013.)
+- case-insensitive (Case insensitive string comparison, Copyright 2011 Bas van Dijk)
+- cereal (A binary serialization library, no copyright notice available)
+- cheapskate (Experimental markdown processor., Copyright (C) 2012-2013 John MacFarlane)
+- checkers (Check properties on standard classes and data structures., Copyright (c) 2008-2013 by Conal Elliott)
+- clock (High-resolution clock functions: monotonic, realtime, cputime., Copyright Copyright © Cetin Sert 2009-2016, Eugene Kirpichov 2010, Finn Espen Gundersen 2013, Gerolf Seitz 2013, Mathieu Boespflug 2014 2015, Chris Done 2015, Dimitri Sabadie 2015, Christian Burger 2015, Mario Longobardi 2016)
+- comonad (Comonads, Copyright Copyright (C) 2008-2014 Edward A. Kmett,
+Copyright (C) 2004-2008 Dave Menendez)
+- config-ini (A library for simple INI-based configuration files., Copyright ©2016 Getty Ritter)
+- connection (Simple and easy network connections API, Copyright Vincent Hanquez <vincent@snarc.org>)
+- containers (Assorted concrete container types, no copyright notice available)
+- contravariant (Contravariant functors, Copyright Copyright (C) 2007-2015 Edward A. Kmett)
+- cryptonite (Cryptography Primitives sink, Copyright Vincent Hanquez <vincent@snarc.org>)
+- data-clist (Simple functional ring type., no copyright notice available)
+- data-default (A class for types with a default value, no copyright notice available)
+- data-default-class (A class for types with a default value, no copyright notice available)
+- data-default-instances-containers (Default instances for types in containers, no copyright notice available)
+- data-default-instances-dlist (Default instances for types in dlist, no copyright notice available)
+- data-default-instances-old-locale (Default instances for types in old-locale, no copyright notice available)
+- deepseq (Deep evaluation of data structures, no copyright notice available)
+- directory (Platform-agnostic library for filesystem operations, no copyright notice available)
+- distributive (Distributive functors -- Dual to Traversable, Copyright Copyright (C) 2011-2016 Edward A. Kmett)
+- dlist (Difference lists, Copyright 2006-2009 Don Stewart, 2013-2016 Sean Leather)
+- entropy (A platform independent entropy source, Copyright Thomas DuBuisson <thomas.dubuisson@gmail.com>)
+- exceptions (Extensible optionally-pure exceptions, Copyright Copyright (C) 2013-2015 Edward A. Kmett
+Copyright (C) 2012 Google Inc.)
+- extensible-exceptions (Extensible exceptions, no copyright notice available)
+- extra (Extra functions I use., Copyright Neil Mitchell 2014-2018)
+- filepath (Library for manipulating FilePaths in a cross platform way., Copyright Neil Mitchell 2005-2017)
+- ghc-boot-th (Shared functionality between GHC and the @template-haskell@
+library, no copyright notice available)
+- ghc-prim (GHC primitives, no copyright notice available)
+- gitrev (Compile git revision info into Haskell projects, no copyright notice available)
+- hashable (A class for types that can be converted to a hash value, no copyright notice available)
+- haskell-lexer (A fully compliant Haskell 98 lexer., no copyright notice available)
+- hourglass (simple performant time related library, Copyright Vincent Hanquez <vincent@snarc.org>)
+- integer-gmp (Integer library based on GMP, no copyright notice available)
+- mattermost-api (Client API for Mattermost chat system, Copyright 2016-2017 Jason Dagit, Getty Ritter, Jonathan Daugherty)
+- memory (memory and related abstraction stuff, Copyright Vincent Hanquez <vincent@snarc.org>)
+- microlens (A tiny lens library with no dependencies. If you're writing an app, you probably want microlens-platform, not this., no copyright notice available)
+- microlens-ghc (microlens + array, bytestring, containers, transformers, no copyright notice available)
+- microlens-mtl (microlens support for Reader/Writer/State from mtl, no copyright notice available)
+- microlens-platform (Feature-complete microlens, no copyright notice available)
+- microlens-th (Automatic generation of record lenses for microlens, no copyright notice available)
+- monad-control (Lift control operations, like exception catching, through monad transformers, Copyright (c) 2011 Bas van Dijk, Anders Kaseorg)
+- mtl (Monad classes, using functional dependencies, no copyright notice available)
+- network (Low-level networking interface, no copyright notice available)
+- network-uri (URI manipulation, no copyright notice available)
+- old-locale (locale library, no copyright notice available)
+- optparse-applicative (Utilities and combinators for parsing command line options, Copyright (c) 2012-2017 Paolo Capriotti <paolo@capriotti.io>)
+- parallel (Parallel programming library, no copyright notice available)
+- parsec (Monadic parser combinators, no copyright notice available)
+- pem (Privacy Enhanced Mail (PEM) format reader and writer., Copyright Vincent Hanquez <vincent@snarc.org>)
+- pretty (Pretty-printing library, no copyright notice available)
+- primitive (Primitive memory-related operations, Copyright (c) Roman Leshchinskiy 2009-2012)
+- process (Process libraries, no copyright notice available)
+- random (random number library, no copyright notice available)
+- regex-base (Replaces/Enhances Text.Regex, Copyright Copyright (c) 2006, Christopher Kuklewicz)
+- regex-tdfa (Replaces/Enhances Text.Regex, Copyright Copyright (c) 2007, Christopher Kuklewicz)
+- resource-pool (A high-performance striped resource pooling implementation, Copyright Copyright 2011 MailRank, Inc.)
+- rts (, no copyright notice available)
+- scientific (Numbers represented using scientific notation, no copyright notice available)
+- semigroupoids (Semigroupoids: Category sans id, Copyright Copyright (C) 2011-2015 Edward A. Kmett)
+- semigroups (Anything that associates, Copyright Copyright (C) 2011-2015 Edward A. Kmett)
+- socks (Socks proxy (ver 5), Copyright Vincent Hanquez <vincent@snarc.org>)
+- stm (Software Transactional Memory, no copyright notice available)
+- strict (Strict data types and String IO., Copyright (c) 2006-2007 by Roman Leshchinskiy)
+- string-conversions (Simplifies dealing with different types for strings, no copyright notice available)
+- syb (Scrap Your Boilerplate, no copyright notice available)
+- tagged (Haskell 98 phantom types to avoid unsafely passing dummy arguments, Copyright 2009-2015 Edward A. Kmett)
+- tagsoup (Parsing and extracting information from (possibly malformed) HTML/XML documents, Copyright Neil Mitchell 2006-2018)
+- template-haskell (Support library for Template Haskell, no copyright notice available)
+- terminfo (Haskell bindings to the terminfo library., Copyright (c) Judah Jacobson)
+- text-zipper (A text editor zipper library, Copyright (c) 2015 Jonathan Daugherty)
+- tf-random (High-quality splittable pseudorandom number generator, no copyright notice available)
+- time (A time library, no copyright notice available)
+- time-locale-compat (Compatibility of TimeLocale between old-locale and time-1.5, Copyright Copyright (c) 2014-2016 Kei Hibino)
+- timezone-olson (A pure Haskell parser and renderer for binary Olson timezone files, Copyright Copyright (c) 2010-2015 Yitzchak Gale. All rights reserved.)
+- timezone-series (Enhanced timezone handling for Data.Time, Copyright Copyright (c) 2010-2015 Yitzchak Gale. All rights reserved.)
+- tls (TLS/SSL protocol native implementation (Server and Client), Copyright Vincent Hanquez <vincent@snarc.org>)
+- transformers (Concrete functor and monad transformers, no copyright notice available)
+- transformers-base (Lift computations from the bottom of a transformer stack, Copyright 2011 Mikhail Vorozhtsov <mikhail.vorozhtsov@gmail.com>,
+Bas van Dijk <v.dijk.bas@gmail.com>)
+- transformers-compat (A small compatibility shim exposing the new types from transformers 0.3 and 0.4 to older Haskell platforms., Copyright Copyright (C) 2012-2015 Edward A. Kmett)
+- unbounded-delays (Unbounded thread delays and timeouts, Copyright 2011-2012 Bas van Dijk & Roel van Dijk)
+- uniplate (Help writing simple, concise and fast generic operations., Copyright Neil Mitchell 2006-2013)
+- unix (POSIX functionality, no copyright notice available)
+- unordered-containers (Efficient hashing-based container types, Copyright 2010-2014 Johan Tibell
+2010 Edward Z. Yang)
+- utf8-string (Support for reading and writing UTF8 Strings, no copyright notice available)
+- uuid-types (Type definitions for Universally Unique Identifiers, Copyright (c) 2008-2014 Antoine Latter)
+- vector (Efficient Arrays, Copyright (c) Roman Leshchinskiy 2008-2012)
+- vty (A simple terminal UI library, no copyright notice available)
+- websockets (A sensible and clean way to write WebSocket-capable servers in Haskell., Copyright (c) 2010-2011 Siniša Biđin
+(c) 2011-2013 Jasper Van der Jeugt
+(c) 2011 Steffen Schuldenzucker
+(c) 2011 Alex Lang)
+- word-wrap (A library for word-wrapping, Copyright 2017 Jonathan Daugherty)
+- x509 (X509 reader and writer, Copyright Vincent Hanquez <vincent@snarc.org>)
+- x509-store (X.509 collection accessing and storing methods, Copyright Vincent Hanquez <vincent@snarc.org>)
+- x509-system (Handle per-operating-system X.509 accessors and storage, Copyright Vincent Hanquez <vincent@snarc.org>)
+- x509-validation (X.509 Certificate and CRL validation, Copyright Vincent Hanquez <vincent@snarc.org>)
+- xdg-basedir (A basic implementation of the XDG Base Directory specification., Copyright (c) 2011 Will Donnelly)
+- zlib (Compression and decompression in the gzip and zlib formats, Copyright (c) 2006-2016 Duncan Coutts)
+
+# MIT
+
+- base-compat (A compatibility layer for base, Copyright (c) 2012-2017 Simon Hengel,
+(c) 2014-2017 João Cristóvão,
+(c) 2015-2017 Ryan Scott)
+- base-orphans (Backwards-compatible orphan instances for base, Copyright (c) 2012-2017 Simon Hengel,
+(c) 2014-2017 João Cristóvão,
+(c) 2015-2017 Ryan Scott)
+- colour (A model for human colour/color perception, no copyright notice available)
+- css-text (CSS parser and renderer., no copyright notice available)
+- integer-logarithms (Integer logarithms., Copyright (c) 2011 Daniel Fischer)
+- pretty-show (Tools for working with derived `Show` instances and generic
+inspection of values., no copyright notice available)
+- quickcheck-text (Alternative arbitrary instance for Text, Copyright 2015-2016 Sharif Olorin and others)
+- streaming-commons (Common lower-level functions needed by various streaming data libraries, no copyright notice available)
+- tasty (Modern and extensible testing framework, no copyright notice available)
+- tasty-hunit (HUnit support for the Tasty test framework., no copyright notice available)
+- tasty-quickcheck (QuickCheck support for the Tasty test framework., no copyright notice available)
+
+# ISC
+
+- mattermost-api-qc (QuickCheck instances for the Mattermost client API library, Copyright 2017 Kevin Quick)
+- th-abstraction (Nicer interface for reified information about data types, Copyright 2017 Eric Mertens)
+
+# BSD2
+
+- megaparsec (Monadic parser combinators, no copyright notice available)
+- text (An efficient packed Unicode text type., Copyright 2009-2011 Bryan O'Sullivan, 2008-2009 Tom Harper)
+- xss-sanitize (sanitize untrusted HTML to prevent XSS attacks, no copyright notice available)
+
+# BSD3
+
+- HTTP (A library for client-side HTTP, no copyright notice available)
+- Hclip (A small cross-platform library for reading and modifying the system clipboard., no copyright notice available)
+- QuickCheck (Automatic testing of Haskell programs, Copyright 2000-2016 Koen Claessen, 2006-2008 Björn Bringert, 2009-2016 Nick Smallbone)
+- SHA (Implementations of the SHA suite of message digest functions, no copyright notice available)
+- StateVar (State variables, Copyright Copyright (C) 2014-2015 Edward A. Kmett, 2009-2016 Sven Panne)
+- aeson (Fast JSON parsing and encoding, Copyright (c) 2011-2016 Bryan O'Sullivan
+(c) 2011 MailRank, Inc.)
+- ansi-terminal (Simple ANSI terminal support, with Windows compatibility, no copyright notice available)
+- array (Mutable and immutable arrays, no copyright notice available)
+- asn1-encoding (ASN1 data reader and writer in RAW, BER and DER forms, Copyright Vincent Hanquez <vincent@snarc.org>)
+- asn1-parse (Simple monadic parser for ASN1 stream types., Copyright Vincent Hanquez <vincent@snarc.org>)
+- asn1-types (ASN.1 types, Copyright Vincent Hanquez <vincent@snarc.org>)
+- aspell-pipe (Pipe-based interface to the Aspell program, Copyright 2017 Jonathan Daugherty)
+- async (Run IO operations asynchronously and wait for their results, Copyright (c) Simon Marlow 2012)
+- attoparsec (Fast combinator parsing for bytestrings and text, no copyright notice available)
+- base (Basic libraries, no copyright notice available)
+- base64-bytestring (Fast base64 encoding and decoding for ByteStrings, Copyright 2010-2012 Bryan O'Sullivan)
+- binary (Binary serialisation for Haskell values using lazy ByteStrings, no copyright notice available)
+- blaze-builder (Efficient buffered output., Copyright (c) 2010-2014 Simon Meier
+(c) 2010 Jasper Van der Jeugt
+(c) 2013-2015 Leon P Smith)
+- blaze-html (A blazingly fast HTML combinator library for Haskell, no copyright notice available)
+- blaze-markup (A blazingly fast markup combinator library for Haskell, no copyright notice available)
+- brick (A declarative terminal user interface library, Copyright (c) Jonathan Daugherty 2015-2018)
+- brick-skylighting (Show syntax-highlighted text in your Brick UI, Copyright Jonathan Daugherty 2018)
+- byteable (Type class for sequence of bytes, Copyright Vincent Hanquez <vincent@snarc.org>)
+- bytestring (Fast, compact, strict and lazy byte strings with a list interface, Copyright Copyright (c) Don Stewart          2005-2009,
+(c) Duncan Coutts        2006-2015,
+(c) David Roundy         2003-2005,
+(c) Jasper Van der Jeugt 2010,
+(c) Simon Meier          2010-2013.)
+- case-insensitive (Case insensitive string comparison, Copyright 2011 Bas van Dijk)
+- cereal (A binary serialization library, no copyright notice available)
+- cheapskate (Experimental markdown processor., Copyright (C) 2012-2013 John MacFarlane)
+- config-ini (A library for simple INI-based configuration files., Copyright ©2016 Getty Ritter)
+- connection (Simple and easy network connections API, Copyright Vincent Hanquez <vincent@snarc.org>)
+- containers (Assorted concrete container types, no copyright notice available)
+- contravariant (Contravariant functors, Copyright Copyright (C) 2007-2015 Edward A. Kmett)
+- cryptonite (Cryptography Primitives sink, Copyright Vincent Hanquez <vincent@snarc.org>)
+- data-clist (Simple functional ring type., no copyright notice available)
+- data-default (A class for types with a default value, no copyright notice available)
+- data-default-class (A class for types with a default value, no copyright notice available)
+- data-default-instances-containers (Default instances for types in containers, no copyright notice available)
+- data-default-instances-dlist (Default instances for types in dlist, no copyright notice available)
+- data-default-instances-old-locale (Default instances for types in old-locale, no copyright notice available)
+- deepseq (Deep evaluation of data structures, no copyright notice available)
+- directory (Platform-agnostic library for filesystem operations, no copyright notice available)
+- dlist (Difference lists, Copyright 2006-2009 Don Stewart, 2013-2016 Sean Leather)
+- entropy (A platform independent entropy source, Copyright Thomas DuBuisson <thomas.dubuisson@gmail.com>)
+- exceptions (Extensible optionally-pure exceptions, Copyright Copyright (C) 2013-2015 Edward A. Kmett
+Copyright (C) 2012 Google Inc.)
+- extensible-exceptions (Extensible exceptions, no copyright notice available)
+- filepath (Library for manipulating FilePaths in a cross platform way., Copyright Neil Mitchell 2005-2017)
+- ghc-boot-th (Shared functionality between GHC and the @template-haskell@
+library, no copyright notice available)
+- ghc-prim (GHC primitives, no copyright notice available)
+- gitrev (Compile git revision info into Haskell projects, no copyright notice available)
+- hashable (A class for types that can be converted to a hash value, no copyright notice available)
+- haskell-lexer (A fully compliant Haskell 98 lexer., no copyright notice available)
+- hourglass (simple performant time related library, Copyright Vincent Hanquez <vincent@snarc.org>)
+- integer-gmp (Integer library based on GMP, no copyright notice available)
+- mattermost-api (Client API for Mattermost chat system, Copyright 2016-2017 Jason Dagit, Getty Ritter, Jonathan Daugherty)
+- memory (memory and related abstraction stuff, Copyright Vincent Hanquez <vincent@snarc.org>)
+- microlens (A tiny lens library with no dependencies. If you're writing an app, you probably want microlens-platform, not this., no copyright notice available)
+- microlens-ghc (microlens + array, bytestring, containers, transformers, no copyright notice available)
+- microlens-mtl (microlens support for Reader/Writer/State from mtl, no copyright notice available)
+- microlens-platform (Feature-complete microlens, no copyright notice available)
+- microlens-th (Automatic generation of record lenses for microlens, no copyright notice available)
+- monad-control (Lift control operations, like exception catching, through monad transformers, Copyright (c) 2011 Bas van Dijk, Anders Kaseorg)
+- mtl (Monad classes, using functional dependencies, no copyright notice available)
+- network (Low-level networking interface, no copyright notice available)
+- network-uri (URI manipulation, no copyright notice available)
+- old-locale (locale library, no copyright notice available)
+- parallel (Parallel programming library, no copyright notice available)
+- parsec (Monadic parser combinators, no copyright notice available)
+- pem (Privacy Enhanced Mail (PEM) format reader and writer., Copyright Vincent Hanquez <vincent@snarc.org>)
+- pretty (Pretty-printing library, no copyright notice available)
+- primitive (Primitive memory-related operations, Copyright (c) Roman Leshchinskiy 2009-2012)
+- process (Process libraries, no copyright notice available)
+- random (random number library, no copyright notice available)
+- regex-base (Replaces/Enhances Text.Regex, Copyright Copyright (c) 2006, Christopher Kuklewicz)
+- regex-pcre-builtin (Replaces/Enhances Text.Regex, Copyright See LICENSE file)
+- resource-pool (A high-performance striped resource pooling implementation, Copyright Copyright 2011 MailRank, Inc.)
+- rts (, no copyright notice available)
+- safe (Library of safe (exception free) functions, Copyright Neil Mitchell 2007-2018)
+- scientific (Numbers represented using scientific notation, no copyright notice available)
+- semigroups (Anything that associates, Copyright Copyright (C) 2011-2015 Edward A. Kmett)
+- socks (Socks proxy (ver 5), Copyright Vincent Hanquez <vincent@snarc.org>)
+- stm (Software Transactional Memory, no copyright notice available)
+- stm-delay (Updatable one-shot timer polled with STM, Copyright Copyright (c) Joseph Adams 2012)
+- strict (Strict data types and String IO., Copyright (c) 2006-2007 by Roman Leshchinskiy)
+- syb (Scrap Your Boilerplate, no copyright notice available)
+- tagged (Haskell 98 phantom types to avoid unsafely passing dummy arguments, Copyright 2009-2015 Edward A. Kmett)
+- tagsoup (Parsing and extracting information from (possibly malformed) HTML/XML documents, Copyright Neil Mitchell 2006-2018)
+- template-haskell (Support library for Template Haskell, no copyright notice available)
+- temporary (Portable temporary file and directory support, no copyright notice available)
+- terminfo (Haskell bindings to the terminfo library., Copyright (c) Judah Jacobson)
+- text-zipper (A text editor zipper library, Copyright (c) 2015 Jonathan Daugherty)
+- tf-random (High-quality splittable pseudorandom number generator, no copyright notice available)
+- time (A time library, no copyright notice available)
+- time-locale-compat (Compatibility of TimeLocale between old-locale and time-1.5, Copyright Copyright (c) 2014-2016 Kei Hibino)
+- timezone-olson (A pure Haskell parser and renderer for binary Olson timezone files, Copyright Copyright (c) 2010-2015 Yitzchak Gale. All rights reserved.)
+- timezone-series (Enhanced timezone handling for Data.Time, Copyright Copyright (c) 2010-2015 Yitzchak Gale. All rights reserved.)
+- tls (TLS/SSL protocol native implementation (Server and Client), Copyright Vincent Hanquez <vincent@snarc.org>)
+- transformers (Concrete functor and monad transformers, no copyright notice available)
+- transformers-base (Lift computations from the bottom of a transformer stack, Copyright 2011 Mikhail Vorozhtsov <mikhail.vorozhtsov@gmail.com>,
+Bas van Dijk <v.dijk.bas@gmail.com>)
+- transformers-compat (A small compatibility shim exposing the new types from transformers 0.3 and 0.4 to older Haskell platforms., Copyright Copyright (C) 2012-2015 Edward A. Kmett)
+- uniplate (Help writing simple, concise and fast generic operations., Copyright Neil Mitchell 2006-2013)
+- unix (POSIX functionality, no copyright notice available)
+- unordered-containers (Efficient hashing-based container types, Copyright 2010-2014 Johan Tibell
+2010 Edward Z. Yang)
+- utf8-string (Support for reading and writing UTF8 Strings, no copyright notice available)
+- uuid-types (Type definitions for Universally Unique Identifiers, Copyright (c) 2008-2014 Antoine Latter)
+- vector (Efficient Arrays, Copyright (c) Roman Leshchinskiy 2008-2012)
+- vty (A simple terminal UI library, no copyright notice available)
+- websockets (A sensible and clean way to write WebSocket-capable servers in Haskell., Copyright (c) 2010-2011 Siniša Biđin
+(c) 2011-2013 Jasper Van der Jeugt
+(c) 2011 Steffen Schuldenzucker
+(c) 2011 Alex Lang)
+- word-wrap (A library for word-wrapping, Copyright 2017 Jonathan Daugherty)
+- x509 (X509 reader and writer, Copyright Vincent Hanquez <vincent@snarc.org>)
+- x509-store (X.509 collection accessing and storing methods, Copyright Vincent Hanquez <vincent@snarc.org>)
+- x509-system (Handle per-operating-system X.509 accessors and storage, Copyright Vincent Hanquez <vincent@snarc.org>)
+- x509-validation (X.509 Certificate and CRL validation, Copyright Vincent Hanquez <vincent@snarc.org>)
+- xdg-basedir (A basic implementation of the XDG Base Directory specification., Copyright (c) 2011 Will Donnelly)
+- zlib (Compression and decompression in the gzip and zlib formats, Copyright (c) 2006-2016 Duncan Coutts)
+
+# MIT
+
+- base-compat (A compatibility layer for base, Copyright (c) 2012-2017 Simon Hengel,
+(c) 2014-2017 João Cristóvão,
+(c) 2015-2017 Ryan Scott)
+- colour (A model for human colour/color perception, no copyright notice available)
+- css-text (CSS parser and renderer., no copyright notice available)
+- hxt (A collection of tools for processing XML with Haskell., Copyright Copyright (c) 2005-20161 Uwe Schmidt)
+- hxt-charproperties (Character properties and classes for XML and Unicode, Copyright Copyright (c) 2010-2014 Uwe Schmidt)
+- hxt-regex-xmlschema (A regular expression library for W3C XML Schema regular expressions, Copyright Copyright (c) 2010- Uwe Schmidt)
+- hxt-unicode (Unicode en-/decoding functions for utf8, iso-latin-* and other encodings, Copyright Copyright (c) 2010- Uwe Schmidt)
+- integer-logarithms (Integer logarithms., Copyright (c) 2011 Daniel Fischer)
+- pretty-show (Tools for working with derived `Show` instances and generic
+inspection of values., no copyright notice available)
+- streaming-commons (Common lower-level functions needed by various streaming data libraries, no copyright notice available)
+
+# BSD2
+
+- megaparsec (Monadic parser combinators, no copyright notice available)
+- text (An efficient packed Unicode text type., Copyright 2009-2011 Bryan O'Sullivan, 2008-2009 Tom Harper)
+- xss-sanitize (sanitize untrusted HTML to prevent XSS attacks, no copyright notice available)
+
+# GPL-2
+
+- skylighting (syntax highlighting library, Copyright (C) 2016 John MacFarlane)
+
+# ISC
+
+- th-abstraction (Nicer interface for reified information about data types, Copyright 2017 Eric Mertens)
+
+# BSD3
+
+- HTTP (A library for client-side HTTP, no copyright notice available)
+- Hclip (A small cross-platform library for reading and modifying the system clipboard., no copyright notice available)
+- QuickCheck (Automatic testing of Haskell programs, Copyright 2000-2016 Koen Claessen, 2006-2008 Björn Bringert, 2009-2016 Nick Smallbone)
+- SHA (Implementations of the SHA suite of message digest functions, no copyright notice available)
+- StateVar (State variables, Copyright Copyright (C) 2014-2015 Edward A. Kmett, 2009-2016 Sven Panne)
+- Unique (It provides the functionality like unix "uniq" utility, no copyright notice available)
+- aeson (Fast JSON parsing and encoding, Copyright (c) 2011-2016 Bryan O'Sullivan
+(c) 2011 MailRank, Inc.)
+- ansi-terminal (Simple ANSI terminal support, with Windows compatibility, no copyright notice available)
+- ansi-wl-pprint (The Wadler/Leijen Pretty Printer for colored ANSI terminal output, no copyright notice available)
+- array (Mutable and immutable arrays, no copyright notice available)
+- asn1-encoding (ASN1 data reader and writer in RAW, BER and DER forms, Copyright Vincent Hanquez <vincent@snarc.org>)
+- asn1-parse (Simple monadic parser for ASN1 stream types., Copyright Vincent Hanquez <vincent@snarc.org>)
+- asn1-types (ASN.1 types, Copyright Vincent Hanquez <vincent@snarc.org>)
+- async (Run IO operations asynchronously and wait for their results, Copyright (c) Simon Marlow 2012)
+- attoparsec (Fast combinator parsing for bytestrings and text, no copyright notice available)
+- base (Basic libraries, no copyright notice available)
+- base64-bytestring (Fast base64 encoding and decoding for ByteStrings, Copyright 2010-2012 Bryan O'Sullivan)
+- bifunctors (Bifunctors, Copyright Copyright (C) 2008-2016 Edward A. Kmett)
+- binary (Binary serialisation for Haskell values using lazy ByteStrings, no copyright notice available)
+- blaze-builder (Efficient buffered output., Copyright (c) 2010-2014 Simon Meier
+(c) 2010 Jasper Van der Jeugt
+(c) 2013-2015 Leon P Smith)
+- blaze-html (A blazingly fast HTML combinator library for Haskell, no copyright notice available)
+- blaze-markup (A blazingly fast markup combinator library for Haskell, no copyright notice available)
+- brick (A declarative terminal user interface library, Copyright (c) Jonathan Daugherty 2015-2018)
+- byteable (Type class for sequence of bytes, Copyright Vincent Hanquez <vincent@snarc.org>)
+- bytestring (Fast, compact, strict and lazy byte strings with a list interface, Copyright Copyright (c) Don Stewart          2005-2009,
+(c) Duncan Coutts        2006-2015,
+(c) David Roundy         2003-2005,
+(c) Jasper Van der Jeugt 2010,
+(c) Simon Meier          2010-2013.)
+- case-insensitive (Case insensitive string comparison, Copyright 2011 Bas van Dijk)
+- cereal (A binary serialization library, no copyright notice available)
+- cheapskate (Experimental markdown processor., Copyright (C) 2012-2013 John MacFarlane)
+- checkers (Check properties on standard classes and data structures., Copyright (c) 2008-2013 by Conal Elliott)
+- clock (High-resolution clock functions: monotonic, realtime, cputime., Copyright Copyright © Cetin Sert 2009-2016, Eugene Kirpichov 2010, Finn Espen Gundersen 2013, Gerolf Seitz 2013, Mathieu Boespflug 2014 2015, Chris Done 2015, Dimitri Sabadie 2015, Christian Burger 2015, Mario Longobardi 2016)
+- comonad (Comonads, Copyright Copyright (C) 2008-2014 Edward A. Kmett,
+Copyright (C) 2004-2008 Dave Menendez)
+- config-ini (A library for simple INI-based configuration files., Copyright ©2016 Getty Ritter)
+- connection (Simple and easy network connections API, Copyright Vincent Hanquez <vincent@snarc.org>)
+- containers (Assorted concrete container types, no copyright notice available)
+- contravariant (Contravariant functors, Copyright Copyright (C) 2007-2015 Edward A. Kmett)
+- cryptonite (Cryptography Primitives sink, Copyright Vincent Hanquez <vincent@snarc.org>)
+- data-clist (Simple functional ring type., no copyright notice available)
+- data-default (A class for types with a default value, no copyright notice available)
+- data-default-class (A class for types with a default value, no copyright notice available)
+- data-default-instances-containers (Default instances for types in containers, no copyright notice available)
+- data-default-instances-dlist (Default instances for types in dlist, no copyright notice available)
+- data-default-instances-old-locale (Default instances for types in old-locale, no copyright notice available)
+- deepseq (Deep evaluation of data structures, no copyright notice available)
+- directory (Platform-agnostic library for filesystem operations, no copyright notice available)
+- distributive (Distributive functors -- Dual to Traversable, Copyright Copyright (C) 2011-2016 Edward A. Kmett)
+- dlist (Difference lists, Copyright 2006-2009 Don Stewart, 2013-2016 Sean Leather)
+- entropy (A platform independent entropy source, Copyright Thomas DuBuisson <thomas.dubuisson@gmail.com>)
+- exceptions (Extensible optionally-pure exceptions, Copyright Copyright (C) 2013-2015 Edward A. Kmett
+Copyright (C) 2012 Google Inc.)
+- extensible-exceptions (Extensible exceptions, no copyright notice available)
+- extra (Extra functions I use., Copyright Neil Mitchell 2014-2018)
+- filepath (Library for manipulating FilePaths in a cross platform way., Copyright Neil Mitchell 2005-2017)
+- ghc-boot-th (Shared functionality between GHC and the @template-haskell@
+library, no copyright notice available)
+- ghc-prim (GHC primitives, no copyright notice available)
+- gitrev (Compile git revision info into Haskell projects, no copyright notice available)
+- hashable (A class for types that can be converted to a hash value, no copyright notice available)
+- haskell-lexer (A fully compliant Haskell 98 lexer., no copyright notice available)
+- hourglass (simple performant time related library, Copyright Vincent Hanquez <vincent@snarc.org>)
+- integer-gmp (Integer library based on GMP, no copyright notice available)
+- mattermost-api (Client API for Mattermost chat system, Copyright 2016-2017 Jason Dagit, Getty Ritter, Jonathan Daugherty)
+- memory (memory and related abstraction stuff, Copyright Vincent Hanquez <vincent@snarc.org>)
+- microlens (A tiny lens library with no dependencies. If you're writing an app, you probably want microlens-platform, not this., no copyright notice available)
+- microlens-ghc (microlens + array, bytestring, containers, transformers, no copyright notice available)
+- microlens-mtl (microlens support for Reader/Writer/State from mtl, no copyright notice available)
+- microlens-platform (Feature-complete microlens, no copyright notice available)
+- microlens-th (Automatic generation of record lenses for microlens, no copyright notice available)
+- monad-control (Lift control operations, like exception catching, through monad transformers, Copyright (c) 2011 Bas van Dijk, Anders Kaseorg)
+- mtl (Monad classes, using functional dependencies, no copyright notice available)
+- network (Low-level networking interface, no copyright notice available)
+- network-uri (URI manipulation, no copyright notice available)
+- old-locale (locale library, no copyright notice available)
+- optparse-applicative (Utilities and combinators for parsing command line options, Copyright (c) 2012-2017 Paolo Capriotti <paolo@capriotti.io>)
+- parallel (Parallel programming library, no copyright notice available)
+- parsec (Monadic parser combinators, no copyright notice available)
+- pem (Privacy Enhanced Mail (PEM) format reader and writer., Copyright Vincent Hanquez <vincent@snarc.org>)
+- pretty (Pretty-printing library, no copyright notice available)
+- primitive (Primitive memory-related operations, Copyright (c) Roman Leshchinskiy 2009-2012)
+- process (Process libraries, no copyright notice available)
+- random (random number library, no copyright notice available)
+- regex-base (Replaces/Enhances Text.Regex, Copyright Copyright (c) 2006, Christopher Kuklewicz)
+- regex-tdfa (Replaces/Enhances Text.Regex, Copyright Copyright (c) 2007, Christopher Kuklewicz)
+- resource-pool (A high-performance striped resource pooling implementation, Copyright Copyright 2011 MailRank, Inc.)
+- rts (, no copyright notice available)
+- scientific (Numbers represented using scientific notation, no copyright notice available)
+- semigroupoids (Semigroupoids: Category sans id, Copyright Copyright (C) 2011-2015 Edward A. Kmett)
+- semigroups (Anything that associates, Copyright Copyright (C) 2011-2015 Edward A. Kmett)
+- socks (Socks proxy (ver 5), Copyright Vincent Hanquez <vincent@snarc.org>)
+- stm (Software Transactional Memory, no copyright notice available)
+- strict (Strict data types and String IO., Copyright (c) 2006-2007 by Roman Leshchinskiy)
+- string-conversions (Simplifies dealing with different types for strings, no copyright notice available)
+- syb (Scrap Your Boilerplate, no copyright notice available)
+- tagged (Haskell 98 phantom types to avoid unsafely passing dummy arguments, Copyright 2009-2015 Edward A. Kmett)
+- tagsoup (Parsing and extracting information from (possibly malformed) HTML/XML documents, Copyright Neil Mitchell 2006-2018)
+- template-haskell (Support library for Template Haskell, no copyright notice available)
+- terminfo (Haskell bindings to the terminfo library., Copyright (c) Judah Jacobson)
+- text-zipper (A text editor zipper library, Copyright (c) 2015 Jonathan Daugherty)
+- tf-random (High-quality splittable pseudorandom number generator, no copyright notice available)
+- time (A time library, no copyright notice available)
+- time-locale-compat (Compatibility of TimeLocale between old-locale and time-1.5, Copyright Copyright (c) 2014-2016 Kei Hibino)
+- timezone-olson (A pure Haskell parser and renderer for binary Olson timezone files, Copyright Copyright (c) 2010-2015 Yitzchak Gale. All rights reserved.)
+- timezone-series (Enhanced timezone handling for Data.Time, Copyright Copyright (c) 2010-2015 Yitzchak Gale. All rights reserved.)
+- tls (TLS/SSL protocol native implementation (Server and Client), Copyright Vincent Hanquez <vincent@snarc.org>)
+- transformers (Concrete functor and monad transformers, no copyright notice available)
+- transformers-base (Lift computations from the bottom of a transformer stack, Copyright 2011 Mikhail Vorozhtsov <mikhail.vorozhtsov@gmail.com>,
+Bas van Dijk <v.dijk.bas@gmail.com>)
+- transformers-compat (A small compatibility shim exposing the new types from transformers 0.3 and 0.4 to older Haskell platforms., Copyright Copyright (C) 2012-2015 Edward A. Kmett)
+- unbounded-delays (Unbounded thread delays and timeouts, Copyright 2011-2012 Bas van Dijk & Roel van Dijk)
+- uniplate (Help writing simple, concise and fast generic operations., Copyright Neil Mitchell 2006-2013)
+- unix (POSIX functionality, no copyright notice available)
+- unordered-containers (Efficient hashing-based container types, Copyright 2010-2014 Johan Tibell
+2010 Edward Z. Yang)
+- utf8-string (Support for reading and writing UTF8 Strings, no copyright notice available)
+- uuid-types (Type definitions for Universally Unique Identifiers, Copyright (c) 2008-2014 Antoine Latter)
+- vector (Efficient Arrays, Copyright (c) Roman Leshchinskiy 2008-2012)
+- vty (A simple terminal UI library, no copyright notice available)
+- websockets (A sensible and clean way to write WebSocket-capable servers in Haskell., Copyright (c) 2010-2011 Siniša Biđin
+(c) 2011-2013 Jasper Van der Jeugt
+(c) 2011 Steffen Schuldenzucker
+(c) 2011 Alex Lang)
+- word-wrap (A library for word-wrapping, Copyright 2017 Jonathan Daugherty)
+- x509 (X509 reader and writer, Copyright Vincent Hanquez <vincent@snarc.org>)
+- x509-store (X.509 collection accessing and storing methods, Copyright Vincent Hanquez <vincent@snarc.org>)
+- x509-system (Handle per-operating-system X.509 accessors and storage, Copyright Vincent Hanquez <vincent@snarc.org>)
+- x509-validation (X.509 Certificate and CRL validation, Copyright Vincent Hanquez <vincent@snarc.org>)
+- xdg-basedir (A basic implementation of the XDG Base Directory specification., Copyright (c) 2011 Will Donnelly)
+- zlib (Compression and decompression in the gzip and zlib formats, Copyright (c) 2006-2016 Duncan Coutts)
+
+# MIT
+
+- base-compat (A compatibility layer for base, Copyright (c) 2012-2017 Simon Hengel,
+(c) 2014-2017 João Cristóvão,
+(c) 2015-2017 Ryan Scott)
+- base-orphans (Backwards-compatible orphan instances for base, Copyright (c) 2012-2017 Simon Hengel,
+(c) 2014-2017 João Cristóvão,
+(c) 2015-2017 Ryan Scott)
+- colour (A model for human colour/color perception, no copyright notice available)
+- css-text (CSS parser and renderer., no copyright notice available)
+- integer-logarithms (Integer logarithms., Copyright (c) 2011 Daniel Fischer)
+- pretty-show (Tools for working with derived `Show` instances and generic
+inspection of values., no copyright notice available)
+- quickcheck-text (Alternative arbitrary instance for Text, Copyright 2015-2016 Sharif Olorin and others)
+- streaming-commons (Common lower-level functions needed by various streaming data libraries, no copyright notice available)
+- tasty (Modern and extensible testing framework, no copyright notice available)
+- tasty-hunit (HUnit support for the Tasty test framework., no copyright notice available)
+- tasty-quickcheck (QuickCheck support for the Tasty test framework., no copyright notice available)
+
+# ISC
+
+- mattermost-api-qc (QuickCheck instances for the Mattermost client API library, Copyright 2017 Kevin Quick)
+- th-abstraction (Nicer interface for reified information about data types, Copyright 2017 Eric Mertens)
+
+# BSD2
+
+- megaparsec (Monadic parser combinators, no copyright notice available)
+- text (An efficient packed Unicode text type., Copyright 2009-2011 Bryan O'Sullivan, 2008-2009 Tom Harper)
+- xss-sanitize (sanitize untrusted HTML to prevent XSS attacks, no copyright notice available)
+
+# BSD3
+
+- HTTP (A library for client-side HTTP, no copyright notice available)
+- SHA (Implementations of the SHA suite of message digest functions, no copyright notice available)
+- aeson (Fast JSON parsing and encoding, Copyright (c) 2011-2016 Bryan O'Sullivan
+(c) 2011 MailRank, Inc.)
+- array (Mutable and immutable arrays, no copyright notice available)
+- asn1-encoding (ASN1 data reader and writer in RAW, BER and DER forms, Copyright Vincent Hanquez <vincent@snarc.org>)
+- asn1-parse (Simple monadic parser for ASN1 stream types., Copyright Vincent Hanquez <vincent@snarc.org>)
+- asn1-types (ASN.1 types, Copyright Vincent Hanquez <vincent@snarc.org>)
+- async (Run IO operations asynchronously and wait for their results, Copyright (c) Simon Marlow 2012)
+- attoparsec (Fast combinator parsing for bytestrings and text, no copyright notice available)
+- base (Basic libraries, no copyright notice available)
+- base64-bytestring (Fast base64 encoding and decoding for ByteStrings, Copyright 2010-2012 Bryan O'Sullivan)
+- binary (Binary serialisation for Haskell values using lazy ByteStrings, no copyright notice available)
+- blaze-builder (Efficient buffered output., Copyright (c) 2010-2014 Simon Meier
+(c) 2010 Jasper Van der Jeugt
+(c) 2013-2015 Leon P Smith)
+- byteable (Type class for sequence of bytes, Copyright Vincent Hanquez <vincent@snarc.org>)
+- bytestring (Fast, compact, strict and lazy byte strings with a list interface, Copyright Copyright (c) Don Stewart          2005-2009,
+(c) Duncan Coutts        2006-2015,
+(c) David Roundy         2003-2005,
+(c) Jasper Van der Jeugt 2010,
+(c) Simon Meier          2010-2013.)
+- case-insensitive (Case insensitive string comparison, Copyright 2011 Bas van Dijk)
+- cereal (A binary serialization library, no copyright notice available)
+- connection (Simple and easy network connections API, Copyright Vincent Hanquez <vincent@snarc.org>)
+- containers (Assorted concrete container types, no copyright notice available)
+- cryptonite (Cryptography Primitives sink, Copyright Vincent Hanquez <vincent@snarc.org>)
+- data-default-class (A class for types with a default value, no copyright notice available)
+- deepseq (Deep evaluation of data structures, no copyright notice available)
+- directory (Platform-agnostic library for filesystem operations, no copyright notice available)
+- dlist (Difference lists, Copyright 2006-2009 Don Stewart, 2013-2016 Sean Leather)
+- entropy (A platform independent entropy source, Copyright Thomas DuBuisson <thomas.dubuisson@gmail.com>)
+- filepath (Library for manipulating FilePaths in a cross platform way., Copyright Neil Mitchell 2005-2017)
+- ghc-boot-th (Shared functionality between GHC and the @template-haskell@
+library, no copyright notice available)
+- ghc-prim (GHC primitives, no copyright notice available)
+- gitrev (Compile git revision info into Haskell projects, no copyright notice available)
+- hashable (A class for types that can be converted to a hash value, no copyright notice available)
+- haskell-lexer (A fully compliant Haskell 98 lexer., no copyright notice available)
+- hourglass (simple performant time related library, Copyright Vincent Hanquez <vincent@snarc.org>)
+- integer-gmp (Integer library based on GMP, no copyright notice available)
+- memory (memory and related abstraction stuff, Copyright Vincent Hanquez <vincent@snarc.org>)
+- microlens (A tiny lens library with no dependencies. If you're writing an app, you probably want microlens-platform, not this., no copyright notice available)
+- microlens-th (Automatic generation of record lenses for microlens, no copyright notice available)
+- mtl (Monad classes, using functional dependencies, no copyright notice available)
+- network (Low-level networking interface, no copyright notice available)
+- network-uri (URI manipulation, no copyright notice available)
+- parsec (Monadic parser combinators, no copyright notice available)
+- pem (Privacy Enhanced Mail (PEM) format reader and writer., Copyright Vincent Hanquez <vincent@snarc.org>)
+- pretty (Pretty-printing library, no copyright notice available)
+- primitive (Primitive memory-related operations, Copyright (c) Roman Leshchinskiy 2009-2012)
+- process (Process libraries, no copyright notice available)
+- random (random number library, no copyright notice available)
+- rts (, no copyright notice available)
+- scientific (Numbers represented using scientific notation, no copyright notice available)
+- socks (Socks proxy (ver 5), Copyright Vincent Hanquez <vincent@snarc.org>)
+- stm (Software Transactional Memory, no copyright notice available)
+- tagged (Haskell 98 phantom types to avoid unsafely passing dummy arguments, Copyright 2009-2015 Edward A. Kmett)
+- template-haskell (Support library for Template Haskell, no copyright notice available)
+- time (A time library, no copyright notice available)
+- time-locale-compat (Compatibility of TimeLocale between old-locale and time-1.5, Copyright Copyright (c) 2014-2016 Kei Hibino)
+- tls (TLS/SSL protocol native implementation (Server and Client), Copyright Vincent Hanquez <vincent@snarc.org>)
+- transformers (Concrete functor and monad transformers, no copyright notice available)
+- transformers-compat (A small compatibility shim exposing the new types from transformers 0.3 and 0.4 to older Haskell platforms., Copyright Copyright (C) 2012-2015 Edward A. Kmett)
+- unix (POSIX functionality, no copyright notice available)
+- unordered-containers (Efficient hashing-based container types, Copyright 2010-2014 Johan Tibell
+2010 Edward Z. Yang)
+- uuid-types (Type definitions for Universally Unique Identifiers, Copyright (c) 2008-2014 Antoine Latter)
+- vector (Efficient Arrays, Copyright (c) Roman Leshchinskiy 2008-2012)
+- websockets (A sensible and clean way to write WebSocket-capable servers in Haskell., Copyright (c) 2010-2011 Siniša Biđin
+(c) 2011-2013 Jasper Van der Jeugt
+(c) 2011 Steffen Schuldenzucker
+(c) 2011 Alex Lang)
+- x509 (X509 reader and writer, Copyright Vincent Hanquez <vincent@snarc.org>)
+- x509-store (X.509 collection accessing and storing methods, Copyright Vincent Hanquez <vincent@snarc.org>)
+- x509-system (Handle per-operating-system X.509 accessors and storage, Copyright Vincent Hanquez <vincent@snarc.org>)
+- x509-validation (X.509 Certificate and CRL validation, Copyright Vincent Hanquez <vincent@snarc.org>)
+- zlib (Compression and decompression in the gzip and zlib formats, Copyright (c) 2006-2016 Duncan Coutts)
+
+# MIT
+
+- base-compat (A compatibility layer for base, Copyright (c) 2012-2017 Simon Hengel,
+(c) 2014-2017 João Cristóvão,
+(c) 2015-2017 Ryan Scott)
+- integer-logarithms (Integer logarithms., Copyright (c) 2011 Daniel Fischer)
+- pretty-show (Tools for working with derived `Show` instances and generic
+inspection of values., no copyright notice available)
+- streaming-commons (Common lower-level functions needed by various streaming data libraries, no copyright notice available)
+
+# BSD2
+
+- text (An efficient packed Unicode text type., Copyright 2009-2011 Bryan O'Sullivan, 2008-2009 Tom Harper)
+
+# ISC
+
+- th-abstraction (Nicer interface for reified information about data types, Copyright 2017 Eric Mertens)
+
+# BSD3
+
+- HTTP (A library for client-side HTTP, no copyright notice available)
+- SHA (Implementations of the SHA suite of message digest functions, no copyright notice available)
+- aeson (Fast JSON parsing and encoding, Copyright (c) 2011-2016 Bryan O'Sullivan
+(c) 2011 MailRank, Inc.)
+- array (Mutable and immutable arrays, no copyright notice available)
+- asn1-encoding (ASN1 data reader and writer in RAW, BER and DER forms, Copyright Vincent Hanquez <vincent@snarc.org>)
+- asn1-parse (Simple monadic parser for ASN1 stream types., Copyright Vincent Hanquez <vincent@snarc.org>)
+- asn1-types (ASN.1 types, Copyright Vincent Hanquez <vincent@snarc.org>)
+- async (Run IO operations asynchronously and wait for their results, Copyright (c) Simon Marlow 2012)
+- attoparsec (Fast combinator parsing for bytestrings and text, no copyright notice available)
+- base (Basic libraries, no copyright notice available)
+- base64-bytestring (Fast base64 encoding and decoding for ByteStrings, Copyright 2010-2012 Bryan O'Sullivan)
+- binary (Binary serialisation for Haskell values using lazy ByteStrings, no copyright notice available)
+- blaze-builder (Efficient buffered output., Copyright (c) 2010-2014 Simon Meier
+(c) 2010 Jasper Van der Jeugt
+(c) 2013-2015 Leon P Smith)
+- byteable (Type class for sequence of bytes, Copyright Vincent Hanquez <vincent@snarc.org>)
+- bytestring (Fast, compact, strict and lazy byte strings with a list interface, Copyright Copyright (c) Don Stewart          2005-2009,
+(c) Duncan Coutts        2006-2015,
+(c) David Roundy         2003-2005,
+(c) Jasper Van der Jeugt 2010,
+(c) Simon Meier          2010-2013.)
+- case-insensitive (Case insensitive string comparison, Copyright 2011 Bas van Dijk)
+- cereal (A binary serialization library, no copyright notice available)
+- connection (Simple and easy network connections API, Copyright Vincent Hanquez <vincent@snarc.org>)
+- containers (Assorted concrete container types, no copyright notice available)
+- cryptonite (Cryptography Primitives sink, Copyright Vincent Hanquez <vincent@snarc.org>)
+- data-default-class (A class for types with a default value, no copyright notice available)
+- deepseq (Deep evaluation of data structures, no copyright notice available)
+- directory (Platform-agnostic library for filesystem operations, no copyright notice available)
+- dlist (Difference lists, Copyright 2006-2009 Don Stewart, 2013-2016 Sean Leather)
+- entropy (A platform independent entropy source, Copyright Thomas DuBuisson <thomas.dubuisson@gmail.com>)
+- filepath (Library for manipulating FilePaths in a cross platform way., Copyright Neil Mitchell 2005-2017)
+- ghc-boot-th (Shared functionality between GHC and the @template-haskell@
+library, no copyright notice available)
+- ghc-prim (GHC primitives, no copyright notice available)
+- gitrev (Compile git revision info into Haskell projects, no copyright notice available)
+- hashable (A class for types that can be converted to a hash value, no copyright notice available)
+- haskell-lexer (A fully compliant Haskell 98 lexer., no copyright notice available)
+- hourglass (simple performant time related library, Copyright Vincent Hanquez <vincent@snarc.org>)
+- integer-gmp (Integer library based on GMP, no copyright notice available)
+- memory (memory and related abstraction stuff, Copyright Vincent Hanquez <vincent@snarc.org>)
+- microlens (A tiny lens library with no dependencies. If you're writing an app, you probably want microlens-platform, not this., no copyright notice available)
+- microlens-th (Automatic generation of record lenses for microlens, no copyright notice available)
+- monad-control (Lift control operations, like exception catching, through monad transformers, Copyright (c) 2011 Bas van Dijk, Anders Kaseorg)
+- mtl (Monad classes, using functional dependencies, no copyright notice available)
+- network (Low-level networking interface, no copyright notice available)
+- network-uri (URI manipulation, no copyright notice available)
+- parsec (Monadic parser combinators, no copyright notice available)
+- pem (Privacy Enhanced Mail (PEM) format reader and writer., Copyright Vincent Hanquez <vincent@snarc.org>)
+- pretty (Pretty-printing library, no copyright notice available)
+- primitive (Primitive memory-related operations, Copyright (c) Roman Leshchinskiy 2009-2012)
+- process (Process libraries, no copyright notice available)
+- random (random number library, no copyright notice available)
+- resource-pool (A high-performance striped resource pooling implementation, Copyright Copyright 2011 MailRank, Inc.)
+- rts (, no copyright notice available)
+- scientific (Numbers represented using scientific notation, no copyright notice available)
+- socks (Socks proxy (ver 5), Copyright Vincent Hanquez <vincent@snarc.org>)
+- stm (Software Transactional Memory, no copyright notice available)
+- tagged (Haskell 98 phantom types to avoid unsafely passing dummy arguments, Copyright 2009-2015 Edward A. Kmett)
+- template-haskell (Support library for Template Haskell, no copyright notice available)
+- time (A time library, no copyright notice available)
+- time-locale-compat (Compatibility of TimeLocale between old-locale and time-1.5, Copyright Copyright (c) 2014-2016 Kei Hibino)
+- tls (TLS/SSL protocol native implementation (Server and Client), Copyright Vincent Hanquez <vincent@snarc.org>)
+- transformers (Concrete functor and monad transformers, no copyright notice available)
+- transformers-base (Lift computations from the bottom of a transformer stack, Copyright 2011 Mikhail Vorozhtsov <mikhail.vorozhtsov@gmail.com>,
+Bas van Dijk <v.dijk.bas@gmail.com>)
+- transformers-compat (A small compatibility shim exposing the new types from transformers 0.3 and 0.4 to older Haskell platforms., Copyright Copyright (C) 2012-2015 Edward A. Kmett)
+- unix (POSIX functionality, no copyright notice available)
+- unordered-containers (Efficient hashing-based container types, Copyright 2010-2014 Johan Tibell
+2010 Edward Z. Yang)
+- uuid-types (Type definitions for Universally Unique Identifiers, Copyright (c) 2008-2014 Antoine Latter)
+- vector (Efficient Arrays, Copyright (c) Roman Leshchinskiy 2008-2012)
+- websockets (A sensible and clean way to write WebSocket-capable servers in Haskell., Copyright (c) 2010-2011 Siniša Biđin
+(c) 2011-2013 Jasper Van der Jeugt
+(c) 2011 Steffen Schuldenzucker
+(c) 2011 Alex Lang)
+- x509 (X509 reader and writer, Copyright Vincent Hanquez <vincent@snarc.org>)
+- x509-store (X.509 collection accessing and storing methods, Copyright Vincent Hanquez <vincent@snarc.org>)
+- x509-system (Handle per-operating-system X.509 accessors and storage, Copyright Vincent Hanquez <vincent@snarc.org>)
+- x509-validation (X.509 Certificate and CRL validation, Copyright Vincent Hanquez <vincent@snarc.org>)
+- zlib (Compression and decompression in the gzip and zlib formats, Copyright (c) 2006-2016 Duncan Coutts)
+
+# MIT
+
+- base-compat (A compatibility layer for base, Copyright (c) 2012-2017 Simon Hengel,
+(c) 2014-2017 João Cristóvão,
+(c) 2015-2017 Ryan Scott)
+- integer-logarithms (Integer logarithms., Copyright (c) 2011 Daniel Fischer)
+- pretty-show (Tools for working with derived `Show` instances and generic
+inspection of values., no copyright notice available)
+- streaming-commons (Common lower-level functions needed by various streaming data libraries, no copyright notice available)
+
+# BSD2
+
+- text (An efficient packed Unicode text type., Copyright 2009-2011 Bryan O'Sullivan, 2008-2009 Tom Harper)
+
+# ISC
+
+- th-abstraction (Nicer interface for reified information about data types, Copyright 2017 Eric Mertens)
+
+# BSD3
+
+- HTTP (A library for client-side HTTP, no copyright notice available)
+- SHA (Implementations of the SHA suite of message digest functions, no copyright notice available)
+- aeson (Fast JSON parsing and encoding, Copyright (c) 2011-2016 Bryan O'Sullivan
+(c) 2011 MailRank, Inc.)
+- array (Mutable and immutable arrays, no copyright notice available)
+- asn1-encoding (ASN1 data reader and writer in RAW, BER and DER forms, Copyright Vincent Hanquez <vincent@snarc.org>)
+- asn1-parse (Simple monadic parser for ASN1 stream types., Copyright Vincent Hanquez <vincent@snarc.org>)
+- asn1-types (ASN.1 types, Copyright Vincent Hanquez <vincent@snarc.org>)
+- async (Run IO operations asynchronously and wait for their results, Copyright (c) Simon Marlow 2012)
+- attoparsec (Fast combinator parsing for bytestrings and text, no copyright notice available)
+- base (Basic libraries, no copyright notice available)
+- base64-bytestring (Fast base64 encoding and decoding for ByteStrings, Copyright 2010-2012 Bryan O'Sullivan)
+- binary (Binary serialisation for Haskell values using lazy ByteStrings, no copyright notice available)
+- blaze-builder (Efficient buffered output., Copyright (c) 2010-2014 Simon Meier
+(c) 2010 Jasper Van der Jeugt
+(c) 2013-2015 Leon P Smith)
+- byteable (Type class for sequence of bytes, Copyright Vincent Hanquez <vincent@snarc.org>)
+- bytestring (Fast, compact, strict and lazy byte strings with a list interface, Copyright Copyright (c) Don Stewart          2005-2009,
+(c) Duncan Coutts        2006-2015,
+(c) David Roundy         2003-2005,
+(c) Jasper Van der Jeugt 2010,
+(c) Simon Meier          2010-2013.)
+- case-insensitive (Case insensitive string comparison, Copyright 2011 Bas van Dijk)
+- cereal (A binary serialization library, no copyright notice available)
+- connection (Simple and easy network connections API, Copyright Vincent Hanquez <vincent@snarc.org>)
+- containers (Assorted concrete container types, no copyright notice available)
+- cryptonite (Cryptography Primitives sink, Copyright Vincent Hanquez <vincent@snarc.org>)
+- data-default-class (A class for types with a default value, no copyright notice available)
+- deepseq (Deep evaluation of data structures, no copyright notice available)
+- directory (Platform-agnostic library for filesystem operations, no copyright notice available)
+- dlist (Difference lists, Copyright 2006-2009 Don Stewart, 2013-2016 Sean Leather)
+- entropy (A platform independent entropy source, Copyright Thomas DuBuisson <thomas.dubuisson@gmail.com>)
+- filepath (Library for manipulating FilePaths in a cross platform way., Copyright Neil Mitchell 2005-2017)
+- ghc-boot-th (Shared functionality between GHC and the @template-haskell@
+library, no copyright notice available)
+- ghc-prim (GHC primitives, no copyright notice available)
+- gitrev (Compile git revision info into Haskell projects, no copyright notice available)
+- hashable (A class for types that can be converted to a hash value, no copyright notice available)
+- haskell-lexer (A fully compliant Haskell 98 lexer., no copyright notice available)
+- hourglass (simple performant time related library, Copyright Vincent Hanquez <vincent@snarc.org>)
+- integer-gmp (Integer library based on GMP, no copyright notice available)
+- memory (memory and related abstraction stuff, Copyright Vincent Hanquez <vincent@snarc.org>)
+- microlens (A tiny lens library with no dependencies. If you're writing an app, you probably want microlens-platform, not this., no copyright notice available)
+- microlens-th (Automatic generation of record lenses for microlens, no copyright notice available)
+- monad-control (Lift control operations, like exception catching, through monad transformers, Copyright (c) 2011 Bas van Dijk, Anders Kaseorg)
+- mtl (Monad classes, using functional dependencies, no copyright notice available)
+- network (Low-level networking interface, no copyright notice available)
+- network-uri (URI manipulation, no copyright notice available)
+- parsec (Monadic parser combinators, no copyright notice available)
+- pem (Privacy Enhanced Mail (PEM) format reader and writer., Copyright Vincent Hanquez <vincent@snarc.org>)
+- pretty (Pretty-printing library, no copyright notice available)
+- primitive (Primitive memory-related operations, Copyright (c) Roman Leshchinskiy 2009-2012)
+- process (Process libraries, no copyright notice available)
+- random (random number library, no copyright notice available)
+- resource-pool (A high-performance striped resource pooling implementation, Copyright Copyright 2011 MailRank, Inc.)
+- rts (, no copyright notice available)
+- scientific (Numbers represented using scientific notation, no copyright notice available)
+- socks (Socks proxy (ver 5), Copyright Vincent Hanquez <vincent@snarc.org>)
+- stm (Software Transactional Memory, no copyright notice available)
+- tagged (Haskell 98 phantom types to avoid unsafely passing dummy arguments, Copyright 2009-2015 Edward A. Kmett)
+- template-haskell (Support library for Template Haskell, no copyright notice available)
+- time (A time library, no copyright notice available)
+- time-locale-compat (Compatibility of TimeLocale between old-locale and time-1.5, Copyright Copyright (c) 2014-2016 Kei Hibino)
+- tls (TLS/SSL protocol native implementation (Server and Client), Copyright Vincent Hanquez <vincent@snarc.org>)
+- transformers (Concrete functor and monad transformers, no copyright notice available)
+- transformers-base (Lift computations from the bottom of a transformer stack, Copyright 2011 Mikhail Vorozhtsov <mikhail.vorozhtsov@gmail.com>,
+Bas van Dijk <v.dijk.bas@gmail.com>)
+- transformers-compat (A small compatibility shim exposing the new types from transformers 0.3 and 0.4 to older Haskell platforms., Copyright Copyright (C) 2012-2015 Edward A. Kmett)
+- unix (POSIX functionality, no copyright notice available)
+- unordered-containers (Efficient hashing-based container types, Copyright 2010-2014 Johan Tibell
+2010 Edward Z. Yang)
+- uuid-types (Type definitions for Universally Unique Identifiers, Copyright (c) 2008-2014 Antoine Latter)
+- vector (Efficient Arrays, Copyright (c) Roman Leshchinskiy 2008-2012)
+- websockets (A sensible and clean way to write WebSocket-capable servers in Haskell., Copyright (c) 2010-2011 Siniša Biđin
+(c) 2011-2013 Jasper Van der Jeugt
+(c) 2011 Steffen Schuldenzucker
+(c) 2011 Alex Lang)
+- x509 (X509 reader and writer, Copyright Vincent Hanquez <vincent@snarc.org>)
+- x509-store (X.509 collection accessing and storing methods, Copyright Vincent Hanquez <vincent@snarc.org>)
+- x509-system (Handle per-operating-system X.509 accessors and storage, Copyright Vincent Hanquez <vincent@snarc.org>)
+- x509-validation (X.509 Certificate and CRL validation, Copyright Vincent Hanquez <vincent@snarc.org>)
+- zlib (Compression and decompression in the gzip and zlib formats, Copyright (c) 2006-2016 Duncan Coutts)
+
+# MIT
+
+- base-compat (A compatibility layer for base, Copyright (c) 2012-2017 Simon Hengel,
+(c) 2014-2017 João Cristóvão,
+(c) 2015-2017 Ryan Scott)
+- integer-logarithms (Integer logarithms., Copyright (c) 2011 Daniel Fischer)
+- pretty-show (Tools for working with derived `Show` instances and generic
+inspection of values., no copyright notice available)
+- streaming-commons (Common lower-level functions needed by various streaming data libraries, no copyright notice available)
+
+# BSD2
+
+- text (An efficient packed Unicode text type., Copyright 2009-2011 Bryan O'Sullivan, 2008-2009 Tom Harper)
+
+# ISC
+
+- th-abstraction (Nicer interface for reified information about data types, Copyright 2017 Eric Mertens)
+
+# BSD3
+
+- HTTP (A library for client-side HTTP, no copyright notice available)
+- QuickCheck (Automatic testing of Haskell programs, Copyright 2000-2016 Koen Claessen, 2006-2008 Björn Bringert, 2009-2016 Nick Smallbone)
+- SHA (Implementations of the SHA suite of message digest functions, no copyright notice available)
+- aeson (Fast JSON parsing and encoding, Copyright (c) 2011-2016 Bryan O'Sullivan
+(c) 2011 MailRank, Inc.)
+- array (Mutable and immutable arrays, no copyright notice available)
+- asn1-encoding (ASN1 data reader and writer in RAW, BER and DER forms, Copyright Vincent Hanquez <vincent@snarc.org>)
+- asn1-parse (Simple monadic parser for ASN1 stream types., Copyright Vincent Hanquez <vincent@snarc.org>)
+- asn1-types (ASN.1 types, Copyright Vincent Hanquez <vincent@snarc.org>)
+- async (Run IO operations asynchronously and wait for their results, Copyright (c) Simon Marlow 2012)
+- attoparsec (Fast combinator parsing for bytestrings and text, no copyright notice available)
+- base (Basic libraries, no copyright notice available)
+- base64-bytestring (Fast base64 encoding and decoding for ByteStrings, Copyright 2010-2012 Bryan O'Sullivan)
+- binary (Binary serialisation for Haskell values using lazy ByteStrings, no copyright notice available)
+- blaze-builder (Efficient buffered output., Copyright (c) 2010-2014 Simon Meier
+(c) 2010 Jasper Van der Jeugt
+(c) 2013-2015 Leon P Smith)
+- byteable (Type class for sequence of bytes, Copyright Vincent Hanquez <vincent@snarc.org>)
+- bytestring (Fast, compact, strict and lazy byte strings with a list interface, Copyright Copyright (c) Don Stewart          2005-2009,
+(c) Duncan Coutts        2006-2015,
+(c) David Roundy         2003-2005,
+(c) Jasper Van der Jeugt 2010,
+(c) Simon Meier          2010-2013.)
+- case-insensitive (Case insensitive string comparison, Copyright 2011 Bas van Dijk)
+- cereal (A binary serialization library, no copyright notice available)
+- connection (Simple and easy network connections API, Copyright Vincent Hanquez <vincent@snarc.org>)
+- containers (Assorted concrete container types, no copyright notice available)
+- cryptonite (Cryptography Primitives sink, Copyright Vincent Hanquez <vincent@snarc.org>)
+- data-default-class (A class for types with a default value, no copyright notice available)
+- deepseq (Deep evaluation of data structures, no copyright notice available)
+- directory (Platform-agnostic library for filesystem operations, no copyright notice available)
+- dlist (Difference lists, Copyright 2006-2009 Don Stewart, 2013-2016 Sean Leather)
+- entropy (A platform independent entropy source, Copyright Thomas DuBuisson <thomas.dubuisson@gmail.com>)
+- filepath (Library for manipulating FilePaths in a cross platform way., Copyright Neil Mitchell 2005-2017)
+- ghc-boot-th (Shared functionality between GHC and the @template-haskell@
+library, no copyright notice available)
+- ghc-prim (GHC primitives, no copyright notice available)
+- gitrev (Compile git revision info into Haskell projects, no copyright notice available)
+- hashable (A class for types that can be converted to a hash value, no copyright notice available)
+- haskell-lexer (A fully compliant Haskell 98 lexer., no copyright notice available)
+- hourglass (simple performant time related library, Copyright Vincent Hanquez <vincent@snarc.org>)
+- integer-gmp (Integer library based on GMP, no copyright notice available)
+- mattermost-api (Client API for Mattermost chat system, Copyright 2016-2017 Jason Dagit, Getty Ritter, Jonathan Daugherty)
+- memory (memory and related abstraction stuff, Copyright Vincent Hanquez <vincent@snarc.org>)
+- microlens (A tiny lens library with no dependencies. If you're writing an app, you probably want microlens-platform, not this., no copyright notice available)
+- microlens-th (Automatic generation of record lenses for microlens, no copyright notice available)
+- mtl (Monad classes, using functional dependencies, no copyright notice available)
+- network (Low-level networking interface, no copyright notice available)
+- network-uri (URI manipulation, no copyright notice available)
+- parsec (Monadic parser combinators, no copyright notice available)
+- pem (Privacy Enhanced Mail (PEM) format reader and writer., Copyright Vincent Hanquez <vincent@snarc.org>)
+- pretty (Pretty-printing library, no copyright notice available)
+- primitive (Primitive memory-related operations, Copyright (c) Roman Leshchinskiy 2009-2012)
+- process (Process libraries, no copyright notice available)
+- random (random number library, no copyright notice available)
+- rts (, no copyright notice available)
+- scientific (Numbers represented using scientific notation, no copyright notice available)
+- socks (Socks proxy (ver 5), Copyright Vincent Hanquez <vincent@snarc.org>)
+- stm (Software Transactional Memory, no copyright notice available)
+- tagged (Haskell 98 phantom types to avoid unsafely passing dummy arguments, Copyright 2009-2015 Edward A. Kmett)
+- template-haskell (Support library for Template Haskell, no copyright notice available)
+- tf-random (High-quality splittable pseudorandom number generator, no copyright notice available)
+- time (A time library, no copyright notice available)
+- time-locale-compat (Compatibility of TimeLocale between old-locale and time-1.5, Copyright Copyright (c) 2014-2016 Kei Hibino)
+- tls (TLS/SSL protocol native implementation (Server and Client), Copyright Vincent Hanquez <vincent@snarc.org>)
+- transformers (Concrete functor and monad transformers, no copyright notice available)
+- transformers-compat (A small compatibility shim exposing the new types from transformers 0.3 and 0.4 to older Haskell platforms., Copyright Copyright (C) 2012-2015 Edward A. Kmett)
+- unix (POSIX functionality, no copyright notice available)
+- unordered-containers (Efficient hashing-based container types, Copyright 2010-2014 Johan Tibell
+2010 Edward Z. Yang)
+- uuid-types (Type definitions for Universally Unique Identifiers, Copyright (c) 2008-2014 Antoine Latter)
+- vector (Efficient Arrays, Copyright (c) Roman Leshchinskiy 2008-2012)
+- websockets (A sensible and clean way to write WebSocket-capable servers in Haskell., Copyright (c) 2010-2011 Siniša Biđin
+(c) 2011-2013 Jasper Van der Jeugt
+(c) 2011 Steffen Schuldenzucker
+(c) 2011 Alex Lang)
+- x509 (X509 reader and writer, Copyright Vincent Hanquez <vincent@snarc.org>)
+- x509-store (X.509 collection accessing and storing methods, Copyright Vincent Hanquez <vincent@snarc.org>)
+- x509-system (Handle per-operating-system X.509 accessors and storage, Copyright Vincent Hanquez <vincent@snarc.org>)
+- x509-validation (X.509 Certificate and CRL validation, Copyright Vincent Hanquez <vincent@snarc.org>)
+- zlib (Compression and decompression in the gzip and zlib formats, Copyright (c) 2006-2016 Duncan Coutts)
+
+# MIT
+
+- base-compat (A compatibility layer for base, Copyright (c) 2012-2017 Simon Hengel,
+(c) 2014-2017 João Cristóvão,
+(c) 2015-2017 Ryan Scott)
+- integer-logarithms (Integer logarithms., Copyright (c) 2011 Daniel Fischer)
+- pretty-show (Tools for working with derived `Show` instances and generic
+inspection of values., no copyright notice available)
+- streaming-commons (Common lower-level functions needed by various streaming data libraries, no copyright notice available)
+
+# BSD2
+
+- text (An efficient packed Unicode text type., Copyright 2009-2011 Bryan O'Sullivan, 2008-2009 Tom Harper)
+
+# ISC
+
+- th-abstraction (Nicer interface for reified information about data types, Copyright 2017 Eric Mertens)
+
+# BSD3
+
+- HTTP (A library for client-side HTTP, no copyright notice available)
+- QuickCheck (Automatic testing of Haskell programs, Copyright 2000-2016 Koen Claessen, 2006-2008 Björn Bringert, 2009-2016 Nick Smallbone)
+- SHA (Implementations of the SHA suite of message digest functions, no copyright notice available)
+- aeson (Fast JSON parsing and encoding, Copyright (c) 2011-2016 Bryan O'Sullivan
+(c) 2011 MailRank, Inc.)
+- array (Mutable and immutable arrays, no copyright notice available)
+- asn1-encoding (ASN1 data reader and writer in RAW, BER and DER forms, Copyright Vincent Hanquez <vincent@snarc.org>)
+- asn1-parse (Simple monadic parser for ASN1 stream types., Copyright Vincent Hanquez <vincent@snarc.org>)
+- asn1-types (ASN.1 types, Copyright Vincent Hanquez <vincent@snarc.org>)
+- async (Run IO operations asynchronously and wait for their results, Copyright (c) Simon Marlow 2012)
+- attoparsec (Fast combinator parsing for bytestrings and text, no copyright notice available)
+- base (Basic libraries, no copyright notice available)
+- base64-bytestring (Fast base64 encoding and decoding for ByteStrings, Copyright 2010-2012 Bryan O'Sullivan)
+- binary (Binary serialisation for Haskell values using lazy ByteStrings, no copyright notice available)
+- blaze-builder (Efficient buffered output., Copyright (c) 2010-2014 Simon Meier
+(c) 2010 Jasper Van der Jeugt
+(c) 2013-2015 Leon P Smith)
+- byteable (Type class for sequence of bytes, Copyright Vincent Hanquez <vincent@snarc.org>)
+- bytestring (Fast, compact, strict and lazy byte strings with a list interface, Copyright Copyright (c) Don Stewart          2005-2009,
+(c) Duncan Coutts        2006-2015,
+(c) David Roundy         2003-2005,
+(c) Jasper Van der Jeugt 2010,
+(c) Simon Meier          2010-2013.)
+- case-insensitive (Case insensitive string comparison, Copyright 2011 Bas van Dijk)
+- cereal (A binary serialization library, no copyright notice available)
+- connection (Simple and easy network connections API, Copyright Vincent Hanquez <vincent@snarc.org>)
+- containers (Assorted concrete container types, no copyright notice available)
+- cryptonite (Cryptography Primitives sink, Copyright Vincent Hanquez <vincent@snarc.org>)
+- data-default-class (A class for types with a default value, no copyright notice available)
+- deepseq (Deep evaluation of data structures, no copyright notice available)
+- directory (Platform-agnostic library for filesystem operations, no copyright notice available)
+- dlist (Difference lists, Copyright 2006-2009 Don Stewart, 2013-2016 Sean Leather)
+- entropy (A platform independent entropy source, Copyright Thomas DuBuisson <thomas.dubuisson@gmail.com>)
+- filepath (Library for manipulating FilePaths in a cross platform way., Copyright Neil Mitchell 2005-2017)
+- ghc-boot-th (Shared functionality between GHC and the @template-haskell@
+library, no copyright notice available)
+- ghc-prim (GHC primitives, no copyright notice available)
+- gitrev (Compile git revision info into Haskell projects, no copyright notice available)
+- hashable (A class for types that can be converted to a hash value, no copyright notice available)
+- haskell-lexer (A fully compliant Haskell 98 lexer., no copyright notice available)
+- hourglass (simple performant time related library, Copyright Vincent Hanquez <vincent@snarc.org>)
+- integer-gmp (Integer library based on GMP, no copyright notice available)
+- mattermost-api (Client API for Mattermost chat system, Copyright 2016-2017 Jason Dagit, Getty Ritter, Jonathan Daugherty)
+- memory (memory and related abstraction stuff, Copyright Vincent Hanquez <vincent@snarc.org>)
+- microlens (A tiny lens library with no dependencies. If you're writing an app, you probably want microlens-platform, not this., no copyright notice available)
+- microlens-th (Automatic generation of record lenses for microlens, no copyright notice available)
+- monad-control (Lift control operations, like exception catching, through monad transformers, Copyright (c) 2011 Bas van Dijk, Anders Kaseorg)
+- mtl (Monad classes, using functional dependencies, no copyright notice available)
+- network (Low-level networking interface, no copyright notice available)
+- network-uri (URI manipulation, no copyright notice available)
+- parsec (Monadic parser combinators, no copyright notice available)
+- pem (Privacy Enhanced Mail (PEM) format reader and writer., Copyright Vincent Hanquez <vincent@snarc.org>)
+- pretty (Pretty-printing library, no copyright notice available)
+- primitive (Primitive memory-related operations, Copyright (c) Roman Leshchinskiy 2009-2012)
+- process (Process libraries, no copyright notice available)
+- random (random number library, no copyright notice available)
+- resource-pool (A high-performance striped resource pooling implementation, Copyright Copyright 2011 MailRank, Inc.)
+- rts (, no copyright notice available)
+- scientific (Numbers represented using scientific notation, no copyright notice available)
+- socks (Socks proxy (ver 5), Copyright Vincent Hanquez <vincent@snarc.org>)
+- stm (Software Transactional Memory, no copyright notice available)
+- tagged (Haskell 98 phantom types to avoid unsafely passing dummy arguments, Copyright 2009-2015 Edward A. Kmett)
+- template-haskell (Support library for Template Haskell, no copyright notice available)
+- tf-random (High-quality splittable pseudorandom number generator, no copyright notice available)
+- time (A time library, no copyright notice available)
+- time-locale-compat (Compatibility of TimeLocale between old-locale and time-1.5, Copyright Copyright (c) 2014-2016 Kei Hibino)
+- tls (TLS/SSL protocol native implementation (Server and Client), Copyright Vincent Hanquez <vincent@snarc.org>)
+- transformers (Concrete functor and monad transformers, no copyright notice available)
+- transformers-base (Lift computations from the bottom of a transformer stack, Copyright 2011 Mikhail Vorozhtsov <mikhail.vorozhtsov@gmail.com>,
+Bas van Dijk <v.dijk.bas@gmail.com>)
+- transformers-compat (A small compatibility shim exposing the new types from transformers 0.3 and 0.4 to older Haskell platforms., Copyright Copyright (C) 2012-2015 Edward A. Kmett)
+- unix (POSIX functionality, no copyright notice available)
+- unordered-containers (Efficient hashing-based container types, Copyright 2010-2014 Johan Tibell
+2010 Edward Z. Yang)
+- uuid-types (Type definitions for Universally Unique Identifiers, Copyright (c) 2008-2014 Antoine Latter)
+- vector (Efficient Arrays, Copyright (c) Roman Leshchinskiy 2008-2012)
+- websockets (A sensible and clean way to write WebSocket-capable servers in Haskell., Copyright (c) 2010-2011 Siniša Biđin
+(c) 2011-2013 Jasper Van der Jeugt
+(c) 2011 Steffen Schuldenzucker
+(c) 2011 Alex Lang)
+- x509 (X509 reader and writer, Copyright Vincent Hanquez <vincent@snarc.org>)
+- x509-store (X.509 collection accessing and storing methods, Copyright Vincent Hanquez <vincent@snarc.org>)
+- x509-system (Handle per-operating-system X.509 accessors and storage, Copyright Vincent Hanquez <vincent@snarc.org>)
+- x509-validation (X.509 Certificate and CRL validation, Copyright Vincent Hanquez <vincent@snarc.org>)
+- zlib (Compression and decompression in the gzip and zlib formats, Copyright (c) 2006-2016 Duncan Coutts)
+
+# MIT
+
+- base-compat (A compatibility layer for base, Copyright (c) 2012-2017 Simon Hengel,
+(c) 2014-2017 João Cristóvão,
+(c) 2015-2017 Ryan Scott)
+- integer-logarithms (Integer logarithms., Copyright (c) 2011 Daniel Fischer)
+- pretty-show (Tools for working with derived `Show` instances and generic
+inspection of values., no copyright notice available)
+- streaming-commons (Common lower-level functions needed by various streaming data libraries, no copyright notice available)
+
+# BSD2
+
+- text (An efficient packed Unicode text type., Copyright 2009-2011 Bryan O'Sullivan, 2008-2009 Tom Harper)
+
+# ISC
+
+- th-abstraction (Nicer interface for reified information about data types, Copyright 2017 Eric Mertens)
+
+# BSD3
+
+- HTTP (A library for client-side HTTP, no copyright notice available)
+- QuickCheck (Automatic testing of Haskell programs, Copyright 2000-2016 Koen Claessen, 2006-2008 Björn Bringert, 2009-2016 Nick Smallbone)
+- SHA (Implementations of the SHA suite of message digest functions, no copyright notice available)
+- aeson (Fast JSON parsing and encoding, Copyright (c) 2011-2016 Bryan O'Sullivan
+(c) 2011 MailRank, Inc.)
+- array (Mutable and immutable arrays, no copyright notice available)
+- asn1-encoding (ASN1 data reader and writer in RAW, BER and DER forms, Copyright Vincent Hanquez <vincent@snarc.org>)
+- asn1-parse (Simple monadic parser for ASN1 stream types., Copyright Vincent Hanquez <vincent@snarc.org>)
+- asn1-types (ASN.1 types, Copyright Vincent Hanquez <vincent@snarc.org>)
+- async (Run IO operations asynchronously and wait for their results, Copyright (c) Simon Marlow 2012)
+- attoparsec (Fast combinator parsing for bytestrings and text, no copyright notice available)
+- base (Basic libraries, no copyright notice available)
+- base64-bytestring (Fast base64 encoding and decoding for ByteStrings, Copyright 2010-2012 Bryan O'Sullivan)
+- binary (Binary serialisation for Haskell values using lazy ByteStrings, no copyright notice available)
+- blaze-builder (Efficient buffered output., Copyright (c) 2010-2014 Simon Meier
+(c) 2010 Jasper Van der Jeugt
+(c) 2013-2015 Leon P Smith)
+- byteable (Type class for sequence of bytes, Copyright Vincent Hanquez <vincent@snarc.org>)
+- bytestring (Fast, compact, strict and lazy byte strings with a list interface, Copyright Copyright (c) Don Stewart          2005-2009,
+(c) Duncan Coutts        2006-2015,
+(c) David Roundy         2003-2005,
+(c) Jasper Van der Jeugt 2010,
+(c) Simon Meier          2010-2013.)
+- case-insensitive (Case insensitive string comparison, Copyright 2011 Bas van Dijk)
+- cereal (A binary serialization library, no copyright notice available)
+- connection (Simple and easy network connections API, Copyright Vincent Hanquez <vincent@snarc.org>)
+- containers (Assorted concrete container types, no copyright notice available)
+- cryptonite (Cryptography Primitives sink, Copyright Vincent Hanquez <vincent@snarc.org>)
+- data-default-class (A class for types with a default value, no copyright notice available)
+- deepseq (Deep evaluation of data structures, no copyright notice available)
+- directory (Platform-agnostic library for filesystem operations, no copyright notice available)
+- dlist (Difference lists, Copyright 2006-2009 Don Stewart, 2013-2016 Sean Leather)
+- entropy (A platform independent entropy source, Copyright Thomas DuBuisson <thomas.dubuisson@gmail.com>)
+- filepath (Library for manipulating FilePaths in a cross platform way., Copyright Neil Mitchell 2005-2017)
+- ghc-boot-th (Shared functionality between GHC and the @template-haskell@
+library, no copyright notice available)
+- ghc-prim (GHC primitives, no copyright notice available)
+- gitrev (Compile git revision info into Haskell projects, no copyright notice available)
+- hashable (A class for types that can be converted to a hash value, no copyright notice available)
+- haskell-lexer (A fully compliant Haskell 98 lexer., no copyright notice available)
+- hourglass (simple performant time related library, Copyright Vincent Hanquez <vincent@snarc.org>)
+- integer-gmp (Integer library based on GMP, no copyright notice available)
+- mattermost-api (Client API for Mattermost chat system, Copyright 2016-2017 Jason Dagit, Getty Ritter, Jonathan Daugherty)
+- memory (memory and related abstraction stuff, Copyright Vincent Hanquez <vincent@snarc.org>)
+- microlens (A tiny lens library with no dependencies. If you're writing an app, you probably want microlens-platform, not this., no copyright notice available)
+- microlens-th (Automatic generation of record lenses for microlens, no copyright notice available)
+- monad-control (Lift control operations, like exception catching, through monad transformers, Copyright (c) 2011 Bas van Dijk, Anders Kaseorg)
+- mtl (Monad classes, using functional dependencies, no copyright notice available)
+- network (Low-level networking interface, no copyright notice available)
+- network-uri (URI manipulation, no copyright notice available)
+- parsec (Monadic parser combinators, no copyright notice available)
+- pem (Privacy Enhanced Mail (PEM) format reader and writer., Copyright Vincent Hanquez <vincent@snarc.org>)
+- pretty (Pretty-printing library, no copyright notice available)
+- primitive (Primitive memory-related operations, Copyright (c) Roman Leshchinskiy 2009-2012)
+- process (Process libraries, no copyright notice available)
+- random (random number library, no copyright notice available)
+- resource-pool (A high-performance striped resource pooling implementation, Copyright Copyright 2011 MailRank, Inc.)
+- rts (, no copyright notice available)
+- scientific (Numbers represented using scientific notation, no copyright notice available)
+- socks (Socks proxy (ver 5), Copyright Vincent Hanquez <vincent@snarc.org>)
+- stm (Software Transactional Memory, no copyright notice available)
+- tagged (Haskell 98 phantom types to avoid unsafely passing dummy arguments, Copyright 2009-2015 Edward A. Kmett)
+- template-haskell (Support library for Template Haskell, no copyright notice available)
+- tf-random (High-quality splittable pseudorandom number generator, no copyright notice available)
+- time (A time library, no copyright notice available)
+- time-locale-compat (Compatibility of TimeLocale between old-locale and time-1.5, Copyright Copyright (c) 2014-2016 Kei Hibino)
+- tls (TLS/SSL protocol native implementation (Server and Client), Copyright Vincent Hanquez <vincent@snarc.org>)
+- transformers (Concrete functor and monad transformers, no copyright notice available)
+- transformers-base (Lift computations from the bottom of a transformer stack, Copyright 2011 Mikhail Vorozhtsov <mikhail.vorozhtsov@gmail.com>,
+Bas van Dijk <v.dijk.bas@gmail.com>)
+- transformers-compat (A small compatibility shim exposing the new types from transformers 0.3 and 0.4 to older Haskell platforms., Copyright Copyright (C) 2012-2015 Edward A. Kmett)
+- unix (POSIX functionality, no copyright notice available)
+- unordered-containers (Efficient hashing-based container types, Copyright 2010-2014 Johan Tibell
+2010 Edward Z. Yang)
+- uuid-types (Type definitions for Universally Unique Identifiers, Copyright (c) 2008-2014 Antoine Latter)
+- vector (Efficient Arrays, Copyright (c) Roman Leshchinskiy 2008-2012)
+- websockets (A sensible and clean way to write WebSocket-capable servers in Haskell., Copyright (c) 2010-2011 Siniša Biđin
+(c) 2011-2013 Jasper Van der Jeugt
+(c) 2011 Steffen Schuldenzucker
+(c) 2011 Alex Lang)
+- x509 (X509 reader and writer, Copyright Vincent Hanquez <vincent@snarc.org>)
+- x509-store (X.509 collection accessing and storing methods, Copyright Vincent Hanquez <vincent@snarc.org>)
+- x509-system (Handle per-operating-system X.509 accessors and storage, Copyright Vincent Hanquez <vincent@snarc.org>)
+- x509-validation (X.509 Certificate and CRL validation, Copyright Vincent Hanquez <vincent@snarc.org>)
+- zlib (Compression and decompression in the gzip and zlib formats, Copyright (c) 2006-2016 Duncan Coutts)
+
+# MIT
+
+- base-compat (A compatibility layer for base, Copyright (c) 2012-2017 Simon Hengel,
+(c) 2014-2017 João Cristóvão,
+(c) 2015-2017 Ryan Scott)
+- integer-logarithms (Integer logarithms., Copyright (c) 2011 Daniel Fischer)
+- pretty-show (Tools for working with derived `Show` instances and generic
+inspection of values., no copyright notice available)
+- streaming-commons (Common lower-level functions needed by various streaming data libraries, no copyright notice available)
+
+# BSD2
+
+- text (An efficient packed Unicode text type., Copyright 2009-2011 Bryan O'Sullivan, 2008-2009 Tom Harper)
+
+# ISC
+
+- th-abstraction (Nicer interface for reified information about data types, Copyright 2017 Eric Mertens)
+
