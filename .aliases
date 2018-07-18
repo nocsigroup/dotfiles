@@ -9,6 +9,6 @@ alias tmux='direnv exec / tmux'
 alias gp='java -jar $HOME/.bin/gp.jar'
 alias rrepl="rustup run nightly-2016-08-01 ~/.cargo/bin/rusti"
 #alias pyenv="CFLAGS='-I$(brew --prefix openssl)/include -I$(xcrun --show-sdk-path)/usr/include' LDFLAGS='-L$(brew --prefix openssl)/lib pyenv'"
-alias curl="/usr/local/Cellar/curl/7.60.0/bin/curl"
+alias curl="$(brew --prefix curl)/bin/curl"
 #alias curlwifi="/usr/local/Cellar/curl/7.60.0/bin/curl -Lo /dev/null -skw '\ntime_connect: %{time_connect}s\ntime_namelookup: %{time_namelookup}s\ntime_pretransfer: %{time_pretransfer}\ntime_starttransfer: %{time_starttransfer}s\ntime_redirect: %{time_redirect}s\ntime_total: %{time_total}s\n\n' --interface en0 --progress-bar --verbose"
-alias curlwifi="/usr/local/Cellar/curl/7.60.0/bin/curl --progress-bar --interface en0 -C - -O"
+alias curlwifi="$(brew --prefix curl)/bin/curl --progress-bar --interface en0 -C - -O"

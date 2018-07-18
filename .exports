@@ -1,7 +1,7 @@
 export MANTA_URL="https://manta.nocsi.org"
 export MANTA_USER=locnguyen
 unset MANTA_SUBUSER
-export MANTA_KEY_ID="54:8f:89:22:58:90:0e:14:3a:90:f7:de:63:2e:d6:ef"
+export MANTA_KEY_ID=54:8f:89:22:58:90:0e:14:3a:90:f7:de:63:2e:d6:ef
 export TRITON_DC=triton
 export TRITON_ACCOUNT=locnguyen
 unset TRITON_USER
@@ -51,6 +51,7 @@ export TRITON_PROFILE="triton"
 
 export VAULT_ADDR=http://vault.nocsi.org:8200
 
+export PKG_CONFIG_PATH="$(brew --prefix openssl)/lib/pkgconfig"
 export PATH="$HOME/.cargo/bin:$PATH"
 export PATH="/opt/piv-agent/bin:$PATH"
 

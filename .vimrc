@@ -22,7 +22,7 @@ if !empty(glob('~/.vim/autoload/plug.vim'))
     " Shortcuts
     Plug 'rizzatti/dash.vim'
     Plug 'direnv/direnv.vim'
-    Plug 'roxma/nvim-completion-manager'
+    " Plug 'roxma/nvim-completion-manager'
     Plug 'jeetsukumaran/vim-indentwise'
     Plug 'OmniSharp/omnisharp-vim'
     Plug 'christoomey/vim-tmux-navigator'
@@ -91,7 +91,6 @@ if !empty(glob('~/.vim/autoload/plug.vim'))
     Plug 'rbgrouleff/bclose.vim'
     " Application
     Plug 'mattn/webapi-vim'
-    Plug 'mmai/vim-markdown-wiki'
     Plug 'majutsushi/tagbar'
     " Add plugins to &runtimepath
   call plug#end()
