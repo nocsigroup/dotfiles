@@ -59,3 +59,5 @@ source $HOME/.aliases
 #    eval `/usr/libexec/path_helper -s`
 #fi
 #zprof
+
+[ -f ~/.fzf.zsh ] && source ~/.fzf.zsh

@@ -23,7 +23,7 @@ export LLVM_CONFIG=llvm-config
 #export CPPFLAGS="-I/usr/local/opt/llvm/include"
 #export CXXFLAGS="$CXXFLAGS -nostdinc++ -I/usr/local/opt/llvm/include/c++/v1"
 
-export GOPATH=$HOME/golang
+export GOPATH=$HOME/.golang
 export GOROOT=/usr/local/opt/go/libexec
 export GOBIN=$GOPATH/bin
 export PATH=$PATH:$GOPATH:$GOROOT/bin:$GOBIN
