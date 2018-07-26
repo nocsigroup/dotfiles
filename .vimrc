@@ -30,7 +30,7 @@ if !empty(glob('~/.vim/autoload/plug.vim'))
     Plug 'honza/vim-snippets'
     " Langs
     Plug 'sheerun/vim-polyglot'
-    Plug 'Valloric/YouCompleteMe', { 'do': './install.py --all' }
+    Plug 'Valloric/YouCompleteMe', { 'do': './install.py --clang-completer --go-completer --js-completer --rust-completer --java-completer' }
     Plug 'rdnetto/YCM-Generator', { 'branch': 'stable' }
     Plug 'rust-lang/rust.vim'
     Plug 'racer-rust/vim-racer'

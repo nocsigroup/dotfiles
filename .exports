@@ -17,36 +17,32 @@ export DYLD_LIBRARY_PATH=/usr/local/opt/unicorn/lib/:/usr/local/opt/capstone/lib
 export CC=/usr/local/opt/llvm/bin/clang
 export CXX=/usr/local/opt/llvm/bin/clang++
 export LLVM_CONFIG=llvm-config
+export CFLAGS="$CFLAGS -I/usr/local/opt/openssl/include -I$(xcrun --show-sdk-path)/usr/include -I/usr/local/opt/readline/include -march=native -O2"
+export CPPFLAGS="-I/usr/local/opt/llvm/include"
+export CXXFLAGS="$CXXFLAGS -nostdinc++ -I/usr/local/opt/llvm/include/c++/v1"
+export LDFLAGS="$LDFLAGS -L/usr/local/opt/openssl/lib -L/usr/local/opt/readline/lib"
 #export CFLAGS="$CFLAGS -I$(brew --prefix openssl)/include -I$(xcrun --show-sdk-path)/usr/include -I$(brew --prefix readline)/include -march=native -O2"
 #export LDFLAGS="$LDFLAGS -L/usr/local/opt/llvm/lib -Wl,-rpath,/usr/local/opt/llvm/lib"
-#export LDFLAGS="$LDFLAGS -L$(brew --prefix openssl)/lib -L$(brew --prefix readline)/lib"
-#export CPPFLAGS="-I/usr/local/opt/llvm/include"
-#export CXXFLAGS="$CXXFLAGS -nostdinc++ -I/usr/local/opt/llvm/include/c++/v1"
 
 export GOPATH=$HOME/.golang
 export GOROOT=/usr/local/opt/go/libexec
 export GOBIN=$GOPATH/bin
 export PATH=$PATH:$GOPATH:$GOROOT/bin:$GOBIN
-export PYENV_ROOT="$HOME/.pyenv"
 
 export PYTHON_CONFIGURE_OPTS="--enable-framework --with-computed-gotos"
 export PYTHONIOENCODING='UTF-8'
+export PYENV_ROOT="$HOME/.pyenv"
+export PYENV_VIRTUALENVWRAPPER_PREFER_PYVENV="true"
+export PIP_REQUIRE_VIRTUALENV=true
 export OPENSSL_STATIC=yes
 
 export CLICOLOR=1
 export EDITOR="nvim"
 export VISUAL="nvim"
-#export GIT_UNCOMMITTED="+"
-#export GIT_UNSTAGED="!"
-#export GIT_UNTRACKED="?"
-#export GIT_STASHED="$"
-#export GIT_UNPULLED="⇣"
-#export GIT_UNPUSHED="⇡"
-
 export VAULT_ADDR=http://vault.nocsi.org:8200
 
-#export PKG_CONFIG_PATH="$(brew --prefix openssl)/lib/pkgconfig"
 export PKG_CONFIG_PATH="/usr/local/opt/openssl/lib/pkgconfig"
+#export PKG_CONFIG_PATH="$(brew --prefix openssl)/lib/pkgconfig"
 #export PATH="$HOME/.cargo/bin:$PATH"
 #export PATH="/opt/piv-agent/bin:$PATH"
 export PATH="$HOME/.cargo/bin:/opt/piv-agent/bin:$PYENV_ROOT/bin:/usr/local/opt/llvm/bin:$HOME/.mix:$PATH"

@@ -55,6 +55,9 @@ export PURE_PROMPT_SYMBOL="${SYMBOLS[$RANDOM % ${#SYMBOLS[@]} + 1]}"
 source $HOME/.exports
 source $HOME/.aliases
 
+if which pyenv > /dev/null; then eval "$(pyenv init -)"; fi
+if which pyenv-virtualenv-init > /dev/null; then eval "$(pyenv virtualenv-init -)"; fi
+
 #if [ -x /usr/libexec/path_helper ]; then
 #    eval `/usr/libexec/path_helper -s`
 #fi
