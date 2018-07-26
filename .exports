@@ -13,6 +13,8 @@ export TRITON_URL="https://triton.nocsi.org"
 export TRITON_KEY_ID="54:8f:89:22:58:90:0e:14:3a:90:f7:de:63:2e:d6:ef"
 export TRITON_PROFILE="triton"
 
+export VAGRANT_SERVER_URL="https://kyozo.nocsi.org"
+
 export DYLD_LIBRARY_PATH=/usr/local/opt/unicorn/lib/:/usr/local/opt/capstone/lib/:/usr/local/opt/keyston/lib/:$DYLD_LIBRARY_PATH
 export CC=/usr/local/opt/llvm/bin/clang
 export CXX=/usr/local/opt/llvm/bin/clang++

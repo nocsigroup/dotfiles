@@ -58,6 +58,25 @@ source $HOME/.aliases
 if which pyenv > /dev/null; then eval "$(pyenv init -)"; fi
 if which pyenv-virtualenv-init > /dev/null; then eval "$(pyenv virtualenv-init -)"; fi
 
+nixify() {
+  if [ ! -e ./.envrc ]; then
+    echo "use nix" > .envrc
+    direnv allow
+  fi
+  if [ ! -e default.nix ]; then
+    cat > default.nix <<'EOF'
+with import <nixpkgs> {};
+stdenv.mkDerivation {
+  name = "env";
+  buildInputs = [
+    bashInteractive
+  ];
+}
+EOF
+    ${EDITOR:-vim} default.nix
+  fi
+}
+
 #if [ -x /usr/libexec/path_helper ]; then
 #    eval `/usr/libexec/path_helper -s`
 #fi
