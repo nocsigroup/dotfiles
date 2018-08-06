@@ -127,6 +127,7 @@ chunkc tiling::rule --owner Fantastical --state float &
 chunkc tiling::rule --owner Messages --state float &
 chunkc tiling::rule --owner NyaoVim --except "^$" --state tile &
 chunkc tiling::rule --owner Quiver --state float &
+chunkc tiling::rule --owner \"Pinentry Mac\" --state float &
 chunkc tiling::rule --owner \"Royal TSX\" --state float &
 chunkc tiling::rule --owner Safari --state float &
 chunkc tiling::rule --owner Timing --except "^$" --state float &

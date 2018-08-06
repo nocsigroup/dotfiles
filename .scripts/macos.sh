@@ -95,8 +95,8 @@ defaults write com.apple.finder ShowRemovableMediaOnDesktop -bool true
 echo "  › Expand save panel by default"
 defaults write NSGlobalDomain NSNavPanelExpandedStateForSaveMode -bool true
 
-echo "  › Set sidebar icon size to small"
-defaults write NSGlobalDomain NSTableViewDefaultSizeMode -int 1
+#echo "  › Set sidebar icon size to small"
+#defaults write NSGlobalDomain NSTableViewDefaultSizeMode -int 1
 
 echo "  › Show status bar"
 defaults write com.apple.finder ShowStatusBar -bool true
@@ -120,10 +120,10 @@ defaults -currentHost write com.apple.ImageCapture disableHotPlug -bool true
 
 #############################
 
-echo ""
-echo "› Dock"
-echo "  › Setting the icon size of Dock items to 36 pixels for optimal size/screen-realestate"
-defaults write com.apple.dock tilesize -int 36
+#echo ""
+#echo "› Dock"
+#echo "  › Setting the icon size of Dock items to 36 pixels for optimal size/screen-realestate"
+#defaults write com.apple.dock tilesize -int 36
 
 echo "  › Speeding up Mission Control animations and grouping windows by application"
 defaults write com.apple.dock expose-animation-duration -float 0.1
@@ -183,7 +183,7 @@ hash tmutil &> /dev/null && sudo tmutil disable local
 defaults write com.apple.ActivityMonitor OpenMainWindow -bool true
 
 # Visualize CPU usage in the Activity Monitor Dock icon
-defaults write com.apple.ActivityMonitor IconType -int 5
+#defaults write com.apple.ActivityMonitor IconType -int 5
 
 # Show all processes in Activity Monitor
 defaults write com.apple.ActivityMonitor ShowCategory -int 0

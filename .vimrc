@@ -227,6 +227,7 @@ set clipboard=unnamed
 
 autocmd FileType javascript let g:SuperTabDefaultCompletionType = "<c-x><c-o>"
 let g:UltiSnipsExpandTrigger="<C-j>"
+let g:actualvim = 0
 inoremap <expr><TAB>  pumvisible() ? "\<C-n>" : "\<TAB>"
 
 for s:fpath in split(globpath("~/.vim/scripts", '*.vim'), '\n')
