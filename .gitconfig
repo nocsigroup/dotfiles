@@ -7,7 +7,9 @@
 [gpg]
 	program = /usr/local/MacGPG2/bin/gpg2
 [credential]
-	helper = osxkeychain
+  helper = osxkeychain
+[credential "https://github.com"]
+  username = nocsi
 [filter "lfs"]
 	clean = git-lfs clean -- %f
 	smudge = git-lfs smudge -- %f
