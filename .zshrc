@@ -1,7 +1,6 @@
 #zmodload zsh/zprof
 export PATH="$HOME/.bin:/usr/local/bin:/usr/local/sbin:$(getconf PATH)"
-if [[ ! -f "$HOME/.zplugin/bin/zplugin.zsh" ]]; then
-  if (( $+commands[git] )); then
+if [[ ! -f "$HOME/.zplugin/bin/zplugin.zsh" ]]; then if (( $+commands[git] )); then
     git clone https://github.com/zdharma/zplugin.git ~/.zplugin/bin
   else
     echo 'git not found' >&2
