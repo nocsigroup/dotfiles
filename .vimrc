@@ -12,28 +12,33 @@ if !empty(glob('~/.vim/autoload/plug.vim'))
     Plug 'itchyny/lightline.vim'
     Plug 'fxn/vim-monochrome'
     " Navigation
+    Plug 'xolox/vim-misc'
+    Plug 'xolox/vim-session'
     Plug 'tpope/vim-rsi'
     Plug 'google/vim-searchindex' " Show match count for search
-    Plug 'junegunn/fzf', { 'dir': '~/.fzf', 'do': './install --all' }
-    Plug 'junegunn/fzf.vim'
+    if isdirectory('/usr/local/opt/fzf')
+      Plug '/usr/local/opt/fzf' | Plug 'junegunn/fzf.vim'
+    else
+      Plug 'junegunn/fzf', { 'dir': '~/.fzf', 'do': './install --bin' }
+      Plug 'junegunn/fzf.vim'
+    endif
     " Git
     Plug 'tpope/vim-fugitive'
     Plug 'airblade/vim-gitgutter'
     " Shortcuts
     Plug 'rizzatti/dash.vim'
     Plug 'direnv/direnv.vim'
-    " Plug 'roxma/nvim-completion-manager'
     Plug 'jeetsukumaran/vim-indentwise'
     Plug 'OmniSharp/omnisharp-vim'
     Plug 'christoomey/vim-tmux-navigator'
     Plug 'SirVer/ultisnips'
     Plug 'honza/vim-snippets'
+    Plug 'vim-scripts/grep.vim'
+    Plug 'vim-scripts/CSApprox'
     " Langs
     Plug 'sheerun/vim-polyglot'
     Plug 'Valloric/YouCompleteMe', { 'do': './install.py --clang-completer --go-completer --js-completer --rust-completer --java-completer' }
     Plug 'rdnetto/YCM-Generator', { 'branch': 'stable' }
-    Plug 'rust-lang/rust.vim'
-    Plug 'racer-rust/vim-racer'
     Plug 'vim-syntastic/syntastic' 
     Plug 'Shirk/vim-gas'
     Plug 'PProvost/vim-ps1'
@@ -55,12 +60,16 @@ if !empty(glob('~/.vim/autoload/plug.vim'))
     Plug 'zchee/deoplete-jedi', { 'do': ':UpdateRemotePlugins' }
     Plug 'davidhalter/jedi-vim'
     Plug 'sebastianmarkow/deoplete-rust'
+    " Rust
+    Plug 'rust-lang/rust.vim'
+    Plug 'racer-rust/vim-racer'
     " Erlang
     Plug 'vim-erlang/vim-erlang-tags'
     Plug 'vim-erlang/vim-erlang-runtime'
     Plug 'vim-erlang/vim-erlang-omnicomplete'
     Plug 'vim-erlang/vim-erlang-compiler'
     " Elixir
+    Plug 'w0rp/ale'
     Plug 'elixir-editors/vim-elixir'
     Plug 'avdgaag/vim-phoenix'
     Plug 'mmorearty/elixir-ctags'
@@ -68,8 +77,9 @@ if !empty(glob('~/.vim/autoload/plug.vim'))
     Plug 'BjRo/vim-extest'
     Plug 'frost/vim-eh-docs'
     Plug 'slashmili/alchemist.vim'
-    Plug 'tpope/vim-endwise'
     Plug 'jadercorrea/elixir_generator.vim'
+    Plug 'carlosgaldino/elixir-snippets'
+    Plug 'tpope/vim-endwise'
     " Markup
     Plug 'vim-pandoc/vim-pandoc'
     Plug 'vim-pandoc/vim-pandoc-syntax'
@@ -113,10 +123,13 @@ set nocompatible              " be iMproved, required
 filetype off                  " required
 filetype plugin indent on
 set encoding=utf8
-set tabstop=2
-set shiftwidth=2
-set expandtab
 set exrc
+
+" session management
+let g:session_directory = "~/.config/nvim/session"
+let g:session_autoload = "no"
+let g:session_autosave = "no"
+let g:session_command_aliases = 1
 
 hi Comment cterm=italic
 hi vertsplit ctermfg=238 ctermbg=235
@@ -149,7 +162,8 @@ syntax enable
 set t_Co=256
 set termguicolors
 set background=dark
-set guifont=SpaceMonoForPowerline:h10 
+set guifont=SpaceMonoForPowerline:h12
+
 
 let &t_8f="\<Esc>[38;2;%lu;%lu;%lum"
 let &t_8b="\<Esc>[48;2;%lu;%lu;%lum"
@@ -157,7 +171,7 @@ let g:monochrome_italic_comments = 1
 colorscheme monochrome
 
 let g:lightline = {
-  \   'colorscheme': 'nord',
+  \   'colorscheme': 'seoul256',
   \   'active': {
   \     'left':[ [ 'mode', 'paste' ],
   \              [ 'gitbranch', 'readonly', 'filename', 'modified' ]
@@ -170,7 +184,6 @@ let g:lightline = {
   \     'gitbranch': 'fugitive#head',
   \   }
   \ }
-set showtabline=2  " Show tabline
 set guioptions-=e  " Don't use GUI tabline
 set statusline=%=&P\ %f\ %m
 
@@ -224,6 +237,18 @@ set noshowmode
 set laststatus=2
 set shell=/usr/local/bin/zsh
 set clipboard=unnamed
+
+" MacOS backspace fix
+set backspace=indent,eol,start
+set foldmethod=syntax
+set foldlevelstart=99
+set smartindent
+set tabstop=2
+set showtabline=2  " Show tabline
+set shiftwidth=2
+set expandtab
+set lazyredraw
+
 
 autocmd FileType javascript let g:SuperTabDefaultCompletionType = "<c-x><c-o>"
 let g:UltiSnipsExpandTrigger="<C-j>"

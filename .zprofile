@@ -1,6 +1,7 @@
 if [[ ! -e "$SSH_AUTH_SOCK" || "$SSH_AUTH_SOCK" == *"launchd"* ]]; then
-  source $HOME/.ssh/agent.env > /dev/null
+  SSH_AUTH_SOCK=$HOME/.ssh/pivy-agent.sock; export SSH_AUTH_SOCK;
 fi
+
 
 export MANPAGER='less -s -M +Gg'
 export LESS="--RAW-CONTROL-CHARS"

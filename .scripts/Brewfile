@@ -7,41 +7,43 @@ tap "homebrew/core"
 tap "homebrew/services"
 tap "koekeishiya/formulae"
 tap "minio/stable"
-cask "java"
-cask "xquartz"
 brew "openssl"
 brew "readline"
-brew "python@2", args: ["with-tcl-tk"]
+brew "xz"
+brew "python"
 brew "ansible"
 brew "ansifilter"
 brew "autoconf"
 brew "automake"
-brew "python"
-brew "azure-cli"
 brew "bash"
 brew "beanstalkd"
-brew "binutils"
+brew "p7zip"
+brew "binwalk"
 brew "bison"
 brew "bochs"
 brew "capstone", args: ["HEAD"]
+brew "carthage"
 brew "cmake"
 brew "cmocka"
 brew "coreutils"
 brew "ctags"
-brew "curl", args: ["with-gssapi", "with-libssh2", "with-nghttp2"]
-brew "erlang", args: ["with-dirty-schedulers", "with-native-libs"]
+brew "curl"
+brew "openssl@1.1"
+brew "erlang"
 brew "elixir"
 brew "envchain"
 brew "gettext"
 brew "flex"
+brew "python@2"
 brew "fpp"
 brew "webp"
-brew "geckodriver"
 brew "git-lfs"
 brew "glib"
 brew "gnu-sed"
 brew "go"
-brew "haskell-stack"
+brew "libtool"
+brew "hadolint"
+brew "ncurses"
 brew "htop"
 brew "ifstat"
 brew "iperf"
@@ -51,59 +53,57 @@ brew "kerl"
 brew "keystone"
 brew "krb5"
 brew "libiconv"
+brew "libssh2"
 brew "libusb"
 brew "libuv"
-brew "llvm", args: ["with-graphviz", "with-polly-gpgpu", "with-python@2", "with-shared-libs", "with-toolchain"]
+brew "llvm"
 brew "lzip"
 brew "makedepend"
 brew "mas"
 brew "maven"
-brew "molecule"
 brew "mono"
 brew "mosh"
-brew "ncurses"
 brew "neofetch"
 brew "neovim"
 brew "ninja"
 brew "nmap"
-brew "openssl@1.1"
-brew "p7zip"
 brew "packer"
 brew "pandoc"
 brew "parallel"
 brew "pinentry-mac"
+brew "pkg-config"
 brew "pyenv"
 brew "pyenv-virtualenv"
-brew "qemu", args: ["with-libssh2", "with-libusb", "with-sdl2"]
+brew "qemu"
 brew "qt"
 brew "radare2"
 brew "ranger"
 brew "reattach-to-user-namespace"
 brew "rebar"
-brew "rebar@3"
-brew "redis"
-brew "ruby"
+brew "rebar3"
+brew "ruby", link: true
 brew "sassc"
 brew "shellcheck"
 brew "shfmt"
 brew "sift"
 brew "socat"
-brew "telnet"
 brew "terminal-notifier"
 brew "terraform"
 brew "tig"
-brew "tmux", args: ["HEAD", "with-utf8proc"]
+brew "tmux", args: ["HEAD"]
 brew "tree"
 brew "unicorn", args: ["HEAD", "with-all"]
 brew "unison"
 brew "vault"
 brew "wget"
 brew "xhyve", args: ["HEAD"]
-brew "z3", args: ["with-python"]
-brew "zsh", args: ["with-gdbm", "with-pcre", "with-unicode9", "without-etcdir"]
-brew "crisidev/chunkwm/chunkwm", args: ["HEAD"]
+brew "z3"
+brew "zsh"
+brew "koekeishiya/formulae/chunkwm", args: ["HEAD"]
 brew "koekeishiya/formulae/skhd"
 brew "minio/stable/mc"
+cask "aerial"
+cask "banktivity"
 cask "betterzip"
 cask "cardhop"
 cask "cryptomator"
@@ -111,6 +111,8 @@ cask "docker"
 cask "firefox-developer-edition"
 cask "font-fira-code"
 cask "font-hack-nerd-font"
+cask "grandtotal"
+cask "java"
 cask "mountain-duck"
 cask "postman"
 cask "sublime-text"
@@ -118,6 +120,7 @@ cask "typinator"
 cask "ubersicht"
 cask "vagrant"
 cask "wireshark"
+cask "xquartz"
 mas "1Password 7", id: 1333542190
 mas "Agenda", id: 1287445660
 mas "Apple Configurator 2", id: 1037126344
@@ -126,15 +129,17 @@ mas "Canary Mail", id: 1236045954
 mas "CARROT Weather", id: 993487541
 mas "DaisyDisk", id: 411643860
 mas "Deliveries", id: 924726344
+mas "iStumbler", id: 546033581
+mas "Marked 2", id: 890031187
 mas "MindNode", id: 1289197285
-mas "Paste", id: 967805235
 mas "PopClip", id: 445189367
 mas "Quiver", id: 866773894
 mas "Reeder", id: 880001334
 mas "Remote Desktop", id: 409907375
 mas "SnippetsLab", id: 1006087419
 mas "Soulver", id: 413965349
-mas "Things3", id: 904280696
+mas "Synalyze It! Pro", id: 475193367
+mas "Things", id: 904280696
 mas "Tweetbot", id: 1384080005
 mas "WiFi Signal", id: 525912054
 mas "Xcode", id: 497799835

@@ -1,11 +1,9 @@
-export TERM='xterm-256color-italic'
+export TERM="xterm-256color-italic"
 export LANG=en_US.UTF-8
 export LC_ALL=en_US.UTF-8
 
-export MANTA_URL="https://manta.nocsi.org"
-export MANTA_USER=locnguyen
-unset MANTA_SUBUSER
-export MANTA_KEY_ID=54:8f:89:22:58:90:0e:14:3a:90:f7:de:63:2e:d6:ef
+export OBJC_DISABLE_INITIALIZE_FORK_SAFETY=YES
+
 export TRITON_DC=triton
 export TRITON_ACCOUNT=locnguyen
 unset TRITON_USER
@@ -13,19 +11,21 @@ export TRITON_URL="https://triton.nocsi.org"
 export TRITON_KEY_ID="54:8f:89:22:58:90:0e:14:3a:90:f7:de:63:2e:d6:ef"
 export TRITON_PROFILE="triton"
 
-export VAGRANT_SERVER_URL="https://kyozo.nocsi.org"
+#export VAGRANT_SERVER_URL="https://kyozo.nocsi.org"
 
-export DYLD_LIBRARY_PATH=/usr/local/opt/unicorn/lib/:/usr/local/opt/capstone/lib/:/usr/local/opt/keyston/lib/:$DYLD_LIBRARY_PATH
+export SDKROOT=`xcrun --show-sdk-path`
+export DYLD_LIBRARY_PATH="/usr/local/opt/unicorn/lib/:/usr/local/opt/capstone/lib/:/usr/local/opt/keystone/lib/"
 export CC=/usr/local/opt/llvm/bin/clang
 export CXX=/usr/local/opt/llvm/bin/clang++
 export LLVM_CONFIG=llvm-config
-export CFLAGS="$CFLAGS -I/usr/local/opt/openssl/include -I$(xcrun --show-sdk-path)/usr/include -I/usr/local/opt/readline/include -march=native -O2"
-export CPPFLAGS="-I/usr/local/opt/llvm/include"
+export CFLAGS="-O3 -fstack-protector-strong -I/usr/local/opt/openssl@1.1/include -I/usr/local/opt/readline/include -march=native -O2"
+#export CFLAGS="-O3 -fstack-protector-strong -I/usr/local/opt/openssl@1.1/include -I$(xcrun --show-sdk-path)/usr/include -I/usr/local/opt/readline/include -march=native -O2"
+export CPPFLAGS="-I/usr/local/opt/llvm/include -I/usr/local/opt/openssl@1.1/include"
 export CXXFLAGS="$CXXFLAGS -nostdinc++ -I/usr/local/opt/llvm/include/c++/v1"
-export LDFLAGS="$LDFLAGS -L/usr/local/opt/openssl/lib -L/usr/local/opt/readline/lib"
+export LDFLAGS="-fstack-protector-strong -L/usr/local/opt/openssl@1.1/lib -L/usr/local/opt/readline/lib -L/usr/local/opt/llvm/lib"
 export EXTRA_CMAKE_ARGS="-DEXTERNAL_LIBCLANG_PATH=$(brew --prefix llvm)/lib/libclang.dylib"
-#export CFLAGS="$CFLAGS -I$(brew --prefix openssl)/include -I$(xcrun --show-sdk-path)/usr/include -I$(brew --prefix readline)/include -march=native -O2"
-#export LDFLAGS="$LDFLAGS -L/usr/local/opt/llvm/lib -Wl,-rpath,/usr/local/opt/llvm/lib"
+
+export LIBCLANG_SYSTEM_INCLUDE_DIR="/Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX.sdk/usr/include"
 
 export GOPATH=$HOME/.golang
 export GOROOT=/usr/local/opt/go/libexec
@@ -33,8 +33,8 @@ export GOBIN=$GOPATH/bin
 export PATH=$PATH:$GOPATH:$GOROOT/bin:$GOBIN
 
 export PYTHON_CONFIGURE_OPTS="--enable-framework --with-computed-gotos"
-export PYTHONIOENCODING='UTF-8'
-export PYENV_ROOT="$HOME/.pyenv"
+export PYTHONIOENCODING="UTF-8"
+#export PYENV_ROOT="$HOME/.pyenv"
 export PYENV_VIRTUALENVWRAPPER_PREFER_PYVENV="true"
 export PIP_REQUIRE_VIRTUALENV=true
 export OPENSSL_STATIC=yes
@@ -44,11 +44,12 @@ export EDITOR="nvim"
 export VISUAL="nvim"
 export VAULT_ADDR=http://vault.nocsi.org:8200
 
-export PKG_CONFIG_PATH="/usr/local/opt/openssl/lib/pkgconfig"
-#export PKG_CONFIG_PATH="$(brew --prefix openssl)/lib/pkgconfig"
-#export PATH="$HOME/.cargo/bin:$PATH"
-#export PATH="/opt/piv-agent/bin:$PATH"
-export PATH="$HOME/.cargo/bin:/opt/piv-agent/bin:$PYENV_ROOT/bin:/usr/local/opt/llvm/bin:$HOME/.mix:$PATH"
+export GEM_HOME=$HOME/.gem
+export PATH="/Users/locnguyen/.gem/ruby/2.6.0/bin:$PATH"
+export PATH="$GEM_HOME/bin:$PATH"
+
+export PKG_CONFIG_PATH="/usr/local/opt/openssl@1.1/lib/pkgconfig"
+export PATH="$HOME/.cargo/bin:/opt/pivy/bin:$PYENV_ROOT/bin:/usr/local/opt/llvm/bin:$HOME/.mix:$PATH"
 
 export RUST_SRC_PATH="$(rustc --print sysroot)/lib/rustlib/src/rust/src"
 #export RUST_SRC_PATH=${HOME}/.rustup/toolchains/stable-x86_64-apple-darwin/lib/rustlib/src/rust/src

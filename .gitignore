@@ -2,3 +2,4 @@
 bin/terraform
 bin/packer
 .python-version
+.config/direnv/allow/*
