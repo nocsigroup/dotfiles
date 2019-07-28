@@ -4,8 +4,8 @@
   name = Loc Nguyen
   email = l@nocsi.com
   signingkey = 201B3228
-[gpg]
-	program = /usr/local/MacGPG2/bin/gpg2
+#[gpg]
+#	program = /usr/local/MacGPG2/bin/gpg2
 [credential]
   helper = osxkeychain
 [credential "https://github.com"]
@@ -20,8 +20,8 @@
 [http]
 	emptyAuth = true
 	postBuffer = 524288000
-[commit]
-	gpgsign = true
+#[commit]
+#	gpgsign = true
 [core]
 	editor = nvim
 [tag]

@@ -121,6 +121,7 @@ chunkc tiling::rule --owner \"1Password 7\" --state float &
 chunkc tiling::rule --owner \"Activity Monitor\" --state float &
 chunkc tiling::rule --owner \"App Store\" --state float &
 chunkc tiling::rule --owner Bear --state float &
+chunkc tiling::rule --owner \"Canary Mail\" --state float &
 chunkc tiling::rule --owner Calculator --state float &
 chunkc tiling::rule --owner Cardhop --state float &
 chunkc tiling::rule --owner Fantastical --state float &
