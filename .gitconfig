@@ -3,7 +3,7 @@
 [user]
   name = Loc Nguyen
   email = l@nocsi.com
-  signingkey = 201B3228
+#  signingkey = 201B3228
 [gpg]
 	program = /usr/local/MacGPG2/bin/gpg2
 [credential]
