@@ -20,8 +20,8 @@
 [http]
 	emptyAuth = true
 	postBuffer = 524288000
-[commit]
-	gpgsign = true
+#[commit]
+#	gpgsign = true
 [core]
 	editor = nvim
 [tag]
