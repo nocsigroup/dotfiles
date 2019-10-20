@@ -1,12 +1,11 @@
-tap "crisidev/chunkwm"
 tap "homebrew/bundle"
 tap "homebrew/cask"
 tap "homebrew/cask-fonts"
 tap "homebrew/cask-versions"
 tap "homebrew/core"
 tap "homebrew/services"
-tap "koekeishiya/formulae"
 tap "minio/stable"
+brew "openssl@1.1"
 brew "ansible"
 brew "ansifilter"
 brew "autoconf"
@@ -17,16 +16,14 @@ brew "binwalk"
 brew "bison"
 brew "libtool"
 brew "bochs"
-brew "capstone", args: ["HEAD"]
-brew "carthage"
 brew "cmake"
 brew "cmocka"
 brew "coreutils"
 brew "ctags"
 brew "curl"
+brew "docker"
 brew "envchain"
 brew "flex"
-brew "python@2"
 brew "fpp"
 brew "git-lfs"
 brew "gnu-sed"
@@ -49,7 +46,6 @@ brew "llvm"
 brew "lzip"
 brew "makedepend"
 brew "mas"
-brew "maven"
 brew "mono"
 brew "mosh"
 brew "neofetch"
@@ -58,17 +54,15 @@ brew "ninja"
 brew "nmap"
 brew "nomad"
 brew "nvm"
-brew "openssl@1.1"
 brew "packer"
 brew "pandoc"
 brew "parallel"
 brew "pinentry-mac"
+brew "pipenv"
 brew "pkg-config"
-brew "pyenv"
-brew "pyenv-virtualenv"
+brew "python@2"
 brew "qemu"
 brew "qt"
-brew "radare2"
 brew "ranger"
 brew "reattach-to-user-namespace"
 brew "ruby"
@@ -90,56 +84,34 @@ brew "watch"
 brew "wget"
 brew "wxmac"
 brew "xhyve", args: ["HEAD"]
+brew "yarn"
 brew "z3"
 brew "zsh"
-brew "koekeishiya/formulae/chunkwm", args: ["HEAD"]
-brew "koekeishiya/formulae/skhd"
 brew "minio/stable/mc"
-cask "aerial"
 cask "banktivity"
 cask "betterzip"
 cask "cardhop"
 cask "cryptomator"
-cask "discord"
-cask "docker"
 cask "firefox-developer-edition"
-cask "font-fira-code"
-cask "font-hack-nerd-font"
 cask "gpg-suite"
 cask "grandtotal"
-cask "java"
-cask "jitsi-meet"
 cask "mountain-duck"
-cask "quicklook-json"
-cask "sublime-text"
 cask "typinator"
-cask "ubersicht"
 cask "vagrant"
-cask "visual-studio-code"
 cask "wireshark"
 cask "xquartz"
 mas "1Password 7", id: 1333542190
-mas "Agenda", id: 1287445660
 mas "Apple Configurator 2", id: 1037126344
 mas "Bear", id: 1091189122
 mas "Canary Mail", id: 1236045954
-mas "CARROT Weather", id: 993487541
-mas "DaisyDisk", id: 411643860
 mas "Deliveries", id: 924726344
-mas "iStumbler", id: 546033581
-mas "Marked 2", id: 890031187
 mas "MindNode", id: 1289197285
 mas "Pixelmator Pro", id: 1289583905
-mas "PopClip", id: 445189367
 mas "Quiver", id: 866773894
 mas "Reeder", id: 880001334
-mas "Remote Desktop", id: 409907375
 mas "SnippetsLab", id: 1006087419
 mas "Soulver", id: 413965349
 mas "Synalyze It! Pro", id: 475193367
 mas "Things", id: 904280696
-mas "Transmit", id: 1436522307
 mas "Tweetbot", id: 1384080005
-mas "WiFi Signal", id: 525912054
 mas "Xcode", id: 497799835
-mas "Yoink", id: 457622435

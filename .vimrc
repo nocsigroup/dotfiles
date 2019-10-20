@@ -81,8 +81,7 @@ if !empty(glob('~/.vim/autoload/plug.vim'))
     Plug 'carlosgaldino/elixir-snippets'
     Plug 'tpope/vim-endwise'
     " Markup
-    Plug 'vim-pandoc/vim-pandoc'
-    Plug 'vim-pandoc/vim-pandoc-syntax'
+    Plug 'plasticboy/vim-markdown'
     " Automation
     Plug 'tpope/vim-dispatch'
     Plug 'tpope/vim-obsession'
@@ -222,9 +221,9 @@ inoremap <special> <expr> <Esc>[200~ XTermPasteBegin()
 
 map <F2> :.w !pbcopy<CR><CR>
 map <F3> :r !pbpaste<CR>
-let g:python_host_prog = '/Users/locnguyen/.pyenv/versions/neovim2/bin/python'
-let g:python3_host_prog = '/Users/locnguyen/.pyenv/versions/neovim3/bin/python'
-let g:ycm_server_python_interpreter = '/Users/locnguyen/.pyenv/versions/neovim3/bin/python'
+"let g:python_host_prog = '/Users/locnguyen/.pyenv/versions/neovim2/bin/python'
+"let g:python3_host_prog = '/Users/locnguyen/.pyenv/versions/neovim3/bin/python'
+let g:ycm_server_python_interpreter = '/usr/local/bin/python3'
 let g:OmniSharp_server_use_mono = 1
 
 set statusline +=%#warningmsg#
