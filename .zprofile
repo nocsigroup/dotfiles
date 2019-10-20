@@ -6,3 +6,5 @@ export MANPAGER='less -s -M +Gg'
 export LESS="--RAW-CONTROL-CHARS"
 lesscolors=$HOME/.bin/LESS_TERMCAP
 [[ -f $lesscolors ]] && . $lesscolors
+
+

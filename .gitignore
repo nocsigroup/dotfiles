@@ -2,6 +2,7 @@
 bin/terraform
 bin/packer
 .python-version
+.config/direnv/allow
 .config/direnv/allow/*
 ./kube/
 .password-store

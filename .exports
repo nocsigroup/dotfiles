@@ -4,6 +4,7 @@ export LANG=en_US.UTF-8
 export LC_ALL=en_US.UTF-8
 
 export OBJC_DISABLE_INITIALIZE_FORK_SAFETY=YES
+export HOMEBREW_NO_ANALYTICS=1
 
 export SDKROOT=`xcrun --show-sdk-path`
 #export DYLD_LIBRARY_PATH="/usr/local/opt/unicorn/lib/:/usr/local/opt/capstone/lib/:/usr/local/opt/keystone/lib/"

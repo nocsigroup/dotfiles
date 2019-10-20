@@ -1,6 +1,7 @@
 alias config="git --git-dir=$HOME/.cfg --work-tree=$HOME"
 alias ssh='TERM=xterm-256color ssh'
-alias ls='exa'
+#alias ls='exa'
+alias ls="exa -bh --color=auto"
 alias vi='nvim'
 alias vim='nvim'
 alias vimdiff='nvim -d'
@@ -11,3 +12,4 @@ alias curl="/usr/local/opt/curl/bin/curl"
 alias curlwifi="/usr/local/opt/curl/bin/curl --progress-bar --interface en0 -C - -O"
 alias python="/usr/local/bin/python3"
 #alias pyenv="CFLAGS='-I$(brew --prefix openssl)/include -I$(xcrun --show-sdk-path)/usr/include' LDFLAGS='-L$(brew --prefix openssl)/lib pyenv'"
+alias zplupdate="rm -rf -- ${ZPLGM[SNIPPETS_DIR]} && zplugin update"
