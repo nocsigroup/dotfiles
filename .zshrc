@@ -108,6 +108,9 @@ zplugin light "junegunn/fzf-bin"
 zplugin ice wait"2" lucid from"gh-r" as"program" mv"exa* -> exa"
 zplugin light ogham/exa
 
+zplugin ice wait"2" lucid from"gh-r" as"program" mv"docker-credential-helpers* -> docker-credential-helpers"
+zplugin light docker/docker-credential-helpers
+
 zplugin ice wait"2" lucid from"gh-r" as"program" mv"docker-compose* -> docker-compose"
 zplugin light docker/compose
 
