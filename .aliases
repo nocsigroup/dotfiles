@@ -8,7 +8,6 @@ alias vimdiff='nvim -d'
 #alias rrepl="rustup run nightly-2016-08-01 ~/.cargo/bin/rusti"
 #alias curl="/usr/local/opt/curl/bin/curl"
 #alias curlwifi="/usr/local/opt/curl/bin/curl --progress-bar --interface en0 -C - -O"
-#alias python="/usr/local/bin/python3"
 #alias pyenv="CFLAGS='-I$(brew --prefix openssl)/include -I$(xcrun --show-sdk-path)/usr/include' LDFLAGS='-L$(brew --prefix openssl)/lib pyenv'"
 alias zplupdate="rm -rf -- ${ZPLGM[SNIPPETS_DIR]} && zinit update"
 alias pandoc="docker run --rm -v `pwd`:/pandoc nocsi/pandoc:1.0"

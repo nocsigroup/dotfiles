@@ -2,35 +2,14 @@
 export TERM="xterm-256color"
 export LANG=en_US.UTF-8
 export LC_ALL=en_US.UTF-8
-
 export OBJC_DISABLE_INITIALIZE_FORK_SAFETY=YES
 export HOMEBREW_NO_ANALYTICS=1
-
 export SDKROOT=`xcrun --show-sdk-path`
-# export EXTRA_CMAKE_ARGS="-DEXTERNAL_LIBCLANG_PATH=/usr/local/opt/llvm/lib/libclang.dylib"
-#export DYLD_LIBRARY_PATH="/usr/local/opt/unicorn/lib/:/usr/local/opt/capstone/lib/:/usr/local/opt/keystone/lib/"
-#export LLVM_CONFIG=llvm-config
-#export CC=/usr/local/opt/llvm/bin/clang
-#export CXX=/usr/local/opt/llvm/bin/clang++
-#export CFLAGS="-O2 -g -fno-stack-check"
-#export CFLAGS="-O3 -fstack-protector-strong -I/usr/local/opt/openssl@1.1/include -I/usr/local/opt/readline/include -march=native -O2"
-#export CFLAGS="-O3 -fstack-protector-strong -I/usr/local/opt/openssl@1.1/include -I$(xcrun --show-sdk-path)/usr/include -I/usr/local/opt/readline/include -march=native -O2"
-#export CPPFLAGS="-I/usr/local/opt/llvm/include -I/usr/local/opt/openssl@1.1/include"
-#export CXXFLAGS="$CXXFLAGS -I/usr/local/opt/llvm/include/c++/v1"
-#export LDFLAGS="-fstack-protector-strong -L/usr/local/opt/openssl@1.1/lib -L/usr/local/opt/readline/lib -L/usr/local/opt/llvm/lib"
-
-#export LIBCLANG_SYSTEM_INCLUDE_DIR="/Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX.sdk/usr/include"
-
-if [[ "$(uname -m)" == "arm64" ]]; then
-  export PATH="/opt/homebrew/bin:${PATH}"
-  export PATH="/opt/homebrew/sbin:${PATH}"
-fi
-
 export GOPATH=$HOME/.golang
 export GOROOT=/opt/homebrew/opt/go/libexec
 #export GOROOT=/usr/local/opt/go/libexec
-export GOBIN=$GOPATH/bin
-export PATH=$PATH:$GOPATH/bin:$GOROOT/bin
+export GOBIN="${GOPATH}/bin"
+export PATH="${PATH}:$GOPATH/bin:$GOROOT/bin"
 
 # export VIRTUALENVWRAPPER_PYTHON=/usr/bin/python3
 # export PATH=/opt/homebrew/opt/python/libexec/bin:$PATH
@@ -43,20 +22,18 @@ export OPENSSL_STATIC=yes
 export CLICOLOR=1
 export EDITOR="nvim"
 export VISUAL="nvim"
-export VAULT_ADDR=http://vault.nocsi.org:8200
+#export VAULT_ADDR=http://vault.nocsi.org:8200
 
 export GEM_HOME=$HOME/.gem
-export PATH="/Users/locnguyen/.gem/ruby/2.6.0/bin:$PATH"
+export PATH="/Users/locnguyen/.gem/ruby/2.6.0/bin:${PATH}"
 export PATH="$GEM_HOME/bin:$PATH"
 #export PATH="$HOME/.cargo/bin:/opt/pivy/bin:$PYENV_ROOT/bin:/usr/local/opt/llvm/bin:$HOME/.mix:$PATH"
-export PATH="$HOME/.cargo/bin:/usr/local/opt/llvm/bin:$HOME/.mix:$PATH"
+#export PATH="$HOME/.cargo/bin:/usr/local/opt/llvm/bin:$HOME/.mix:$PATH"
 
-export PATH="/Applications/VMware Fusion.app/Contents/Public/:$PATH"
-export PATH="/Applications/Wireshark.app/Contents/MacOS/extcap/:$PATH"
+#export PATH="/Applications/VMware Fusion.app/Contents/Public/:$PATH"
+#export PATH="/Applications/Wireshark.app/Contents/MacOS/extcap/:$PATH"
 
-export PKG_CONFIG_PATH="/usr/local/opt/openssl@1.1/lib/pkgconfig"
-export RUST_SRC_PATH="$HOME/.rustup/toolchains/nightly-x86_64-apple-darwin/lib/rustlib/src/rust/src"
-#export HOMEBREW_PREFIX=/opt/homebrew
-#export HOMEBREW_CELLAR=/opt/homebrew/Cellar
-# export PATH="/opt/homebrew/bin:${PATH}"
-# export PATH="/opt/homebrew/sbin:${PATH}"
+#export PKG_CONFIG_PATH="/usr/local/opt/openssl@1.1/lib/pkgconfig"
+export PKG_CONFIG_PATH="/opt/homebrew/opt/openssl@1.1/lib/pkgconfig"
+#export RUST_SRC_PATH="$HOME/.rustup/toolchains/nightly-x86_64-apple-darwin/lib/rustlib/src/rust/src"
+#export RUST_SRC_PATH="$HOME/.rustup/toolchains/nightly-aarch64-apple-darwin/lib/rustlib/src/rust/src"

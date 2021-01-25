@@ -1,15 +1,42 @@
 #zmodload zsh/zprof
-export PATH="$HOME/.bin:/usr/local/bin:/usr/local/sbin:$(getconf PATH)"
-if [[ ! -f "$HOME/.zinit/bin/zinit.zsh" ]]; then if (( $+commands[git] )); then
-    git clone https://github.com/zdharma/zinit.git ~/.zinit/bin
-  else
-    echo 'git not found' >&2
-    exit 1
-  fi
+#export PATH="$HOME/.bin:/usr/local/bin:/usr/local/sbin:$(getconf PATH)"
+#if [[ ! -f "$HOME/.zinit/bin/zinit.zsh" ]]; then if (( $+commands[git] )); then
+#    git clone https://github.com/zdharma/zinit.git ~/.zinit/bin
+#  else
+#    echo 'git not found' >&2
+#    exit 1
+#  fi
+#fi
+#source "$HOME/.zinit/bin/zinit.zsh"
+
+### Added by Zinit's installer
+if [[ ! -f $HOME/.zinit/bin/zinit.zsh ]]; then
+    print -P "%F{33}▓▒░ %F{220}Installing %F{33}DHARMA%F{220} Initiative Plugin Manager (%F{33}zdharma/zinit%F{220})…%f"
+command mkdir -p "$HOME/.zinit" && command chmod g-rwX "$HOME/.zinit"
+command git clone https://github.com/zdharma/zinit "$HOME/.zinit/bin" && \
+        print -P "%F{33}▓▒░ %F{34}Installation successful.%f%b" || \
+        print -P "%F{160}▓▒░ The clone has failed.%f%b"
 fi
 source "$HOME/.zinit/bin/zinit.zsh"
+autoload -Uz _zinit
+(( ${+_comps} )) && _comps[zinit]=_zinit
 
-typeset -g HISTSIZE=290000 SAVEHIST=290000 HISTFILE=~/.zhistory ABSD=${${(M)OSTYPE:#*(darwin|bsd)*}:+1}
+# Load a few important annexes, without Turbo
+# (this is currently required for annexes)
+zinit light-mode for \
+    zinit-zsh/z-a-rust \
+    zinit-zsh/z-a-as-monitor \
+    zinit-zsh/z-a-patch-dl \
+    zinit-zsh/z-a-bin-gem-node
+
+
+
+typeset -g HISTSIZE=290000 SAVEHIST=290000 HISTFILE=~/.zhistory
+setopt inc_append_history
+setopt share_history
+setopt hist_ignore_space
+
+#typeset -g HISTSIZE=290000 SAVEHIST=290000 HISTFILE=~/.zhistory ABSD=${${(M)OSTYPE:#*(darwin|bsd)*}:+1}
 
 typeset -ga mylogs
 zflai-msg() { mylogs+=( "$1" ); }
@@ -25,6 +52,15 @@ setopt inc_append_history   complete_in_word  no_auto_menu   auto_pushd
 setopt pushd_ignore_dups    no_glob_complete  no_glob_dots   c_bases
 setopt numeric_glob_sort    no_share_history  promptsubst    auto_cd
 setopt rc_quotes            extendedglob
+
+setopt correct
+setopt interactive_comments
+setopt no_clobber
+setopt auto_pushd
+setopt complete_in_word
+setopt complete_aliases
+setopt auto_list
+setopt auto_menu
 
 #
 # Bindkeys
@@ -51,6 +87,12 @@ bindkey "\e[F"    end-of-line           "\e[3~"   delete-char
 bindkey "^J"      accept-line           "^M"      accept-line
 bindkey "^T"      accept-line           "^R"      history-incremental-search-backward
 
+autoload -Uz allopt zed zmv zcalc colors
+colors
+autoload -Uz url-quote-magic
+zle -N self-insert url-quote-magic
+autoload -Uz select-word-style
+select-word-style bash
 autoload -Uz _zinit
 (( ${+_comps} )) && _comps[zinit]=_zinit
 
@@ -79,9 +121,26 @@ zinit load zdharma/history-search-multi-word
 zinit ice wait'[[ -n ${ZLAST_COMMANDS[(r)cra*]} ]]' lucid
 zinit load zdharma/zinit-crasis
 
-zinit ice wait lucid blockf atpull'zinit creinstall -q .'
-zinit light zsh-users/zsh-completions
+#zinit ice wait lucid blockf atpull'zinit creinstall -q .'
+#zinit light zsh-users/zsh-completions
 
+#autoload -Uz compinit
+#compinit
+
+zinit wait lucid light-mode for \
+  atinit"zicompinit; zicdreplay" \
+      zdharma/fast-syntax-highlighting \
+  atload"_zsh_autosuggest_start" \
+      zsh-users/zsh-autosuggestions \
+  blockf atpull'zinit creinstall -q .' \
+      zsh-users/zsh-completions
+
+#zinit ice blockf atpull'zinit creinstall -q .'
+#zinit light zsh-users/zsh-completions
+zstyle ':completion:*' menu select
+zstyle ':completion:*' matcher-list 'm:{a-z}={A-Za-z}' '+l:|=* r:|=*'
+
+zinit light agkozak/zsh-z
 #zinit ice wait"1" lucid atinit"ZPLGM[COMPINIT_OPTS]=-C; zpcompinit; zpcdreplay"
 zinit light zsh-users/zsh-autosuggestions
 zinit light zdharma/fast-syntax-highlighting
@@ -120,8 +179,14 @@ zinit ice from"gh-r" as"program"
 zinit load junegunn/fzf-bin
 
 # ogham/exa, replacement for ls
-zinit ice wait"2" lucid from"gh-r" as"program" mv"exa* -> exa"
-zinit light ogham/exa
+#zinit ice wait"2" lucid from"gh-r" as"program" mv"exa* -> exa"
+#zinit light ogham/exa
+
+#zinit id-as=rust wait=1 as=null sbin="bin/*" lucid rustup cargo'exa;lsd' as"command" pick"bin/(exa|lsd)" \
+zinit id-as=rust wait=1 as=null sbin="bin/*" lucid rustup \
+    atload="[[ ! -f ${ZINIT[COMPLETIONS_DIR]}/_cargo ]] && zi creinstall rust; \
+    export CARGO_HOME=\$PWD RUSTUP_HOME=\$PWD/rustup" for \
+        zdharma/null
 
 # All of the above using the for-syntax and also z-a-bin-gem-node annex
 #zinit wait"1" lucid from"gh-r" as"null" for \
@@ -134,8 +199,18 @@ export ZSH_AUTOSUGGEST_BUFFER_MAX_SIZE=10
 
 # For GNU ls (the binaries can be gls, gdircolors, e.g. on OS X when installing the
 # coreutils package from Homebrew; you can also use https://github.com/ogham/exa)
-zinit ice atclone"dircolors -b LS_COLORS > c.zsh" atpull'%atclone' pick"c.zsh" nocompile'!'
+#zinit ice atclone"dircolors -b LS_COLORS > c.zsh" atpull'%atclone' pick"c.zsh" nocompile'!'
+#zinit light trapd00r/LS_COLORS
+
+zinit ice wait"0c" lucid reset \
+    atclone"local P=${${(M)OSTYPE:#*darwin*}:+g}
+            \${P}sed -i \
+            '/DIR/c\DIR 38;5;63;1' LS_COLORS; \
+            \${P}dircolors -b LS_COLORS > c.zsh" \
+    atpull'%atclone' pick"c.zsh" nocompile'!' \
+    atload'zstyle ":completion:*" list-colors “${(s.:.)LS_COLORS}”'
 zinit light trapd00r/LS_COLORS
+alias ls='ls --color=auto'
 
 #
 # Binaries
@@ -155,10 +230,24 @@ zinit light direnv/direnv
 zinit ice from"gh-r" as"program" mv"shfmt* -> shfmt"
 zinit light mvdan/sh
 
-zinit ice atclone"PYENV_ROOT='$PWD' ./libexec/pyenv init - > zpyenv.zsh && git clone https://github.com/pyenv/pyenv-vir" \
+# sharkdp/fd
+zinit ice as"command" from"gh-r" mv"fd* -> fd" pick"fd/fd"
+zinit light sharkdp/fd
+
+# sharkdp/bat
+zinit ice as"command" from"gh-r" mv"bat* -> bat" pick"bat/bat"
+zinit light sharkdp/bat
+
+zinit ice atclone'PYENV_ROOT="$PWD" ./libexec/pyenv init - > zpyenv.zsh && git clone https://github.com/pyenv/pyenv-virtualenv ./plugins/pyenv-virtualenv' \
     atinit'export PYENV_ROOT="$PWD"' atpull"%atclone" \
     as'command' pick'bin/pyenv' src"zpyenv.zsh" nocompile'!'
 zinit light pyenv/pyenv
+
+zinit ice as"program" pick"$ZPFX/sdkman/bin/sdk" id-as'sdkman' run-atpull \
+    atclone"curl https://get.sdkman.io/ | SDKMAN_DIR=$ZPFX/sdkman bash" \
+    atpull"SDKMAN_DIR=$ZPFX/sdkman sdk selfupdate" \
+    atinit"export SDKMAN_DIR=$ZPFX/sdkman; source $ZPFX/sdkman/bin/sdkman-init.sh"
+zinit light zdharma/null
 
 zinit ice as"command" wait lucid \
     atinit"export PYTHONPATH=$ZPFX/lib/python3.9/site-packages/" \
@@ -220,8 +309,13 @@ SYMBOLS=(
 zstyle :prompt:pure:path color white
 PURE_PROMPT_SYMBOL="${SYMBOLS[$RANDOM % ${#SYMBOLS[@]} + 1]}"
 
+
 source $HOME/.exports
 source $HOME/.aliases
+#if [[ "$(uname -m)" == "arm64" ]]; then
+  #export PATH="${PATH}:/opt/homebrew/bin"
+  #export PATH="/opt/homebrew/sbin:${PATH}"
+#fi
 
 [[ -s "$HOME/.kerl/23.2.2/activate" ]] && source "$HOME/.kerl/23.2.2/activate"
 [[ -s "$HOME/.kiex/scripts/kiex" ]] && source "$HOME/.kiex/scripts/kiex"
