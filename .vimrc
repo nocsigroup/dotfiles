@@ -5,49 +5,46 @@ endif
 
 if !empty(glob('~/.vim/autoload/plug.vim'))
     call plug#begin('~/.vim/plugged')
+    " Aesthetics
+    Plug 'junegunn/rainbow_parentheses.vim', {'type': 'opt'}
+    Plug 'ryanoasis/vim-devicons'
+    Plug 'itchyny/lightline.vim'
+    " Functionality
+
     " Misc
     Plug 'editorconfig/editorconfig-vim'
-    Plug 'tpope/vim-speeddating'
     " Theme
-    Plug 'itchyny/lightline.vim'
     Plug 'fxn/vim-monochrome'
+    Plug 'NLKNguyen/papercolor-theme'
     " Navigation
     Plug 'xolox/vim-misc'
     Plug 'xolox/vim-session'
-    Plug 'tpope/vim-rsi'
     Plug 'google/vim-searchindex' " Show match count for search
-    if isdirectory('/usr/local/opt/fzf')
-      Plug '/usr/local/opt/fzf' | Plug 'junegunn/fzf.vim'
-    else
-      Plug 'junegunn/fzf', { 'dir': '~/.fzf', 'do': './install --bin' }
-      Plug 'junegunn/fzf.vim'
-    endif
     " Git
+    Plug 'tpope/vim-dispatch'
+    Plug 'tpope/vim-endwise'
     Plug 'tpope/vim-fugitive'
+    Plug 'tpope/vim-obsession'
+    Plug 'tpope/vim-rsi'
+    Plug 'tpope/vim-sensible'
+    Plug 'tpope/vim-surround'
+    Plug 'tpope/vim-speeddating'
     Plug 'airblade/vim-gitgutter'
     " Shortcuts
     Plug 'rizzatti/dash.vim'
     Plug 'direnv/direnv.vim'
     Plug 'jeetsukumaran/vim-indentwise'
-    Plug 'OmniSharp/omnisharp-vim'
-    Plug 'christoomey/vim-tmux-navigator'
-    Plug 'SirVer/ultisnips'
     Plug 'honza/vim-snippets'
-    Plug 'vim-scripts/grep.vim'
-    Plug 'vim-scripts/CSApprox'
     " Langs
     Plug 'sheerun/vim-polyglot'
-    Plug 'Valloric/YouCompleteMe', { 'do': './install.py --clang-completer --go-completer --js-completer --rust-completer --java-completer' }
-    Plug 'rdnetto/YCM-Generator', { 'branch': 'stable' }
-    Plug 'vim-syntastic/syntastic' 
+    Plug 'neovim/nvim-lspconfig', {'type': 'opt'}
+    Plug 'hashivim/vim-terraform'
+    Plug 'juliosueiras/vim-terraform-completion'
     Plug 'Shirk/vim-gas'
     Plug 'PProvost/vim-ps1'
-    Plug 'autozimu/LanguageClient-neovim', {
-          \ 'branch': 'next',
-          \ 'do': './install.sh',
-          \ }
     if has('nvim')
       Plug 'Shougo/deoplete.nvim', { 'do': ':UpdateRemotePlugin' }
+      Plug 'Shougo/deoplete-lsp'
     else
       Plug 'Shougo/deoplete.nvim'
       Plug 'roxma/nvim-yarp'
@@ -57,8 +54,8 @@ if !empty(glob('~/.vim/autoload/plug.vim'))
     Plug 'Shougo/neosnippet-snippets'
     Plug 'ervandew/supertab'
     Plug 'Shougo/context_filetype.vim'
-    Plug 'zchee/deoplete-jedi', { 'do': ':UpdateRemotePlugins' }
     Plug 'davidhalter/jedi-vim'
+    Plug 'avakhov/vim-yaml'
     Plug 'sebastianmarkow/deoplete-rust'
     " Rust
     Plug 'rust-lang/rust.vim'
@@ -69,7 +66,9 @@ if !empty(glob('~/.vim/autoload/plug.vim'))
     Plug 'vim-erlang/vim-erlang-omnicomplete'
     Plug 'vim-erlang/vim-erlang-compiler'
     " Elixir
-    Plug 'w0rp/ale'
+    " Plug 'elixir-lsp/elixir-ls', { 'do': { -> g:ElixirLS.compile() } }
+    Plug 'neoclide/coc.nvim', {'branch': 'release'}
+    Plug 'amiralies/coc-elixir', {'do': 'yarn install && yarn prepack'}
     Plug 'elixir-editors/vim-elixir'
     Plug 'avdgaag/vim-phoenix'
     Plug 'mmorearty/elixir-ctags'
@@ -79,18 +78,20 @@ if !empty(glob('~/.vim/autoload/plug.vim'))
     Plug 'slashmili/alchemist.vim'
     Plug 'jadercorrea/elixir_generator.vim'
     Plug 'carlosgaldino/elixir-snippets'
-    Plug 'tpope/vim-endwise'
-    " Markup
-    Plug 'plasticboy/vim-markdown'
+    " Golang
+    Plug 'fatih/vim-go', { 'do': ':GoUpdateBinaries' }
     " Automation
-    Plug 'tpope/vim-dispatch'
-    Plug 'tpope/vim-obsession'
     " Utility
+    Plug 'w0rp/ale'
+    Plug 'mattn/emmet-vim'
+    Plug 'vim-test/vim-test'
     Plug 'scrooloose/nerdtree'
     Plug 'scrooloose/nerdcommenter'
+    Plug 'Xuyuanp/nerdtree-git-plugin'
     Plug 'zenbro/mirror.vim'
     Plug 'kien/ctrlp.vim'
     Plug 'neomake/neomake'
+    "Plug 'vim-syntastic/syntastic' 
     Plug 'ConradIrwin/vim-bracketed-paste'
     Plug 'pearofducks/ansible-vim'
     Plug 'terryma/vim-smooth-scroll'
@@ -124,6 +125,8 @@ filetype plugin indent on
 set encoding=utf8
 set exrc
 
+" let g:coc_global_extensions = ['coc-elixir', 'coc-diagnostic']
+
 " session management
 let g:session_directory = "~/.config/nvim/session"
 let g:session_autoload = "no"
@@ -138,13 +141,12 @@ hi StatusLineNC ctermfg=235 ctermbg=237
 hi Search ctermbg=58 ctermfg=15
 hi Default ctermfg=1
 hi clear SignColumn
-hi SignColumn ctermbg=235
 hi GitGutterAdd ctermbg=235 ctermfg=245
 hi GitGutterChange ctermbg=235 ctermfg=245
 hi GitGutterDelete ctermbg=235 ctermfg=245
 hi GitGutterChangeDelete ctermbg=235 ctermfg=245
 hi EndOfBuffer ctermfg=237 ctermbg=235
-set shell=/usr/local/bin/zsh
+set shell=/opt/homebrew/bin/zsh
 if (empty($TMUX))
   if (has("nvim"))
   "For Neovim 0.1.3 and 0.1.4 < https://github.com/neovim/neovim/pull/2198 >
@@ -160,36 +162,50 @@ endif
 syntax enable
 set t_Co=256
 set termguicolors
+
+" let &t_8f="\<Esc>[38;2;%lu;%lu;%lum"
+" let &t_8b="\<Esc>[48;2;%lu;%lu;%lum"
+
+"colorscheme lucius
 set background=dark
-set guifont=SpaceMonoForPowerline:h12
+colorscheme PaperColor
 
+let g:lightline = { 'colorscheme': 'PaperColor' }
+" let g:lightline = {
+"   \ 'colorscheme': 'onedark',
+"  \ }
 
-let &t_8f="\<Esc>[38;2;%lu;%lu;%lum"
-let &t_8b="\<Esc>[48;2;%lu;%lu;%lum"
-let g:monochrome_italic_comments = 1
-colorscheme monochrome
-
-let g:lightline = {
-  \   'colorscheme': 'seoul256',
-  \   'active': {
-  \     'left':[ [ 'mode', 'paste' ],
-  \              [ 'gitbranch', 'readonly', 'filename', 'modified' ]
-  \     ]
-  \   },
-	\   'component': {
-	\     'lineinfo': ' %3l:%-2v',
-	\   },
-  \   'component_function': {
-  \     'gitbranch': 'fugitive#head',
+let g:PaperColor_Theme_Options = {
+  \   'theme': {
+  \     'default': {
+  \       'transparent_background': 1
+  \     }
   \   }
   \ }
+
+" Other Configurations
+set fillchars+=vert:\ 
+set foldenable foldmethod=syntax foldlevelstart=99 foldcolumn=1
+set ignorecase smartcase
+set inccommand=split
+set list listchars=trail:»,tab:»-
+set number relativenumber
+set scrolloff=2
+set showmatch
+set tabstop=2 softtabstop=2 shiftwidth=2 expandtab
+set title
+set wrap breakindent
+set colorcolumn=80,100
+set lazyredraw
+set undofile
+set splitbelow splitright
+
+let &undodir = $HOME . "/.config/nvim/undo"
+let g:python3_host_prog = '/opt/homebrew/bin/python3'
+let g:polyglot_is_disabled={}
+" }}}
 set guioptions-=e  " Don't use GUI tabline
 set statusline=%=&P\ %f\ %m
-
-" Syntastic Stuff
-set statusline+=%#warningmsg#
-set statusline+=%{SyntasticStatuslineFlag()}
-set statusline+=%*
 
 " for tmux to automatically set paste and nopaste mode at the time pasting (as
 " happens in VIM UI)
@@ -216,25 +232,12 @@ endfunction
 
 inoremap <special> <expr> <Esc>[200~ XTermPasteBegin()
 
-"set t_8b=^[[48;2;%lu;%lu;%lum
-"set t_8f=^[[38;2;%lu;%lu;%lum
-
 map <F2> :.w !pbcopy<CR><CR>
 map <F3> :r !pbpaste<CR>
-"let g:python_host_prog = '/Users/locnguyen/.pyenv/versions/neovim2/bin/python'
-"let g:python3_host_prog = '/Users/locnguyen/.pyenv/versions/neovim3/bin/python'
-let g:ycm_server_python_interpreter = '/usr/local/bin/python3'
-let g:OmniSharp_server_use_mono = 1
 
-set statusline +=%#warningmsg#
-set statusline +=%{SyntasticStatuslineFlag()}
-set statusline +=%*
-"
-" Syntastic stuff
 set fillchars=vert:\ ,stl:\ ,stlnc:\ 
 set noshowmode
 set laststatus=2
-set shell=/usr/local/bin/zsh
 set clipboard=unnamed
 
 " MacOS backspace fix
@@ -248,9 +251,7 @@ set shiftwidth=2
 set expandtab
 set lazyredraw
 
-
 autocmd FileType javascript let g:SuperTabDefaultCompletionType = "<c-x><c-o>"
-let g:UltiSnipsExpandTrigger="<C-j>"
 let g:actualvim = 0
 inoremap <expr><TAB>  pumvisible() ? "\<C-n>" : "\<TAB>"
 

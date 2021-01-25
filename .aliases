@@ -1,14 +1,19 @@
 alias config="git --git-dir=$HOME/.cfg --work-tree=$HOME"
 alias ls="exa -bh --color=auto --icons"
-alias "lt"="exa --color=auto -l -snew --icons"
+alias "lst"="exa --color=auto -l -snew --icons"
 alias vi='nvim'
 alias vim='nvim'
 alias vimdiff='nvim -d'
-alias drive='cd ~/Library/CloudStorage/iCloudDrive/Documents'
 #alias tmux='direnv exec / tmux'
-alias rrepl="rustup run nightly-2016-08-01 ~/.cargo/bin/rusti"
-alias curl="/usr/local/opt/curl/bin/curl"
-alias curlwifi="/usr/local/opt/curl/bin/curl --progress-bar --interface en0 -C - -O"
-alias python="/usr/local/bin/python3"
+#alias rrepl="rustup run nightly-2016-08-01 ~/.cargo/bin/rusti"
+#alias curl="/usr/local/opt/curl/bin/curl"
+#alias curlwifi="/usr/local/opt/curl/bin/curl --progress-bar --interface en0 -C - -O"
+#alias python="/usr/local/bin/python3"
 #alias pyenv="CFLAGS='-I$(brew --prefix openssl)/include -I$(xcrun --show-sdk-path)/usr/include' LDFLAGS='-L$(brew --prefix openssl)/lib pyenv'"
-alias zplupdate="rm -rf -- ${ZPLGM[SNIPPETS_DIR]} && zplugin update"
+alias zplupdate="rm -rf -- ${ZPLGM[SNIPPETS_DIR]} && zinit update"
+alias pandoc="docker run --rm -v `pwd`:/pandoc nocsi/pandoc:1.0"
+alias a="arch -x86_64"
+alias ibrew="arch -x86_64 /usr/local/Homebrew/bin/brew"
+#alias pip="/opt/homebrew/bin/pip3"
+alias macclean="nvm cache clear"
+alias dsclean="find ~/ -name '.DS_Store' -delete"

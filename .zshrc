@@ -1,13 +1,13 @@
 #zmodload zsh/zprof
 export PATH="$HOME/.bin:/usr/local/bin:/usr/local/sbin:$(getconf PATH)"
-if [[ ! -f "$HOME/.zplugin/bin/zplugin.zsh" ]]; then if (( $+commands[git] )); then
-    git clone https://github.com/zdharma/zplugin.git ~/.zplugin/bin
+if [[ ! -f "$HOME/.zinit/bin/zinit.zsh" ]]; then if (( $+commands[git] )); then
+    git clone https://github.com/zdharma/zinit.git ~/.zinit/bin
   else
     echo 'git not found' >&2
     exit 1
   fi
 fi
-source "$HOME/.zplugin/bin/zplugin.zsh"
+source "$HOME/.zinit/bin/zinit.zsh"
 
 typeset -g HISTSIZE=290000 SAVEHIST=290000 HISTFILE=~/.zhistory ABSD=${${(M)OSTYPE:#*(darwin|bsd)*}:+1}
 
@@ -51,134 +51,152 @@ bindkey "\e[F"    end-of-line           "\e[3~"   delete-char
 bindkey "^J"      accept-line           "^M"      accept-line
 bindkey "^T"      accept-line           "^R"      history-incremental-search-backward
 
-autoload -Uz _zplugin
-(( ${+_comps} )) && _comps[zplugin]=_zplugin
+autoload -Uz _zinit
+(( ${+_comps} )) && _comps[zinit]=_zinit
 
 NVM_LAZY_LOAD=true
 
-#zplugin light "zsh-users/zsh-history-substring-search"
+#zinit light "zsh-users/zsh-history-substring-search"
 
 # diff-so-fancy
-zplugin ice wait"2" lucid as"program" pick"bin/git-dsf"
-zplugin load zdharma/zsh-diff-so-fancy
+zinit ice wait"2" lucid as"program" pick"bin/git-dsf"
+zinit load zdharma/zsh-diff-so-fancy
 
 # zsh-startify, a vim-startify like plugin
-zplugin ice wait"0b" lucid atload"zsh-startify"
-zplugin load zdharma/zsh-startify
+zinit ice wait"0b" lucid atload"zsh-startify"
+zinit load zdharma/zsh-startify
 
-zplugin light zdharma/z-p-submods
+# zinit light zdharma/z-p-submods
 
 # ZUI and Crasis
-zplugin ice wait"1" lucid
-zplugin load zdharma/zui
+zinit ice wait"1" lucid
+zinit load zdharma/zui
 
 zstyle ":history-search-multi-word" page-size "11"
-zplugin ice wait"1" lucid
-zplugin load zdharma/history-search-multi-word
+zinit ice wait"1" lucid
+zinit load zdharma/history-search-multi-word
 
-zplugin ice wait'[[ -n ${ZLAST_COMMANDS[(r)cra*]} ]]' lucid
-zplugin load zdharma/zplugin-crasis
+zinit ice wait'[[ -n ${ZLAST_COMMANDS[(r)cra*]} ]]' lucid
+zinit load zdharma/zinit-crasis
 
-zplugin ice wait lucid blockf atpull'zplugin creinstall -q .'
-zplugin light zsh-users/zsh-completions
+zinit ice wait lucid blockf atpull'zinit creinstall -q .'
+zinit light zsh-users/zsh-completions
 
-zplugin ice wait"1" lucid atinit"ZPLGM[COMPINIT_OPTS]=-C; zpcompinit; zpcdreplay"
-zplugin light zdharma/fast-syntax-highlighting
+#zinit ice wait"1" lucid atinit"ZPLGM[COMPINIT_OPTS]=-C; zpcompinit; zpcdreplay"
+zinit light zsh-users/zsh-autosuggestions
+zinit light zdharma/fast-syntax-highlighting
 
-zplugin ice wait"!0" lucid atload"_zsh_autosuggest_start"
-zplugin light "zsh-users/zsh-autosuggestions"
-export ZSH_AUTOSUGGEST_BUFFER_MAX_SIZE=10
+# Plugin history-search-multi-word loaded with investigating.
+zinit load zdharma/history-search-multi-word
 
-zplugin ice wait"0c" lucid reset \
-    atclone"local P=${${(M)OSTYPE:#*darwin*}:+g}
-            \${P}sed -i \
-            '/DIR/c\DIR 38;5;63;1' LS_COLORS; \
-            \${P}dircolors -b LS_COLORS > c.zsh" \
-    atpull'%atclone' pick"c.zsh" nocompile'!' \
-    atload'zstyle ":completion:*" list-colors “${(s.:.)LS_COLORS}”'
-zplugin light 'trapd00r/LS_COLORS'
+# Load the pure theme, with zsh-async library that's bundled with it.
+zinit ice pick"async.zsh" src"pure.zsh"
+zinit light sindresorhus/pure
 
+# A glance at the new for-syntax – load all of the above
+# plugins with a single command. For more information see:
+# https://zdharma.org/zinit/wiki/For-Syntax/
+zinit for \
+    light-mode  zsh-users/zsh-autosuggestions \
+    light-mode  zdharma/fast-syntax-highlighting \
+                zdharma/history-search-multi-word \
+    light-mode pick"async.zsh" src"pure.zsh" \
+                sindresorhus/pure
 #
 # Binaries
 #
 
-zplugin ice from"gh-r" as"program"
-zplugin light "junegunn/fzf-bin"
+# sharkdp/fd
+#zinit ice as"command" from"gh-r" mv"fd* -> fd" pick"fd/fd"
+#zinit light sharkdp/fd
 
-zplugin ice wait"2" lucid from"gh-r" as"program" mv"exa* -> exa"
-zplugin light ogham/exa
+# sharkdp/bat
+#zinit ice as"command" from"gh-r" mv"bat* -> bat" pick"bat/bat"
+#zinit light sharkdp/bat
 
-zplugin ice wait"2" lucid from"gh-r" as"program" mv"docker-credential-helpers* -> docker-credential-helpers"
-zplugin light docker/docker-credential-helpers
+# Binary release in archive, from GitHub-releases page.
+# After automatic unpacking it provides program "fzf".
+zinit ice from"gh-r" as"program"
+zinit load junegunn/fzf-bin
 
-zplugin ice wait"2" lucid from"gh-r" as"program" mv"docker-compose* -> docker-compose"
-zplugin light docker/compose
+# ogham/exa, replacement for ls
+zinit ice wait"2" lucid from"gh-r" as"program" mv"exa* -> exa"
+zinit light ogham/exa
 
-zplugin ice lucid from"gh-r" as"program" mv"docker-machine* -> docker-machine"
-zplugin light docker/machine
+# All of the above using the for-syntax and also z-a-bin-gem-node annex
+#zinit wait"1" lucid from"gh-r" as"null" for \
+#     sbin"fzf"          junegunn/fzf-bin \
+#     sbin"**/fd"        @sharkdp/fd \
+#     sbin"**/bat"       @sharkdp/bat \
+#     sbin"exa* -> exa"  ogham/exa
 
-zplugin ice as"program" make'!' atclone'./direnv hook zsh > zhook.zsh' atpull'%atclone' pick"direnv" src"zhook.zsh"
-zplugin light direnv/direnv
+export ZSH_AUTOSUGGEST_BUFFER_MAX_SIZE=10
 
-zplugin ice from"gh-r" as"program" mv"shfmt* -> shfmt"
-zplugin light mvdan/sh
+# For GNU ls (the binaries can be gls, gdircolors, e.g. on OS X when installing the
+# coreutils package from Homebrew; you can also use https://github.com/ogham/exa)
+zinit ice atclone"dircolors -b LS_COLORS > c.zsh" atpull'%atclone' pick"c.zsh" nocompile'!'
+zinit light trapd00r/LS_COLORS
 
-zplugin ice atclone"./libexec/pyenv init - > zpyenv.zsh" \
+#
+# Binaries
+#
+zinit ice wait"2" lucid from"gh-r" as"program" mv"docker-credential-helpers* -> docker-credential-helpers"
+zinit light docker/docker-credential-helpers
+
+zinit ice wait"2" lucid from"gh-r" as"program" mv"docker-compose* -> docker-compose"
+zinit light docker/compose
+
+zinit ice lucid from"gh-r" as"program" mv"docker-machine* -> docker-machine"
+zinit light docker/machine
+
+zinit ice as"program" make'!' atclone'./direnv hook zsh > zhook.zsh' atpull'%atclone' src"zhook.zsh"
+zinit light direnv/direnv
+
+zinit ice from"gh-r" as"program" mv"shfmt* -> shfmt"
+zinit light mvdan/sh
+
+zinit ice atclone"PYENV_ROOT='$PWD' ./libexec/pyenv init - > zpyenv.zsh && git clone https://github.com/pyenv/pyenv-vir" \
     atinit'export PYENV_ROOT="$PWD"' atpull"%atclone" \
     as'command' pick'bin/pyenv' src"zpyenv.zsh" nocompile'!'
-zplugin light pyenv/pyenv
+zinit light pyenv/pyenv
 
-zplugin ice as"command" wait lucid \
-    atinit"export PYTHONPATH=$ZPFX/lib/python3.7/site-packages/" \
-    atclone"PYTHONPATH=$ZPFX/lib/python3.7/site-packages/ \
+zinit ice as"command" wait lucid \
+    atinit"export PYTHONPATH=$ZPFX/lib/python3.9/site-packages/" \
+    atclone"PYTHONPATH=$ZPFX/lib/python3.9/site-packages/ \
     python3 setup.py --quiet install --prefix $ZPFX" \
     atpull'%atclone' test'0' \
     pick"$ZPFX/bin/asciinema"
-zplugin load asciinema/asciinema.git
+zinit load asciinema/asciinema.git
 
-zplugin ice depth="1" as"program" atclone'./install.sh $ZPFX $ZPFX' atpull"%atclone" compile"grc.zsh" src"grc.zsh" pick'$ZPFX/bin/grc*'
-zplugin light garabik/grc
+zinit ice depth="1" as"program" atclone'./install.sh $ZPFX $ZPFX' atpull"%atclone" compile"grc.zsh" src"grc.zsh" pick'$ZPFX/bin/grc*'
+zinit light garabik/grc
 
-zplugin ice lucid wait"!0" 
-zplugin light "lukechilds/zsh-nvm"
+zinit ice lucid wait"!0"
+zinit light "lukechilds/zsh-nvm"
 
 #
 # Completions
-# 
+#
 
-zplugin ice as"completion"
-zplugin snippet https://github.com/docker/cli/blob/master/contrib/completion/zsh/_docker
+# zinit ice as"completion"
+# zinit snippet https://github.com/docker/cli/blob/master/contrib/completion/zsh/_docker
 
-zplugin ice as"completion" id-as"dc-completion"
-zplugin load docker/compose
+zinit ice as"completion" id-as"dc-completion"
+zinit load docker/compose
 
-zplugin ice as"completion" id-as"dm-completion"
-zplugin load docker/machine
+zinit ice as"completion" id-as"dm-completion"
+zinit load docker/machine
 
 #
 # Plugins
 #
 
-zplugin ice pick"h.sh"
-zplugin light paoloantinori/hhighlighter
-
+zinit ice pick"h.sh"
+zinit light paoloantinori/hhighlighter
 
 #
 # Snippets
 #
-
-# Uses z-p-submods z-plugin: https://github.com/zdharma/z-p-submods
-zplugin ice svn submods'zsh-users/zsh-autosuggestions -> external'
-zplugin snippet PZT::modules/autosuggestions
-
-zplugin ice svn submods"clvv/fasd -> external"
-zplugin snippet PZT::modules/fasd
-
-zplugin ice svn pick"completion.zsh" src"git.zsh"
-zplugin snippet OMZ::lib
-
-zplugin ice svn
-zplugin snippet OMZ::plugins/osx
 
 ZSH_AUTOSUGGEST_HIGHLIGHT_STYLE='fg=8'
 ZSH_AUTOSUGGEST_USE_ASYNC=true
@@ -187,23 +205,8 @@ ZSH_AUTOSUGGEST_USE_ASYNC=true
 # Themes
 #
 
-zplugin ice pick"async.zsh" src"pure.zsh"
-zplugin light sindresorhus/pure
-#zplugin ice ice load'![[ $MYPROMPT = 0 ]]' unload'![[ $MYPROMPT != 0 ]]' \
-#             multisrc"{async,pure}.zsh" pick"/dev/null" idas"pure-prompt"
-#zplugin load sindresorhus/pure
-
-#GEOMETRY_COLOR_DIR=152
-#zplugin ice wait"0" lucid atload"prompt_geometry_render"
-#zplugin light geometry-zsh/geometry
-#zplugin ice load'![[ $MYPROMPT = 1 ]]' unload'![[ $MYPROMPT != 1 ]]' atload"prompt_geometry_render" lucid
-#zplugin load geometry-zsh/geometry
-
-#zplugin light mafredri/zsh-async  # dependency
-#zplugin ice svn silent atload'prompt sorin'
-#zplugin snippet PZT::modules/prompt
-
-#MYPROMPT=1
+zinit ice pick"async.zsh" src"pure.zsh"
+zinit light sindresorhus/pure
 
 SYMBOLS=(
 "λ"
@@ -220,27 +223,9 @@ PURE_PROMPT_SYMBOL="${SYMBOLS[$RANDOM % ${#SYMBOLS[@]} + 1]}"
 source $HOME/.exports
 source $HOME/.aliases
 
-[[ -s "$HOME/.kerl/21.2/activate" ]] && source "$HOME/.kerl/21.2/activate"
+[[ -s "$HOME/.kerl/23.2.2/activate" ]] && source "$HOME/.kerl/23.2.2/activate"
 [[ -s "$HOME/.kiex/scripts/kiex" ]] && source "$HOME/.kiex/scripts/kiex"
 
 [ -f ~/.fzf.zsh ] && source ~/.fzf.zsh
 
 fpath=($HOME/.config/fpath $fpath)
-
-MACHINE=default
-if [[ $(docker-machine status "$MACHINE" 2>&1) != "Running" ]]; then
-  docker-machine start "$MACHINE"
-fi
-today=$(date +%s)
-lastchange=$(stat -f "%m" "$HOME/.docker/$MACHINE")
-delta=$((today - lastchange))
-if [[ ! -f "$HOME/.docker/$MACHINE" || $delta -gt 3600 ]]; then
-  echo $(docker-machine env "$MACHINE") |  >"$HOME/.docker/$MACHINE" > >(eval)
-else 
-  [[ -s "$HOME/.docker/$MACHINE" ]] && source "$HOME/.docker/$MACHINE"
-fi
-#
-#zprof
-
-#test -e "${HOME}/.iterm2_shell_integration.zsh" && source "${HOME}/.iterm2_shell_integration.zsh"
-
