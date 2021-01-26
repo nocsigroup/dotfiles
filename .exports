@@ -28,7 +28,7 @@ export GEM_HOME=$HOME/.gem
 export PATH="/Users/locnguyen/.gem/ruby/2.6.0/bin:${PATH}"
 export PATH="$GEM_HOME/bin:$PATH"
 #export PATH="$HOME/.cargo/bin:/opt/pivy/bin:$PYENV_ROOT/bin:/usr/local/opt/llvm/bin:$HOME/.mix:$PATH"
-#export PATH="$HOME/.cargo/bin:/usr/local/opt/llvm/bin:$HOME/.mix:$PATH"
+export PATH="$HOME/.cargo/bin:/usr/local/opt/llvm/bin:$HOME/.mix:$PATH"
 
 #export PATH="/Applications/VMware Fusion.app/Contents/Public/:$PATH"
 #export PATH="/Applications/Wireshark.app/Contents/MacOS/extcap/:$PATH"

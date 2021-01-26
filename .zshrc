@@ -323,3 +323,5 @@ source $HOME/.aliases
 [ -f ~/.fzf.zsh ] && source ~/.fzf.zsh
 
 fpath=($HOME/.config/fpath $fpath)
+
+test -e "${HOME}/.iterm2_shell_integration.zsh" && source "${HOME}/.iterm2_shell_integration.zsh"

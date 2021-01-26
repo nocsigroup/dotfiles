@@ -6,6 +6,7 @@ tap "homebrew/cask-versions"
 tap "homebrew/core"
 tap "homebrew/services"
 tap "universal-ctags/universal-ctags"
+brew "openssl@1.1"
 brew "readline"
 brew "sqlite"
 brew "xz"
@@ -21,6 +22,7 @@ brew "carthage"
 brew "cloc"
 brew "cmake"
 brew "cmocka"
+brew "code-server", restart_service: true
 brew "coreutils"
 brew "ctags"
 brew "gettext"
@@ -32,6 +34,7 @@ brew "expat"
 brew "fpp"
 brew "fzf"
 brew "git"
+brew "git-lfs"
 brew "gnu-sed"
 brew "pkg-config"
 brew "libusb"
@@ -39,6 +42,7 @@ brew "gnupg"
 brew "go", args: ["HEAD"]
 brew "ncurses"
 brew "htop"
+brew "hwloc"
 brew "ifstat"
 brew "jq"
 brew "kerl"
@@ -48,6 +52,7 @@ brew "libgit2"
 brew "libiconv"
 brew "libimobiledevice"
 brew "libpcap"
+brew "libuv"
 brew "llvm"
 brew "luajit", args: ["HEAD"]
 brew "lzip"
@@ -110,6 +115,7 @@ cask "font-hack-nerd-font"
 cask "font-monofur-nerd-font"
 cask "font-space-mono"
 cask "ghidra"
+cask "google-chrome"
 cask "gpg-suite"
 cask "grandtotal"
 cask "hazel"
@@ -120,9 +126,12 @@ cask "keka"
 cask "keyboard-maestro"
 cask "ledger-live"
 cask "little-snitch"
+cask "microsoft-teams"
+cask "monero-wallet"
 cask "monodraw"
 cask "mountain-duck"
 cask "ngrok"
+cask "nova"
 cask "obsidian"
 cask "onyx"
 cask "osxfuse"
@@ -132,38 +141,39 @@ cask "qlmarkdown"
 cask "quicklook-json"
 cask "receipts"
 cask "royal-tsx"
+cask "secretive"
 cask "signal"
 cask "sketch"
 cask "slack"
+cask "sublime-merge"
 cask "sublime-text"
 cask "typinator"
 cask "vagrant"
 cask "viscosity"
-cask "visual-studio-code"
 cask "wireshark"
 cask "wkhtmltopdf"
 cask "xquartz"
 mas "1Password 7", id: 1333542190
 mas "Apple Configurator 2", id: 1037126344
 mas "Bear", id: 1091189122
+mas "Compressor", id: 424390742
 mas "Deliveries", id: 290986013
 mas "Expenses", id: 1492055171
 mas "Fantastical", id: 975937182
+mas "Final Cut Pro", id: 424389933
 mas "Honey", id: 1472777122
-mas "iMovie", id: 408981434
 mas "Keynote", id: 409183694
+mas "Logic Pro", id: 634148309
 mas "MindNode", id: 1289197285
+mas "Motion", id: 434290957
 mas "Noto", id: 1459055246
-mas "Numbers", id: 409203825
 mas "OmniGraffle", id: 1142578753
 mas "OmniOutliner", id: 1142578772
 mas "OmniPlan", id: 1460319993
-mas "Pages", id: 409201541
 mas "Pixelmator Pro", id: 1289583905
 mas "Quiver", id: 866773894
 mas "Reeder", id: 1529448980
 mas "SEE Finance", id: 1316742770
-mas "SubEthaEdit", id: 728530824
 mas "Synalyze It! Pro", id: 475193367
 mas "Things", id: 904280696
 mas "Tweetbot", id: 1384080005
