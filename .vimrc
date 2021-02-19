@@ -91,7 +91,7 @@ if !empty(glob('~/.vim/autoload/plug.vim'))
     Plug 'zenbro/mirror.vim'
     Plug 'kien/ctrlp.vim'
     Plug 'neomake/neomake'
-    "Plug 'vim-syntastic/syntastic' 
+    "Plug 'vim-syntastic/syntastic'
     Plug 'ConradIrwin/vim-bracketed-paste'
     Plug 'pearofducks/ansible-vim'
     Plug 'terryma/vim-smooth-scroll'
@@ -113,7 +113,7 @@ map <Bar> <C-W>v<C-W><Right>
 map _     <C-W>s<C-W><Down>
 
 " tab navigation mappings
-map tt :tabnew 
+map tt :tabnew
 map <M-Right> :tabn<CR>
 imap <M-Right> <ESC>:tabn<CR>
 map <M-Left> :tabp<CR>
@@ -184,7 +184,7 @@ let g:PaperColor_Theme_Options = {
   \ }
 
 " Other Configurations
-set fillchars+=vert:\ 
+set fillchars+=vert:\
 set foldenable foldmethod=syntax foldlevelstart=99 foldcolumn=1
 set ignorecase smartcase
 set inccommand=split
@@ -201,7 +201,8 @@ set undofile
 set splitbelow splitright
 
 let &undodir = $HOME . "/.config/nvim/undo"
-let g:python3_host_prog = '/opt/homebrew/bin/python3'
+" let g:python3_host_prog = '/opt/homebrew/bin/python3'
+let g:python3_host_prog = '/Users/locnguyen/.zinit/plugins/pyenv---pyenv/shims/python3'
 let g:polyglot_is_disabled={}
 " }}}
 set guioptions-=e  " Don't use GUI tabline
@@ -235,7 +236,7 @@ inoremap <special> <expr> <Esc>[200~ XTermPasteBegin()
 map <F2> :.w !pbcopy<CR><CR>
 map <F3> :r !pbpaste<CR>
 
-set fillchars=vert:\ ,stl:\ ,stlnc:\ 
+set fillchars=vert:\ ,stl:\ ,stlnc:\
 set noshowmode
 set laststatus=2
 set clipboard=unnamed

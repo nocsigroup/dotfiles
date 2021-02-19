@@ -312,12 +312,8 @@ PURE_PROMPT_SYMBOL="${SYMBOLS[$RANDOM % ${#SYMBOLS[@]} + 1]}"
 
 source $HOME/.exports
 source $HOME/.aliases
-#if [[ "$(uname -m)" == "arm64" ]]; then
-  #export PATH="${PATH}:/opt/homebrew/bin"
-  #export PATH="/opt/homebrew/sbin:${PATH}"
-#fi
 
-[[ -s "$HOME/.kerl/23.2.2/activate" ]] && source "$HOME/.kerl/23.2.2/activate"
+[[ -s "$HOME/.kerl/23.2.5/activate" ]] && source "$HOME/.kerl/23.2.5/activate"
 [[ -s "$HOME/.kiex/scripts/kiex" ]] && source "$HOME/.kiex/scripts/kiex"
 
 [ -f ~/.fzf.zsh ] && source ~/.fzf.zsh
