@@ -243,6 +243,10 @@ zinit ice atclone'PYENV_ROOT="$PWD" ./libexec/pyenv init - > zpyenv.zsh && git c
     as'command' pick'bin/pyenv' src"zpyenv.zsh" nocompile'!'
 zinit light pyenv/pyenv
 
+zinit ice wait"0" lucid
+zinit light htlsne/zinit-rbenv
+eval "$(rbenv init -)"
+
 zinit ice as"program" pick"$ZPFX/sdkman/bin/sdk" id-as'sdkman' run-atpull \
     atclone"curl https://get.sdkman.io/ | SDKMAN_DIR=$ZPFX/sdkman bash" \
     atpull"SDKMAN_DIR=$ZPFX/sdkman sdk selfupdate" \

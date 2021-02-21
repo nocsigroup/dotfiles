@@ -1,39 +1,39 @@
-#export TERM="xterm-256color-italic"
-export TERM="xterm-256color"
 export LANG=en_US.UTF-8
 export LC_ALL=en_US.UTF-8
-export OBJC_DISABLE_INITIALIZE_FORK_SAFETY=YES
-export HOMEBREW_NO_ANALYTICS=1
-export SDKROOT=`xcrun --show-sdk-path`
-export GOPATH=$HOME/.golang
-export GOROOT=/opt/homebrew/opt/go/libexec
-#export GOROOT=/usr/local/opt/go/libexec
-export GOBIN="${GOPATH}/bin"
-export PATH="${PATH}:$GOPATH/bin:$GOROOT/bin"
-
-# export VIRTUALENVWRAPPER_PYTHON=/usr/bin/python3
-# export PATH=/opt/homebrew/opt/python/libexec/bin:$PATH
-# export PATH="$(python3 -m site --user-base)/bin:${PATH}"
-
-export PIP_REQUIRE_VIRTUALENV=false
-
-export OPENSSL_STATIC=yes
-
 export CLICOLOR=1
 export EDITOR="nvim"
 export VISUAL="nvim"
-#export VAULT_ADDR=http://vault.nocsi.org:8200
+export TERM="xterm-256color"
+#export TERM="xterm-256color-italic"
+export OPENSSL_STATIC=yes
+export OBJC_DISABLE_INITIALIZE_FORK_SAFETY=YES
+
+export HOMEBREW_NO_ANALYTICS=1
+export SDKROOT=`xcrun --show-sdk-path`
+export PIP_REQUIRE_VIRTUALENV=false
+
+export GOPATH=$HOME/.golang
+export GOROOT=/opt/homebrew/opt/go/libexec
+export GOBIN="${GOPATH}/bin"
+export PATH="${PATH}:$GOPATH/bin:$GOROOT/bin"
 
 export GEM_HOME=$HOME/.gem
-export PATH="/Users/locnguyen/.gem/ruby/2.6.0/bin:${PATH}"
-export PATH="$GEM_HOME/bin:$PATH"
+export PKG_CONFIG_PATH="/opt/homebrew/opt/openssl@1.1/lib/pkgconfig"
+export RUBY_CONFIGURE_OPTS="--with-openssl-dir=/opt/homebrew/opt/openssl@1"
+#export PATH="/Users/locnguyen/.gem/ruby/2.6.0/bin:${PATH}"
+#export PATH="$GEM_HOME/bin:/Users/locnguyen/.bin/:${PATH}"
+
+
 #export PATH="$HOME/.cargo/bin:/opt/pivy/bin:$PYENV_ROOT/bin:/usr/local/opt/llvm/bin:$HOME/.mix:$PATH"
+
 export PATH="$HOME/.cargo/bin:/usr/local/opt/llvm/bin:$HOME/.mix:$PATH"
 
-#export PATH="/Applications/VMware Fusion.app/Contents/Public/:$PATH"
 #export PATH="/Applications/Wireshark.app/Contents/MacOS/extcap/:$PATH"
-
-#export PKG_CONFIG_PATH="/usr/local/opt/openssl@1.1/lib/pkgconfig"
-export PKG_CONFIG_PATH="/opt/homebrew/opt/openssl@1.1/lib/pkgconfig"
 #export RUST_SRC_PATH="$HOME/.rustup/toolchains/nightly-x86_64-apple-darwin/lib/rustlib/src/rust/src"
 #export RUST_SRC_PATH="$HOME/.rustup/toolchains/nightly-aarch64-apple-darwin/lib/rustlib/src/rust/src"
+
+PATH="/Users/locnguyen/.perl5/bin${PATH:+:${PATH}}"; export PATH;
+PERL5LIB="/Users/locnguyen/.perl5/lib/perl5${PERL5LIB:+:${PERL5LIB}}"; export PERL5LIB;
+PERL_LOCAL_LIB_ROOT="/Users/locnguyen/.perl5${PERL_LOCAL_LIB_ROOT:+:${PERL_LOCAL_LIB_ROOT}}"; export PERL_LOCAL_LIB_ROOT;
+PERL_MB_OPT="--install_base \"/Users/locnguyen/.perl5\""; export PERL_MB_OPT;
+PERL_MM_OPT="INSTALL_BASE=/Users/locnguyen/.perl5"; export PERL_MM_OPT;
