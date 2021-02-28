@@ -1,14 +1,3 @@
-#zmodload zsh/zprof
-#export PATH="$HOME/.bin:/usr/local/bin:/usr/local/sbin:$(getconf PATH)"
-#if [[ ! -f "$HOME/.zinit/bin/zinit.zsh" ]]; then if (( $+commands[git] )); then
-#    git clone https://github.com/zdharma/zinit.git ~/.zinit/bin
-#  else
-#    echo 'git not found' >&2
-#    exit 1
-#  fi
-#fi
-#source "$HOME/.zinit/bin/zinit.zsh"
-
 ### Added by Zinit's installer
 if [[ ! -f $HOME/.zinit/bin/zinit.zsh ]]; then
     print -P "%F{33}▓▒░ %F{220}Installing %F{33}DHARMA%F{220} Initiative Plugin Manager (%F{33}zdharma/zinit%F{220})…%f"
@@ -29,14 +18,10 @@ zinit light-mode for \
     zinit-zsh/z-a-patch-dl \
     zinit-zsh/z-a-bin-gem-node
 
-
-
 typeset -g HISTSIZE=290000 SAVEHIST=290000 HISTFILE=~/.zhistory
 setopt inc_append_history
 setopt share_history
 setopt hist_ignore_space
-
-#typeset -g HISTSIZE=290000 SAVEHIST=290000 HISTFILE=~/.zhistory ABSD=${${(M)OSTYPE:#*(darwin|bsd)*}:+1}
 
 typeset -ga mylogs
 zflai-msg() { mylogs+=( "$1" ); }
@@ -165,14 +150,6 @@ zinit for \
 # Binaries
 #
 
-# sharkdp/fd
-#zinit ice as"command" from"gh-r" mv"fd* -> fd" pick"fd/fd"
-#zinit light sharkdp/fd
-
-# sharkdp/bat
-#zinit ice as"command" from"gh-r" mv"bat* -> bat" pick"bat/bat"
-#zinit light sharkdp/bat
-
 # Binary release in archive, from GitHub-releases page.
 # After automatic unpacking it provides program "fzf".
 zinit ice from"gh-r" as"program"
@@ -188,20 +165,10 @@ zinit id-as=rust wait=1 as=null sbin="bin/*" lucid rustup \
     export CARGO_HOME=\$PWD RUSTUP_HOME=\$PWD/rustup" for \
         zdharma/null
 
-# All of the above using the for-syntax and also z-a-bin-gem-node annex
-#zinit wait"1" lucid from"gh-r" as"null" for \
-#     sbin"fzf"          junegunn/fzf-bin \
-#     sbin"**/fd"        @sharkdp/fd \
-#     sbin"**/bat"       @sharkdp/bat \
-#     sbin"exa* -> exa"  ogham/exa
-
 export ZSH_AUTOSUGGEST_BUFFER_MAX_SIZE=10
 
 # For GNU ls (the binaries can be gls, gdircolors, e.g. on OS X when installing the
 # coreutils package from Homebrew; you can also use https://github.com/ogham/exa)
-#zinit ice atclone"dircolors -b LS_COLORS > c.zsh" atpull'%atclone' pick"c.zsh" nocompile'!'
-#zinit light trapd00r/LS_COLORS
-
 zinit ice wait"0c" lucid reset \
     atclone"local P=${${(M)OSTYPE:#*darwin*}:+g}
             \${P}sed -i \
@@ -313,11 +280,10 @@ SYMBOLS=(
 zstyle :prompt:pure:path color white
 PURE_PROMPT_SYMBOL="${SYMBOLS[$RANDOM % ${#SYMBOLS[@]} + 1]}"
 
-
 source $HOME/.exports
 source $HOME/.aliases
 
-[[ -s "$HOME/.kerl/23.2.5/activate" ]] && source "$HOME/.kerl/23.2.5/activate"
+[[ -s "$HOME/.kerl/23.2.6/activate" ]] && source "$HOME/.kerl/23.2.6/activate"
 [[ -s "$HOME/.kiex/scripts/kiex" ]] && source "$HOME/.kiex/scripts/kiex"
 
 [ -f ~/.fzf.zsh ] && source ~/.fzf.zsh

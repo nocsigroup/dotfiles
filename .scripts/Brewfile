@@ -114,6 +114,7 @@ cask "dash"
 cask "deckset"
 cask "devonthink"
 cask "discord"
+cask "figma"
 cask "firefox"
 cask "font-fira-code"
 cask "font-hack-nerd-font"
@@ -145,6 +146,7 @@ cask "receipts"
 cask "royal-tsx"
 cask "secretive"
 cask "signal"
+cask "sketch"
 cask "slack"
 cask "sublime-merge"
 cask "sublime-text"
@@ -154,27 +156,3 @@ cask "viscosity"
 cask "wireshark"
 cask "wkhtmltopdf"
 cask "xquartz"
-mas "1Password 7", id: 1333542190
-mas "Apple Configurator 2", id: 1037126344
-mas "Bear", id: 1091189122
-mas "Compressor", id: 424390742
-mas "Deliveries", id: 290986013
-mas "Expenses", id: 1492055171
-mas "Fantastical", id: 975937182
-mas "Final Cut Pro", id: 424389933
-mas "Keynote", id: 409183694
-mas "Logic Pro", id: 634148309
-mas "MindNode", id: 1289197285
-mas "Motion", id: 434290957
-mas "Noto", id: 1459055246
-mas "OmniGraffle", id: 1142578753
-mas "OmniOutliner", id: 1142578772
-mas "OmniPlan", id: 1460319993
-mas "Pixelmator Pro", id: 1289583905
-mas "Quiver", id: 866773894
-mas "Reeder", id: 1529448980
-mas "SEE Finance", id: 1316742770
-mas "Synalyze It! Pro", id: 475193367
-mas "Things", id: 904280696
-mas "Tweetbot", id: 1384080005
-mas "Xcode", id: 497799835
