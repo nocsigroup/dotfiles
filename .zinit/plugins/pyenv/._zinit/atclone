@@ -1,0 +1,1 @@
+PYENV_ROOT="$PWD" ./libexec/pyenv init - > zpyenv.zsh

@@ -1,0 +1,1 @@
+/Users/locnguyen/.zinit/plugins/rust/registry/src/github.com-1ecc6299db9ec823/tokio-1.2.0/tests/_require_full.rs

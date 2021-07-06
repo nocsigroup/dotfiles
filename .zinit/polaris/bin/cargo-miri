@@ -1,0 +1,13 @@
+#!/usr/bin/env zsh
+
+function cargo-miri {
+    local bindir="/Users/locnguyen/.zinit/plugins/rust/bin"
+    
+    
+    local -xU PATH="$bindir":"$PATH"
+    
+    "$bindir"/"cargo-miri" "$@"
+
+}
+
+cargo-miri "$@"

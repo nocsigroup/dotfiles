@@ -1,0 +1,1 @@
+/Users/locnguyen/.zinit/plugins/ajeetdsouza---zoxide/src/app/_app.rs
